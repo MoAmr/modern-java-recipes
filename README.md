@@ -59,3 +59,22 @@ as in String::length
 </h4>
 
 --------------------------------------------------------------------------
+
+# Constructor References:-
+
+<h3><u>Note:</u></h3><h4>Problem:
+You want to instantiate an object using a method reference as part of a stream pipe‐ line.
+
+Solution:
+Use the new keyword as part of a method reference.</h4>
+
+<h3><u>Note:</u></h3><h4>Constructor references can also be used with arrays.
+If you want an array of Person instances, Person[], instead of a list,
+you can use the toArray method on Stream, whose signature is:
+<A> A[] toArray(IntFunction<A[]> generator)</h4>
+
+<h3><u>Note:</u></h3><h4>The toArray method argument creates an array of 
+Person references of the proper size and populates it with the instantiated
+Person instances.</h4>
+
+--------------------------------------------------------------------------
