@@ -1,7 +1,9 @@
 package FunctionalInterfaces;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author Mohammed Amr
@@ -19,6 +21,45 @@ public class Main {
         System.out.println("Elements were " + (removed ? "" : "NOT") + " removed");
         // Use the default method forEach from Iterator
         nums.forEach(System.out::println);
+
+        /** One example of a convenient static method in an interface is the comparing method in java.util.Comparator,
+         *  along with its primitive variants, comparingInt, comparingLong, and comparingDouble. The Comparator
+         *  interface also has static methods naturalOrder and reverseOrder. */
+
+        /** Sorting strings */
+        List<String> bonds = Arrays.asList("Connery", "Lazenby", "Moore",
+                "Dalton", "Brosnan", "Craig");
+
+        List<String> sorted = bonds.stream()
+                // Natural order (lexicographical)
+                .sorted(Comparator.naturalOrder())
+                .collect(Collectors.toList());
+        // [Craig, Moore, Dalton, Brosnan, Connery, Lazenby]
+
+        sorted = bonds.stream()
+                // Reverse lexicographical
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+        // [Moore, Lazenby, Dalton, Craig, Connery, Brosnan]
+
+        sorted = bonds.stream()
+                // Sort by lowercase name
+                .sorted(Comparator.comparing(String::toLowerCase))
+                .collect(Collectors.toList());
+        // [Brosnan, Connery, Craig, Dalton, Lazenby, Moore]
+
+        sorted = bonds.stream()
+                // Sort by name length
+                .sorted(Comparator.comparingInt(String::length))
+                .collect(Collectors.toList());
+        // [Moore, Craig, Dalton, Connery, Lazenby, Brosnan]
+
+        sorted = bonds.stream()
+        // Sort by length, then equal lengths lexicographically
+                .sorted(Comparator.comparingInt(String::length)
+                        .thenComparing(Comparator.naturalOrder()))
+                .collect(Collectors.toList());
+        // [Craig, Moore, Dalton, Brosnan, Connery, Lazenby]
     }
 
     /** MyInterface is a functional interface with static and default methods */

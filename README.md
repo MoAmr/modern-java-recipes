@@ -111,6 +111,40 @@ This allowed the library maintainers to add new default methods throughout
 the JDK without breaking existing implementations.</h4>
 
 <h3><u>Note:</u></h3><h4>Predicate is one of the new functional interfaces 
-in the java.util.function package,</h4>
+in the java.util.function package.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to add a class-level utility method to 
+an interface, along with an implementation, make the method static and provide
+the implementation in the usual way.</h4>
+
+<h3><u>Note:</u></h3><h4>Utility classes: classes that contain only static 
+methods. A typical example is java.util.Collections, which contains methods 
+for sorting and searching, wrapping collections in synchronized or unmodifiable 
+types, and more.</h4>
+
+<h3><u>Note:</u></h3><h4>In Java 8, you can add static methods to interfaces 
+whenever you like. The requirements are:
+
+• Add the static keyword to the method.
+
+• Provide an implementation (which cannot be overridden). In this way they are
+like default methods, and are included in the default tab in the Javadocs.
+
+• Access the method using the interface name. Classes do not need to implement
+an interface to use its static methods.</h4>
+
+<h3><u>Note:</u></h3><h4>Static methods in interfaces remove the need to create 
+separate utility classes, though that option is still available if a design
+calls for it.</h4>
+
+<h3><u>Note:</u></h3><h4>SThe key points to remember are:
+
+• Static methods must have an implementation
+
+• You cannot override a static method
+
+• Call static methods from the interface name
+
+• You do not need to implement an interface to use its static methods</h4>
 
 --------------------------------------------------------------------------
