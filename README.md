@@ -78,3 +78,39 @@ Person references of the proper size and populates it with the instantiated
 Person instances.</h4>
 
 --------------------------------------------------------------------------
+
+# Functional Interfaces:-
+
+<h3><u>Note:</u></h3><h4>If you want want to use an existing functional
+interface, or write your own, create an interface with a single,
+abstract method, and add the @FunctionalInter face annotation.</h4>
+
+<h3><u>Note:</u></h3><h4>A functional interface in Java 8 is an interface
+with a single, abstract method. As such, it can be the target for a lambda
+expression or method reference.</h4>
+
+<h3><u>Note:</u></h3><h4>All methods in an interface are public,
+so you can leave out the access modifier, just as you can leave out the
+abstract keyword.</h4>
+
+<h3><u>Note:</u></h3><h4>Functional interfaces can have default and static
+methods as well. Both default and static methods have implementations, 
+so they don’t count against the single abstract method requirement.</h4>
+
+<h3><u>Note:</u></h3><h4>The rules for functional interfaces say that
+methods from Object don’t count against the single abstract method limit, 
+so Comparator is still a functional interface.</h4>
+
+<h3><u>Note:</u></h3><h4>Many of the existing interfaces in Java have been
+enhanced with default methods in order to maintain backward compatibility.</h4>
+
+<h3><u>Note:</u></h3><h4> Normally when you add a new method to an interface,
+you break all the existing implementations. By adding a new method as a default, 
+all the existing implementations inherit the new method and still work.
+This allowed the library maintainers to add new default methods throughout
+the JDK without breaking existing implementations.</h4>
+
+<h3><u>Note:</u></h3><h4>Predicate is one of the new functional interfaces 
+in the java.util.function package,</h4>
+
+--------------------------------------------------------------------------
