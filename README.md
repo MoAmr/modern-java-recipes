@@ -148,3 +148,21 @@ calls for it.</h4>
 • You do not need to implement an interface to use its static methods</h4>
 
 --------------------------------------------------------------------------
+
+# The java.util.function Package:-
+
+<h3><u>Note:</u></h3><h4>Specifically designed to contain only functional interfaces 
+that are reused in the rest of the library.</h4>
+
+</h3><h4>The interfaces in java.util.function fall into four categories: 
+(1) consumers, (2) suppliers, (3) predicates, and (4) functions. 
+Consumers take a generic argument and return nothing. 
+Suppliers take no arguments and return a value.
+Predicates take an argument and return a boolean. 
+Functions take a single argument and return a value.</h4>
+
+<h3><u>Note:</u></h3><h4>An Optional is a nonnull object that either wraps
+a value or is empty. It is typically returned by methods that may reasonably 
+expect to have no result, like finding a value in an empty collection.</h4>
+
+--------------------------------------------------------------------------

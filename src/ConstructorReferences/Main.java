@@ -1,7 +1,9 @@
 package ConstructorReferences;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -82,5 +84,27 @@ public class Main {
                 .map(Person::new)
                 // Constructor reference for an array of Person
                 .toArray(Person[]::new);
+
+        /** Finding a name from a collection */
+        List<String> names1 = Arrays.asList("Mal", "Wash", "Kaylee", "Inara",
+                "Zoë", "Jayne", "Simon", "River", "Shepherd Book");
+
+        Optional<String> first = names1.stream()
+                .filter(name -> name.startsWith("C"))
+                .findFirst();
+
+        // Prints Optional.empty
+        System.out.println(first);
+        // Prints the string "None"
+        System.out.println(first.orElse("None"));
+
+        // Forms the comma-separated collection, even when name is found
+        System.out.println(first.orElse(String.format("No result found in %s",
+                names1.stream().collect(Collectors.joining(",")))));
+
+        // Forms the comma-separated collection only if the Optional is empty
+        System.out.println(first.orElseGet(() ->
+                String.format("No result found in %s",
+                        names1.stream().collect(Collectors.joining(", ")))));
     }
 }
