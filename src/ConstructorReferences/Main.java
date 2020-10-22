@@ -106,5 +106,25 @@ public class Main {
         System.out.println(first.orElseGet(() ->
                 String.format("No result found in %s",
                         names1.stream().collect(Collectors.joining(", ")))));
+
+
+
+
+    }
+
+    /** Finding strings of a given length */
+    public String getNamesOfLength(int length, String... names) {
+        return Arrays.stream(names)
+                // Predicate for strings of given length only
+                .filter(str -> str.length() == length)
+                .collect(Collectors.joining(", "));
+    }
+
+    /** Finding strings that start with a given string */
+    public String getNamesStartingWith(String s, String... names) {
+        return Arrays.stream(names)
+               //Predicate to return strings starting with a given string
+                .filter(str2 -> str2.startsWith(s))
+                .collect(Collectors.joining(", "));
     }
 }

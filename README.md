@@ -137,7 +137,7 @@ an interface to use its static methods.</h4>
 separate utility classes, though that option is still available if a design
 calls for it.</h4>
 
-<h3><u>Note:</u></h3><h4>SThe key points to remember are:
+<h3><u>Note:</u></h3><h4>The key points to remember are:
 
 • Static methods must have an implementation
 
@@ -164,5 +164,10 @@ Functions take a single argument and return a value.</h4>
 <h3><u>Note:</u></h3><h4>An Optional is a nonnull object that either wraps
 a value or is empty. It is typically returned by methods that may reasonably 
 expect to have no result, like finding a value in an empty collection.</h4>
+
+<h3><u>Note:</u></h3><h4>Predicates are used primarily to filter streams.
+Given a stream of items, the filter method in java.util.stream.Stream takes 
+a Predicate and returns a new stream that includes only the items that satisfy 
+the given predicate.</h4>
 
 --------------------------------------------------------------------------
