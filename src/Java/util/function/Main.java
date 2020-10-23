@@ -96,16 +96,33 @@ class ImplementPredicateTest {
 
     @Test
     public void getNamesOfLength5() throws Exception {
+
         assertEquals("Inara, Jayne, River, Simon",
                 demo.getNamesOfLength(5, names));
     }
 
     @Test
     public void getNamesStartsWithS() throws Exception {
+
         assertEquals("Shepherd Book, Simon",
                 demo.getNamesStartingWith("S", names));
     }
 
+    @Test
+    public void getNamesSatisfyingCondition() throws Exception {
 
+        assertEquals("Inara, Jayne, River, Simon",
+                demo.getNamesSatisfyingConditions(s -> s.length() == 5, names));
+
+        assertEquals("Shepherd Book, Simon",
+                demo.getNamesSatisfyingConditions(s -> s.startsWith("S"), names));
+
+        assertEquals("Inara, Jayne, River, Simon",
+                demo.getNamesSatisfyingConditions(ImplementPredicate.LENGTH_FIVE, names));
+
+        assertEquals("Shepherd Book, Simon",
+                demo.getNamesSatisfyingConditions(ImplementPredicate.STARTS_WITH_S, names));
+
+    }
 
 }
