@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.AssertEquals.assertEquals;
 
 /**
  * @author Mohammed Amr
@@ -100,5 +99,13 @@ class ImplementPredicateTest {
         assertEquals("Inara, Jayne, River, Simon",
                 demo.getNamesOfLength(5, names));
     }
+
+    @Test
+    public void getNamesStartsWithS() throws Exception {
+        assertEquals("Shepherd Book, Simon",
+                demo.getNamesStartingWith("S", names));
+    }
+
+
 
 }
