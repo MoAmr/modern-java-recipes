@@ -165,9 +165,34 @@ Functions take a single argument and return a value.</h4>
 a value or is empty. It is typically returned by methods that may reasonably 
 expect to have no result, like finding a value in an empty collection.</h4>
 
+--------------------------------------------------------------------------
+
+# The java.util.function Predicates:-
+
 <h3><u>Note:</u></h3><h4>Predicates are used primarily to filter streams.
 Given a stream of items, the filter method in java.util.stream.Stream takes 
 a Predicate and returns a new stream that includes only the items that satisfy 
 the given predicate.</h4>
+
+<h3><u>Note:</u></h3><h4>Other methods in the standard library that use 
+predicates include:
+
+• Optional.filter(Predicate<? super T> predicate)
+If a value is present, and the value matches the given predicate,
+returns an Optional describing the value, otherwise returns an empty Optional.
+
+• Collection.removeIf(Predicate<? super E> filter)
+Removes all elements of this collection that satisfy the predicate.
+
+• Stream.allMatch(Predicate<? super T> predicate)
+Returns true if all elements of the stream satisfy the given predicate.
+The methods anyMatch and noneMatch work similarly.
+
+• Collectors.partitioningBy(Predicate<? super T> predicate)
+Returns a Collector that splits a stream into two categories:
+those that satisfy the predicate and those that do not.</h4>
+
+<h3><u>Note:</u></h3><h4>Predicates are useful whenever a stream should 
+only return certain elements.</h4>
 
 --------------------------------------------------------------------------

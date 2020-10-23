@@ -45,12 +45,16 @@ public class Main {
 
 }
 
-/** Finding strings that satisfy an arbitrary predicate */
+/**
+ * Finding strings that satisfy an arbitrary predicate
+ */
 class ImplementPredicate {
 
-    /** Adding constants for common cases */
+    /**
+     * Adding constants for common cases
+     */
     public static final Predicate<String> LENGTH_FIVE = s -> s.length() == 5;
-    public static final Predicate<String> STARTS_WITH_S =  s -> s.startsWith("s");
+    public static final Predicate<String> STARTS_WITH_S = s -> s.startsWith("s");
 
     public String getNamesSatisfyingConditions(Predicate<String> condition, String... names) {
         return Arrays.stream(names)
@@ -59,7 +63,9 @@ class ImplementPredicate {
                 .collect(Collectors.joining(", "));
     }
 
-    /** Finding strings of a given length */
+    /**
+     * Finding strings of a given length
+     */
     public String getNamesOfLength(int length, String... names) {
         return Arrays.stream(names)
                 // Predicate for strings of given length only
@@ -67,7 +73,9 @@ class ImplementPredicate {
                 .collect(Collectors.joining(", "));
     }
 
-    /** Finding strings that start with a given string */
+    /**
+     * Finding strings that start with a given string
+     */
     public String getNamesStartingWith(String s, String... names) {
         return Arrays.stream(names)
                 //Predicate to return strings starting with a given string
@@ -78,7 +86,9 @@ class ImplementPredicate {
     // ... other methods ...
 }
 
-/**  JUnit test for predicate methods */
+/**
+ * JUnit test for predicate methods
+ */
 class ImplementPredicateTest {
 
     private ImplementPredicate demo = new ImplementPredicate();
@@ -122,6 +132,28 @@ class ImplementPredicateTest {
 
         assertEquals("Shepherd Book, Simon",
                 demo.getNamesSatisfyingConditions(ImplementPredicate.STARTS_WITH_S, names));
+
+    }
+
+    @Test
+    public void composedPredicate() throws Exception {
+
+        assertEquals("Simon",
+                demo.getNamesSatisfyingConditions(
+                        // Composition
+                        ImplementPredicate.LENGTH_FIVE.and(ImplementPredicate.STARTS_WITH_S), names
+                ));
+
+        assertEquals("Inara, Jayne, River, Shepherd Book, Simon",
+                demo.getNamesSatisfyingConditions(
+                        // Composition
+                        ImplementPredicate.LENGTH_FIVE.or(ImplementPredicate.STARTS_WITH_S), names
+                ));
+
+        assertEquals("Kaylee, Mal, Shepherd Book, Wash, Zoë",
+                demo.getNamesSatisfyingConditions(
+                        // Negation
+                        ImplementPredicate.LENGTH_FIVE.negate(), names));
 
     }
 
