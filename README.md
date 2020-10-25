@@ -254,19 +254,32 @@ streams, range and rangeClosed.</h4>
 Each returns a sequential, ordered stream that starts at the first argument 
 and increments by one after that.</h4>
 
-<h3><u>Note:</u></h3><h4>boxed() method is necessary for Collectors to convert 
+<h3><u>Note:</u></h3><h4>The boxed() method is necessary for Collectors to convert 
 primitives to List<T></h4>
 
 <h3><u>Note:</u></h3><h4>To summarize, here are the methods to create streams:
 
 • Stream.of(T... values) and Stream.of(T t)
+
 • Arrays.stream(T[] array), with overloads for int[], double[], and long[] • Stream.iterate(T seed, UnaryOperator<T> f)
+
 • Stream.generate(Supplier<T> s)
+
 • Collection.stream()
+
 • Using range and rangeClosed:
+
 — IntStream.range(int startInclusive, int endExclusive)
+
 — IntStream.rangeClosed(int startInclusive, int endInclusive) 
+
 — LongStream.range(long startInclusive, long endExclusive)
+
 — LongStream.rangeClosed(long startInclusive, long endInclusive)</h4>
+
+<h3><u>Note:</u></h3><h4>Just as mapToInt, mapToLong, and mapToDouble parse 
+streamsof objects into the associated primitives, the mapToObj method 
+from IntStream, LongStream, and Double Stream converts primitives to
+instances of the associated wrapper classes.</h4>
 
 --------------------------------------------------------------------------

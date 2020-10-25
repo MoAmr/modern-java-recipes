@@ -81,6 +81,19 @@ public class Main {
 
         /** Note: rangeClosed includes the end value, and range doesn’t. */
 
+        /** Using the boxed method on Stream to convert the IntStream to a Stream<Integer> */
+        List<Integer> ints1 = IntStream.of(3, 1, 4, 1, 5, 9)
+                // Converts int to Integer
+                .boxed()
+                .collect(Collectors.toList());
+
+        /** One alternative is to use the mapToObj method to convert each element from a primitive
+         *  to an instance of the wrapper class, */
+        List<Integer> ints2 = IntStream.of(3, 1, 4, 1, 5, 9)
+                // The argument to mapToObj in this example uses the Integer constructor.
+                .mapToObj(Integer::valueOf)
+                .collect(Collectors.toList());
+
     }
 
     /**
