@@ -19,6 +19,14 @@ public class Main {
 
         System.out.println(names);
         // prints Gomez,Morticia,Wednesday,Pugsley
+
+        /**  Creating a stream using Arrays.stream */
+        String[] munsters = { "Herman", "Lily", "Eddie", "Marilyn", "Grandpa" };
+        names = Arrays.stream(munsters)
+                .collect(Collectors.joining(","));
+        System.out.println(names);
+        // prints Herman,Lily,Eddie,Marilyn,Grandpa
+
     }
 
     /** Reference implementation of Stream.of */

@@ -237,4 +237,12 @@ promises not to do that.</h4>
 <h3><u>Note:</u></h3><h4>Streams do not process any data until a terminal
 expression is reached, as collect or forEach.</h4>
 
+<h3><u>Note:</u></h3><h4>The new java.util.stream.Stream interface in Java 8 
+provides several static methods for creating streams. Specifically,
+you can use the static methods Stream.of, Stream.iterate, and Stream.generate</h4>
+
+<h3><u>Note:</u></h3><h4>UnaryOperator is a function whose single input 
+and output types are the same. This is useful when you have a way to produce 
+the next value of the stream from the current value</h4>
+
 --------------------------------------------------------------------------
