@@ -250,4 +250,23 @@ for working with primitives: IntStream, LongStream, and DoubleStream.
 IntStream and LongStream each have two additional factory methods for creating
 streams, range and rangeClosed.</h4>
 
+<h3><u>Note:</u></h3><h4>rangeClosed includes the end value, and range doesn’t. 
+Each returns a sequential, ordered stream that starts at the first argument 
+and increments by one after that.</h4>
+
+<h3><u>Note:</u></h3><h4>boxed() method is necessary for Collectors to convert 
+primitives to List<T></h4>
+
+<h3><u>Note:</u></h3><h4>To summarize, here are the methods to create streams:
+
+• Stream.of(T... values) and Stream.of(T t)
+• Arrays.stream(T[] array), with overloads for int[], double[], and long[] • Stream.iterate(T seed, UnaryOperator<T> f)
+• Stream.generate(Supplier<T> s)
+• Collection.stream()
+• Using range and rangeClosed:
+— IntStream.range(int startInclusive, int endExclusive)
+— IntStream.rangeClosed(int startInclusive, int endInclusive) 
+— LongStream.range(long startInclusive, long endExclusive)
+— LongStream.rangeClosed(long startInclusive, long endInclusive)</h4>
+
 --------------------------------------------------------------------------

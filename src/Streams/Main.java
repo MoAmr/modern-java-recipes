@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 /**
@@ -59,6 +61,25 @@ public class Main {
 
         System.out.println(names);
         // prints Greg,Marcia,Peter,Jan,Bobby,Cindy
+
+        /** The range and rangeClosed methods */
+        List<Integer> ints = IntStream.range(10, 15)
+                // Necessary for Collectors to convert primitives to List<T>
+                .boxed()
+                .collect(Collectors.toList());
+
+        System.out.println(ints);
+        // prints [10, 11, 12, 13, 14]
+
+        List<Long> longs = LongStream.rangeClosed(10, 15)
+                // Necessary for Collectors to convert primitives to List<T>
+                .boxed()
+                .collect(Collectors.toList());
+
+        System.out.println(longs);
+        // prints [10, 11, 12, 13, 14, 15]
+
+        /** Note: rangeClosed includes the end value, and range doesn’t. */
 
     }
 
