@@ -196,3 +196,45 @@ those that satisfy the predicate and those that do not.</h4>
 only return certain elements.</h4>
 
 --------------------------------------------------------------------------
+
+# The java.util.function Functions:-
+
+<h3><u>Note:</u></h3><h4>The functional interface java.util.function.Function 
+contains the single abstract method apply, which is invoked to transform a 
+generic input parameter of type T into a generic output value of type R.</h4>
+
+<h3><u>Note:</u></h3><h4>The most common usage of Function is as an argument 
+to the Stream.map method. For example, one way to transform a String into an
+integer would be to invoke the length method on each instance.</h4>
+
+<h3><u>Note:</u></h3><h4>The BiFunction interface is defined for two generic 
+input types and one generic out‐ put type, all of which are assumed to be different. 
+If all three are the same, the pack‐ age includes the BinaryOperator interface.</h4>
+
+--------------------------------------------------------------------------
+
+# Streams:-
+
+<h3><u>Note:</u></h3><h4>A stream is a sequence of elements that does not
+save the elements or modify the original source.</h4>
+
+<h3><u>Note:</u></h3><h4>Functional programming in Java often involves 
+generating a stream from some source of data, passing the elements through 
+a series of intermediate operations (called a pipeline), and completing the 
+process with a terminal expression.</h4>
+
+<h3><u>Note:</u></h3><h4>Streams can only be used once. After a stream has 
+passed through zero or more intermediate operations and reached a 
+terminal operation, it is finished. To process the values again, 
+you need to make a new stream.</h4>
+
+<h3><u>Note:</u></h3><h4>The @SafeVarargs annotation is part of Java generics. 
+It comes up when you have an array as an argument, because it is possible to
+assign a typed array to an Object array and then violate type safety with an 
+added element. The @SafeVarargs annotation tells the compiler that the developer
+promises not to do that.</h4>
+
+<h3><u>Note:</u></h3><h4>Streams do not process any data until a terminal
+expression is reached, as collect or forEach.</h4>
+
+--------------------------------------------------------------------------

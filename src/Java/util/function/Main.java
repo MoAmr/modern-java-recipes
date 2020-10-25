@@ -5,6 +5,7 @@ import org.junit.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -41,6 +42,33 @@ public class Main {
         System.out.println(first.orElseGet(() ->
                 String.format("No result found in %s",
                         names.stream().collect(Collectors.joining(", ")))));
+
+        /**  Mapping strings to their lengths */
+        List<String> names1 = Arrays.asList("Mal", "Wash", "Kaylee", "Inara",
+                "Zoë", "Jayne", "Simon", "River", "Shepherd Book");
+
+        List<Integer> nameLengths = names1.stream()
+                // Anonymous inner class
+                .map(new Function<String, Integer>() {
+                    @Override
+                    public Integer apply(String s) {
+                        return s.length();
+                    }
+                })
+                .collect(Collectors.toList());
+
+        nameLengths = names1.stream()
+                // Lambda expression
+                .map(s -> s.length())
+                .collect(Collectors.toList());
+
+        nameLengths = names1.stream()
+                // Method reference
+                .map(String::length)
+                .collect(Collectors.toList());
+
+        System.out.printf("nameLength = %s%n", nameLengths);
+        // nameLengths == [3, 4, 6, 5, 3, 5, 5, 5, 13]
     }
 
 }
