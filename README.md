@@ -243,6 +243,11 @@ you can use the static methods Stream.of, Stream.iterate, and Stream.generate</h
 
 <h3><u>Note:</u></h3><h4>UnaryOperator is a function whose single input 
 and output types are the same. This is useful when you have a way to produce 
-the next value of the stream from the current value</h4>
+the next value of the stream from the current value.</h4>
+
+<h3><u>Note:</u></h3><h4>There are three child interfaces of Stream specifically 
+for working with primitives: IntStream, LongStream, and DoubleStream. 
+IntStream and LongStream each have two additional factory methods for creating
+streams, range and rangeClosed.</h4>
 
 --------------------------------------------------------------------------

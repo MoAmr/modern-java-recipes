@@ -44,6 +44,22 @@ public class Main {
                 .limit(10)
                 .forEach(System.out::println);
         // prints 10 days starting from today
+
+        /** Creating a stream of random doubles */
+//        long count = Stream.generate(Math::random)
+//                .limit(10)
+//                .forEach(System.out::println);
+
+        /** Creating a stream from a collection */
+        List<String> bradyBunch = Arrays.asList("Greg", "Marcia", "Peter", "Jan",
+                "Bobby", "Cindy");
+
+        names = bradyBunch.stream()
+                .collect(Collectors.joining(","));
+
+        System.out.println(names);
+        // prints Greg,Marcia,Peter,Jan,Bobby,Cindy
+
     }
 
     /**
