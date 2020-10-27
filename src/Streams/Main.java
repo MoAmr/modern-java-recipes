@@ -2,6 +2,7 @@ package Streams;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -94,6 +95,17 @@ public class Main {
                 .mapToObj(Integer::valueOf)
                 .collect(Collectors.toList());
 
+        /** Using the three-argument version of collect */
+        List<Integer> ints3 = IntStream.of(3, 1, 4, 1, 5, 9)
+                .collect(ArrayList<Integer>::new, ArrayList::add, ArrayList::addAll);
+        System.out.println(ints3);
+
+        // In this version of collect, the Supplier is the constructor for ArrayList<Integer>,
+        // the accumulator is the add method, which represents how to add a single element to a list,
+        // and the combiner (which is only used during parallel operations) is addAll, which combines two lists into one.
+
+        /** Convert an IntStream to an int array */
+        int[] intArray = IntStream.of(3, 1, 4, 1, 5, 9).toArray();
     }
 
     /**
