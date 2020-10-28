@@ -137,6 +137,25 @@ public class Main {
 
         System.out.println("The max and min lengths are " + max + " and " + min);
 
+        /** Summing numbers using reduce */
+        int sum = IntStream.rangeClosed(1, 10)
+                .reduce((x, y) -> x + y).orElse(0);
+        System.out.println("The value of sum = " + sum);
+        // The value of sum is 55
+
+        /**  Printing the values of x and y */
+        int sum1 = IntStream.rangeClosed(1, 10)
+                .reduce((x, y) -> {
+                    System.out.printf("x=%d, y=%d%n", x, y);
+                    return x + y;
+                }).orElse(0);
+
+        /** Doubling the values during the sum (WORKS) */
+        int doubleSum = IntStream.rangeClosed(1, 10)
+                .reduce(0, (x, y) -> x + 2 * y);
+        System.out.println("The value of doubleSum = "  + doubleSum);
+        // The value of doubleSum is 110, as it should be
+
     }
 
     /**
