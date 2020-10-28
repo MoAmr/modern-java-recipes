@@ -2,9 +2,7 @@ package Streams;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
@@ -106,6 +104,39 @@ public class Main {
 
         /** Convert an IntStream to an int array */
         int[] intArray = IntStream.of(3, 1, 4, 1, 5, 9).toArray();
+
+        /** Reduction operations on IntStream */
+        String[] strings = "this is an array of strings".split(" ");
+        long count = Arrays.stream(strings)
+                // count is a Stream method, so no need to map to IntStream
+                .map(String::length)
+                .count();
+        System.out.println("There are " + count + " strings");
+
+        int totalLength = Arrays.stream(strings)
+                .mapToInt(String::length)
+                // sum is on the primitive streams only
+                .sum();
+        System.out.println("The total length is " + totalLength);
+
+        OptionalDouble ave = Arrays.stream(strings)
+                .mapToInt(String::length)
+                // average is on the primitive streams only
+                .average();
+        System.out.println("The average length is " + ave);
+
+        OptionalInt max = Arrays.stream(strings)
+                .mapToInt(String::length)
+                // max without Comparator only on primitive streams
+                .max();
+
+        OptionalInt min = Arrays.stream(strings)
+                .mapToInt(String::length)
+                // min without Comparator only on primitive streams
+                .min();
+
+        System.out.println("The max and min lengths are " + max + " and " + min);
+
     }
 
     /**

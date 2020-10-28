@@ -282,4 +282,25 @@ streamsof objects into the associated primitives, the mapToObj method
 from IntStream, LongStream, and Double Stream converts primitives to
 instances of the associated wrapper classes.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to produce a single value from stream 
+operations, use the reduce method to accumulate calculations on each element.</h4>
+
+<h3><u>Note:</u></h3><h4>The functional paradigm in Java often uses a process
+known as map-filter-reduce. The map operation transforms a stream of one type 
+(like a String) into another (like an int, by invoking the length method). 
+Then a filter is applied to produce a new stream with only the desired 
+elements in it (e.g., strings with length below a certain threshold).
+Finally, you may wish to provide a terminal operation that generates a 
+single value from the stream (like a sum or average of the lengths).</h4>
+
+<h3><u>Note:</u></h3><h4>Reduction operations like sum, count, max, min, 
+and average do what you would expect. The only interesting part is that 
+some of them return Optionals, because if there are no elements in the 
+stream (perhaps after a filtering operation) the result is undefined or null.</h4>
+
+<h3><u>Note:</u></h3><h4>The collect method is used to convert a stream 
+into a collection, usually in combination with one of the static helper 
+methods in the Collectors class, like toList or toSet. 
+That version of collect does not exist on the primitive streams.</h4>
+
 --------------------------------------------------------------------------
