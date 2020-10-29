@@ -152,9 +152,31 @@ public class Main {
 
         /** Doubling the values during the sum (WORKS) */
         int doubleSum = IntStream.rangeClosed(1, 10)
+                // The word identity means that you should supply a value
+                // to the binary operator that, when combined with any other value,
+                // returns the other value. For addition, the identity is zero.
+                // For multiplication, the identity is 1. For string concatenation,
+                // the identity is the empty string.
                 .reduce(0, (x, y) -> x + 2 * y);
         System.out.println("The value of doubleSum = "  + doubleSum);
         // The value of doubleSum is 110, as it should be
+
+        /** Performing a reduce with a binary operator */
+        int sum2 = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .reduce(0, Integer::sum);
+        System.out.println(sum2);
+
+        /** Finding the max using reduce */
+        Integer max1 = Stream.of(3, 1, 4, 1, 5, 9)
+                // The identity for max is the minimum integer
+                .reduce(Integer.MIN_VALUE, Integer::max);
+        System.out.println("The max value is " + max);
+
+        /** Concatenating strings from a stream using reduce */
+        String s = Stream.of("this", "is", "a", "list")
+                .reduce("", String::concat);
+        System.out.println(s);
+        // Prints thisisalist
 
     }
 
