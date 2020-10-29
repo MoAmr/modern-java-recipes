@@ -186,6 +186,14 @@ public class Main {
                 .toString();
         System.out.println(s1);
 
+        /** Collecting strings, with method references */
+        String s2 = Stream.of("this", "is", "a", "list")
+                .collect(StringBuilder::new,
+                        StringBuilder::append,
+                        StringBuilder::append)
+                .toString();
+        System.out.println(s2);
+
 
     }
 
