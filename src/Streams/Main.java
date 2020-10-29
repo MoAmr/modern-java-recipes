@@ -1,5 +1,8 @@
 package Streams;
 
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;
@@ -18,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         /** Creating a stream using Stream.of */
         String names = Stream.of("Gomez", "Morticia", "Wednesday", "Pugsley")
@@ -254,6 +257,7 @@ public class Main {
                     return curr; // curr becomes the next value of prev
                 });
 
+        testingSumDoublesDivisibleBy3(100, 120);
     }
 
     /**
@@ -262,6 +266,20 @@ public class Main {
     @SafeVarargs
     public static <T> Stream<T> of(T... values) {
         return Arrays.stream(values);
+    }
+
+    /** Doubling integers, filtering, and summing */
+    public static int sumDoublesDivisibleBy3(int start, int end) {
+        return IntStream.rangeClosed(start, end)
+                .map(n -> n * 2)
+                .filter(n -> n % 3 == 0)
+                .sum();
+    }
+
+    /** Testing sum doubles divisible by 3 */
+    @Test
+    public static void testingSumDoublesDivisibleBy3(int start, int end) throws Exception {
+        assertEquals(1554, sumDoublesDivisibleBy3(start, end));
     }
 
     // A simple Book class

@@ -310,4 +310,8 @@ A better approach would be to use the collect method with a Collector.</h4>
 <h3><u>Note:</u></h3><h4>If you want to check that a sort is correct, 
 use the reduce method to check each pair of elements.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to see the individual elements of a 
+stream as they are processed, invoke the peek intermediate operation wherever 
+you need it in a stream pipeline.</h4>
+
 --------------------------------------------------------------------------
