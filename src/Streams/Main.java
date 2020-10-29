@@ -257,7 +257,10 @@ public class Main {
                     return curr; // curr becomes the next value of prev
                 });
 
+        /** Invoking testing doubling integers, filtering, and summing */
         testingSumDoublesDivisibleBy3(100, 120);
+        /** Invoking testing doubling integers, filtering, and summing and adding an identity map for printing */
+        testingSumDoublesDivisibleByNumber3(100, 120);
     }
 
     /**
@@ -268,9 +271,21 @@ public class Main {
         return Arrays.stream(values);
     }
 
-    /** Doubling integers, filtering, and summing */
+    /** Doubling integers, filtering, and summing - method implementation */
     public static int sumDoublesDivisibleBy3(int start, int end) {
         return IntStream.rangeClosed(start, end)
+                .map(n -> n * 2)
+                .filter(n -> n % 3 == 0)
+                .sum();
+    }
+
+    /** Doubling integers, filtering, and summing and adding an identity map for printing - method implementation */
+    public static int sumDoublesDivisibleByNumber3(int start, int end) {
+        return IntStream.rangeClosed(start, end)
+                .map(n -> { // Identity map that prints each element before returning it
+                    System.out.println(n);
+                    return n;
+                })
                 .map(n -> n * 2)
                 .filter(n -> n % 3 == 0)
                 .sum();
@@ -280,6 +295,11 @@ public class Main {
     @Test
     public static void testingSumDoublesDivisibleBy3(int start, int end) throws Exception {
         assertEquals(1554, sumDoublesDivisibleBy3(start, end));
+    }
+
+    /** Testing sum doubles divisible by 3 while adding an identity map for printing */
+    public static void testingSumDoublesDivisibleByNumber3(int start, int end) throws Exception {
+        assertEquals(1554, sumDoublesDivisibleByNumber3(start, end));
     }
 
     // A simple Book class

@@ -314,4 +314,14 @@ use the reduce method to check each pair of elements.</h4>
 stream as they are processed, invoke the peek intermediate operation wherever 
 you need it in a stream pipeline.</h4>
 
+<h3><u>Note:</u></h3><h4>According to the Javadocs, the peek method 
+“returns a stream consisting of the elements of this stream, additionally 
+performing the provided action on each element as they are consumed from 
+the resulting stream.” Recall that a Consumer takes a single input but 
+returns nothing, so any provided Consumer will not corrupt each value as 
+it streams by.</h4>
+
+<h3><u>Note:</u></h3><h4>Since peek is an intermediate operation, 
+the peek method can be added multiple times if you wish.</h4>
+
 --------------------------------------------------------------------------

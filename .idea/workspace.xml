@@ -17,38 +17,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="387">
-                <caret line="314" selection-start-line="314" selection-end-line="314" />
+              <first_editor relative-caret-position="477">
+                <caret line="325" column="38" selection-start-line="325" selection-start-column="38" selection-end-line="325" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="256" column="36" selection-start-line="256" selection-start-column="36" selection-end-line="256" selection-end-column="36" />
+            <state relative-caret-position="118">
+              <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11005#11006#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/util/function/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268">
-              <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#11248#11249#0" expanded="true" />
+                <element signature="e#11821#11822#0" expanded="true" />
+                <element signature="e#11854#11855#0" expanded="true" />
+                <element signature="e#11895#11896#0" expanded="true" />
+                <element signature="e#11931#11932#0" expanded="true" />
+                <element signature="e#11967#11968#0" expanded="true" />
+                <element signature="e#12003#12004#0" expanded="true" />
+                <element signature="e#12049#12050#0" expanded="true" />
+                <element signature="e#12091#12092#0" expanded="true" />
+                <element signature="e#12663#12664#0" expanded="true" />
+                <element signature="e#12717#12718#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/ConstructorReferences/Main.java" />
         <option value="$PROJECT_DIR$/src/Java/util/function/Main.java" />
         <option value="$PROJECT_DIR$/src/MethodReferences/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -247,12 +245,12 @@
       <workItem from="1603655047131" duration="4400000" />
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
-      <workItem from="1603997395413" duration="9166000" />
+      <workItem from="1603997395413" duration="10168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51216000" />
+    <option name="totallyTimeSpent" value="52218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="726" y="0" width="714" height="900" extended-state="6" />
@@ -365,16 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="387">
-            <caret line="314" selection-start-line="314" selection-end-line="314" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Java/util/function/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-268">
@@ -387,12 +375,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="256" column="36" selection-start-line="256" selection-start-column="36" selection-end-line="256" selection-end-column="36" />
+        <state relative-caret-position="118">
+          <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11005#11006#0" expanded="true" />
+            <element signature="e#11248#11249#0" expanded="true" />
+            <element signature="e#11821#11822#0" expanded="true" />
+            <element signature="e#11854#11855#0" expanded="true" />
+            <element signature="e#11895#11896#0" expanded="true" />
+            <element signature="e#11931#11932#0" expanded="true" />
+            <element signature="e#11967#11968#0" expanded="true" />
+            <element signature="e#12003#12004#0" expanded="true" />
+            <element signature="e#12049#12050#0" expanded="true" />
+            <element signature="e#12091#12092#0" expanded="true" />
+            <element signature="e#12663#12664#0" expanded="true" />
+            <element signature="e#12717#12718#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="477">
+            <caret line="325" column="38" selection-start-line="325" selection-start-column="38" selection-end-line="325" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
