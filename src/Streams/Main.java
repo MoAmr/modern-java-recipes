@@ -194,6 +194,39 @@ public class Main {
                 .toString();
         System.out.println(s2);
 
+        /** Joining strings using Collectors */
+        String s3 = Stream.of("this", "is", "a", "list")
+                .collect(Collectors.joining()); // Simplest of all
+        System.out.println(s3);
+
+        /** The most general form of reduce
+         * <U> U reduce(U identity,
+         * BiFunction<U,? super T,U> accumulator,
+         * BinaryOperator<U> combiner)
+         */
+
+        /** Accumulating Books into a Map */
+        Book[] booksArr = {new Book(1, "The Subtle Art of Not Giving a Fuck"),
+                new Book(2, "After We Collided"),
+                new Book(3, "The Archimedes"),
+                new Book(4, "Modern Java Recipes"),
+                new Book(5, "Making Java Groovy"),
+                new Book(6, "Gradle Recipes for Android")};
+
+        List<Book> books = Arrays.asList(booksArr);
+
+        HashMap<Integer, Book> bookMap = books.stream()
+                .reduce(new HashMap<Integer, Book>(), // Identity value for putAll is Empty Map
+                (map, book) -> {
+                    map.put(book.getId(), book); // Accumulate a single book into Map using put
+                    return map;
+                },
+                (map1, map2) -> {
+                    map1.putAll(map2); // Combine multiple Maps using putAll
+                    return map1;
+                });
+
+        bookMap.forEach((k, v) -> System.out.println(k + ": " + v));
 
     }
 
@@ -203,6 +236,56 @@ public class Main {
     @SafeVarargs
     public static <T> Stream<T> of(T... values) {
         return Arrays.stream(values);
+    }
+
+    // A simple Book class
+    static class Book {
+
+        private Integer id;
+        private String title;
+
+        public Book(Integer id, String title) {
+            this.id = id;
+            this.title = title;
+        }
+
+        public Integer getId() {
+            return id;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        @Override
+        public String toString() {
+            return "Book{" +
+                    "id=" + id +
+                    ", title='" + title + '\'' +
+                    '}';
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Book book = (Book) o;
+            return Objects.equals(id, book.id) &&
+                    Objects.equals(title, book.title);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(id, title);
+        }
     }
 
 }
