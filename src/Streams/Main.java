@@ -8,6 +8,9 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.toList;
+import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * @author Mohammed Amr
  * @created 25/10/2020 - 22:10
@@ -35,7 +38,7 @@ public class Main {
         List<BigDecimal> nums = Stream.iterate(BigDecimal.ONE, n -> n.add(BigDecimal.ONE))
                 // Since the resulting stream is unbounded, the intermediate operation limit is needed.
                 .limit(10)
-                .collect(Collectors.toList());
+                .collect(toList());
 
         System.out.println(nums);
         // prints [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -65,7 +68,7 @@ public class Main {
         List<Integer> ints = IntStream.range(10, 15)
                 // Necessary for Collectors to convert primitives to List<T>
                 .boxed()
-                .collect(Collectors.toList());
+                .collect(toList());
 
         System.out.println(ints);
         // prints [10, 11, 12, 13, 14]
@@ -73,7 +76,7 @@ public class Main {
         List<Long> longs = LongStream.rangeClosed(10, 15)
                 // Necessary for Collectors to convert primitives to List<T>
                 .boxed()
-                .collect(Collectors.toList());
+                .collect(toList());
 
         System.out.println(longs);
         // prints [10, 11, 12, 13, 14, 15]
@@ -84,14 +87,14 @@ public class Main {
         List<Integer> ints1 = IntStream.of(3, 1, 4, 1, 5, 9)
                 // Converts int to Integer
                 .boxed()
-                .collect(Collectors.toList());
+                .collect(toList());
 
         /** One alternative is to use the mapToObj method to convert each element from a primitive
          *  to an instance of the wrapper class, */
         List<Integer> ints2 = IntStream.of(3, 1, 4, 1, 5, 9)
                 // The argument to mapToObj in this example uses the Integer constructor.
                 .mapToObj(Integer::valueOf)
-                .collect(Collectors.toList());
+                .collect(toList());
 
         /** Using the three-argument version of collect */
         List<Integer> ints3 = IntStream.of(3, 1, 4, 1, 5, 9)
@@ -235,6 +238,21 @@ public class Main {
                 .reduce(BigDecimal.ZERO, (acc, val) -> acc.add(val)); // Using the add method in BigDecimal as a BinaryOperator
         System.out.println("The total is " + total);
 
+        /** Sorting strings by length */
+        List<String> strings1 = Arrays.asList("this", "is", "a", "list", "of", "strings");
+
+        List<String> sorted = strings1.stream()
+                .sorted(Comparator.comparingInt(String::length))
+                .collect(toList());
+        System.out.println(sorted);
+
+        /** Testing that strings are sorted properly */
+        // The only thing required to make this work is for the stream to be sequential and ordered
+        sorted.stream()
+                .reduce((prev, curr) -> {
+                    assertTrue(prev.length() <= curr.length()); // Check each pair is sorted properly
+                    return curr; // curr becomes the next value of prev
+                });
 
     }
 

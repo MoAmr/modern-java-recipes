@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,21 +31,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
+            <state relative-caret-position="201">
+              <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9975#9976#0" expanded="true" />
-                <element signature="e#8860#8861#0" expanded="true" />
-                <element signature="e#8893#8894#0" expanded="true" />
-                <element signature="e#8934#8935#0" expanded="true" />
-                <element signature="e#8970#8971#0" expanded="true" />
-                <element signature="e#9006#9007#0" expanded="true" />
-                <element signature="e#9042#9043#0" expanded="true" />
-                <element signature="e#9088#9089#0" expanded="true" />
-                <element signature="e#9130#9131#0" expanded="true" />
-                <element signature="e#9502#9503#0" expanded="true" />
-                <element signature="e#9556#9557#0" expanded="true" />
+                <element signature="e#10546#10547#0" expanded="true" />
+                <element signature="e#10590#10591#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,13 +66,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/test.txt" />
         <option value="$PROJECT_DIR$/src/LambdaExpressions/Main.java" />
-        <option value="$PROJECT_DIR$/src/MethodReferences/Main.java" />
         <option value="$PROJECT_DIR$/src/ConstructorReferences/Person.java" />
         <option value="$PROJECT_DIR$/src/FunctionalInterfaces/Main.java" />
         <option value="$PROJECT_DIR$/src/JavaUtilFunction/Main.java" />
         <option value="$PROJECT_DIR$/src/ConstructorReferences/Main.java" />
         <option value="$PROJECT_DIR$/src/Java/util/function/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/MethodReferences/Main.java" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
       </list>
     </option>
@@ -109,6 +99,12 @@
               <item name="Modern Java Recipes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Modern Java Recipes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Modern Java Recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Modern Java Recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Streams" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,18 +234,18 @@
       <workItem from="1603655047131" duration="4400000" />
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
-      <workItem from="1603997395413" duration="5719000" />
+      <workItem from="1603997395413" duration="7123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47769000" />
+    <option name="totallyTimeSpent" value="49173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="726" y="0" width="714" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22916667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22916667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -258,7 +254,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,26 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MethodReferences/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionalInterfaces/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConstructorReferences/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -333,6 +309,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java/util/function/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="172" column="19" lean-forward="true" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionalInterfaces/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -356,16 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java/util/function/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="172" column="19" lean-forward="true" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -376,23 +362,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/MethodReferences/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9975#9976#0" expanded="true" />
-            <element signature="e#8860#8861#0" expanded="true" />
-            <element signature="e#8893#8894#0" expanded="true" />
-            <element signature="e#8934#8935#0" expanded="true" />
-            <element signature="e#8970#8971#0" expanded="true" />
-            <element signature="e#9006#9007#0" expanded="true" />
-            <element signature="e#9042#9043#0" expanded="true" />
-            <element signature="e#9088#9089#0" expanded="true" />
-            <element signature="e#9130#9131#0" expanded="true" />
-            <element signature="e#9502#9503#0" expanded="true" />
-            <element signature="e#9556#9557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="252" column="71" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10546#10547#0" expanded="true" />
+            <element signature="e#10590#10591#0" expanded="true" />
           </folding>
         </state>
       </provider>
