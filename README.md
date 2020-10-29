@@ -307,4 +307,7 @@ That version of collect does not exist on the primitive streams.</h4>
 it is inefficient because String concatenation creates and destroys objects. 
 A better approach would be to use the collect method with a Collector.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to check that a sort is correct, 
+use the reduce method to check each pair of elements.</h4>
+
 --------------------------------------------------------------------------

@@ -228,6 +228,14 @@ public class Main {
 
         bookMap.forEach((k, v) -> System.out.println(k + ": " + v));
 
+        /** Summing BigDecimals with reduce */
+        // This is the most typical way of using the reduce method,
+        BigDecimal total = Stream.iterate(BigDecimal.ONE, n -> n.add(BigDecimal.ONE))
+                .limit(10)
+                .reduce(BigDecimal.ZERO, (acc, val) -> acc.add(val)); // Using the add method in BigDecimal as a BinaryOperator
+        System.out.println("The total is " + total);
+
+
     }
 
     /**

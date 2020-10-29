@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="400">
-                <caret line="307" selection-start-line="307" selection-end-line="307" />
+              <first_editor relative-caret-position="397">
+                <caret line="310" selection-start-line="310" selection-end-line="310" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,11 +32,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="218" column="95" selection-start-line="218" selection-start-column="95" selection-end-line="218" selection-end-column="95" />
+            <state relative-caret-position="282">
+              <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9682#9683#0" expanded="true" />
+                <element signature="e#9975#9976#0" expanded="true" />
                 <element signature="e#8860#8861#0" expanded="true" />
                 <element signature="e#8893#8894#0" expanded="true" />
                 <element signature="e#8934#8935#0" expanded="true" />
@@ -237,12 +238,12 @@
       <workItem from="1603655047131" duration="4400000" />
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
-      <workItem from="1603997395413" duration="4914000" />
+      <workItem from="1603997395413" duration="5719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46964000" />
+    <option name="totallyTimeSpent" value="47769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="726" y="0" width="714" height="900" extended-state="6" />
@@ -368,8 +369,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="400">
-            <caret line="307" selection-start-line="307" selection-end-line="307" />
+          <first_editor relative-caret-position="397">
+            <caret line="310" selection-start-line="310" selection-end-line="310" />
           </first_editor>
           <second_editor />
         </state>
@@ -377,11 +378,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="218" column="95" selection-start-line="218" selection-start-column="95" selection-end-line="218" selection-end-column="95" />
+        <state relative-caret-position="282">
+          <caret line="234" column="52" selection-start-line="234" selection-start-column="52" selection-end-line="234" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9682#9683#0" expanded="true" />
+            <element signature="e#9975#9976#0" expanded="true" />
             <element signature="e#8860#8861#0" expanded="true" />
             <element signature="e#8893#8894#0" expanded="true" />
             <element signature="e#8934#8935#0" expanded="true" />
