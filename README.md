@@ -324,4 +324,8 @@ it streams by.</h4>
 <h3><u>Note:</u></h3><h4>Since peek is an intermediate operation, 
 the peek method can be added multiple times if you wish.</h4>
 
+<h3><u>Note:</u></h3><h4>Unfortunately, there’s no easy way to make the
+peek code optional, so this is a convenient step to use for debugging but 
+should be removed in production code.</h4>
+
 --------------------------------------------------------------------------

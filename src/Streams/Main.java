@@ -259,8 +259,13 @@ public class Main {
 
         /** Invoking testing doubling integers, filtering, and summing */
         testingSumDoublesDivisibleBy3(100, 120);
+
         /** Invoking testing doubling integers, filtering, and summing and adding an identity map for printing */
         testingSumDoublesDivisibleByNumber3(100, 120);
+
+        /** Invoking using multiple peek methods */
+        int sumDoublesDivisibleBy3Val = sumDoublesDivisibleBy3UsingPeek(100, 120);
+        System.out.println(sumDoublesDivisibleBy3Val);
     }
 
     /**
@@ -288,6 +293,17 @@ public class Main {
                 })
                 .map(n -> n * 2)
                 .filter(n -> n % 3 == 0)
+                .sum();
+    }
+
+    /** Using multiple peek methods */
+    public static int sumDoublesDivisibleBy3UsingPeek(int start, int end) {
+        return IntStream.rangeClosed(start, end)
+                .peek(n -> System.out.printf("original: %d%n", n)) // Print value before doubling
+                .map(n -> n * 2)
+                .peek(n -> System.out.printf("doubled: %d%n", n)) // Print value after doubling but before filtering
+                .filter(n -> n % 3 == 0)
+                .peek(n -> System.out.printf("filtered: %d%n", n)) // Print value after filtering but before summing
                 .sum();
     }
 
