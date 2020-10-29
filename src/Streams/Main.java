@@ -178,6 +178,15 @@ public class Main {
         System.out.println(s);
         // Prints thisisalist
 
+        /** Collecting strings using a StringBuilder */
+        String s1 = Stream.of("this", "is", "a", "list")
+                .collect(() -> new StringBuilder(), // Result Supplier
+                        (sb, str) -> sb.append(str), // Add a single value to the result
+                        (sb1, sb2) -> sb1.append(sb2)) // Combine two results
+                .toString();
+        System.out.println(s1);
+
+
     }
 
     /**

@@ -303,4 +303,8 @@ into a collection, usually in combination with one of the static helper
 methods in the Collectors class, like toList or toSet. 
 That version of collect does not exist on the primitive streams.</h4>
 
+<h3><u>Note:</u></h3><h4>While using concat with reduce works, 
+it is inefficient because String concatenation creates and destroys objects. 
+A better approach would be to use the collect method with a Collector.</h4>
+
 --------------------------------------------------------------------------
