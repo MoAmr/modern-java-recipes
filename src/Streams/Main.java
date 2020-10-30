@@ -263,9 +263,18 @@ public class Main {
         /** Invoking testing doubling integers, filtering, and summing and adding an identity map for printing */
         testingSumDoublesDivisibleByNumber3(100, 120);
 
-        /** Invoking using multiple peek methods */
+        /** Invoking using multiple peek method */
         int sumDoublesDivisibleBy3Val = sumDoublesDivisibleBy3UsingPeek(100, 120);
         System.out.println(sumDoublesDivisibleBy3Val);
+
+        /** Invoking isPalindromeJava7OrEarlier method */
+        System.out.println("Is the word Anna Palindrome? " + isPalindromeJava7OrEarlier("Anna"));
+        System.out.println("Is the word Abc Palindrome? " + isPalindromeJava7OrEarlier("Abc"));
+
+        /** Invoking isPalindrome using Java8 method */
+        System.out.println("Is the word Anna Palindrome? " + isPalindrome("Anna"));
+        System.out.println("Is the word Abc Palindrome? " + isPalindrome("Abc"));
+
     }
 
     /**
@@ -306,6 +315,32 @@ public class Main {
                 .peek(n -> System.out.printf("filtered: %d%n", n)) // Print value after filtering but before summing
                 .sum();
     }
+
+    /** Checking for palindromes in Java 7 or earlier */
+    public static boolean isPalindromeJava7OrEarlier(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (Character.isLetterOrDigit(c)) {
+                sb.append(c);
+            }
+        }
+        String forward = sb.toString().toLowerCase();
+        String backward = sb.reverse().toString().toLowerCase();
+        return forward.equals(backward);
+    }
+
+    /** Checking for palindromes using Java 8 streams */
+    public static boolean isPalindrome(String s) {
+        String forward = s.toLowerCase().codePoints() // Returns an IntStream
+                .filter(Character::isLetterOrDigit)
+                .collect(StringBuilder::new,
+                        StringBuilder::appendCodePoint,
+                        StringBuilder::append)
+                .toString();
+        String backward = new StringBuilder(forward).reverse().toString();
+        return forward.equals(backward);
+    }
+
 
     /** Testing sum doubles divisible by 3 */
     @Test

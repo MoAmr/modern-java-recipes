@@ -328,4 +328,25 @@ the peek method can be added multiple times if you wish.</h4>
 peek code optional, so this is a convenient step to use for debugging but 
 should be removed in production code.</h4>
 
+<h3><u>Note:</u></h3><h4>Rather than loop over individual characters of a 
+String, you would like to use the idiomatic Stream processing techniques.
+Use the default methods chars and codePoints from the java.lang.CharSequence 
+interface to convert a String into an IntStream. To convert back to a String, 
+use the overload of the collect method on IntStream that takes a Supplier, 
+a BiConsumer representing an accumulator, and a BiConsumer representing a combiner.</h4>
+
+<h3><u>Note:</u></h3><h4>String is not part of the Collections framework, 
+and therefore does not implement Iterable, so there is no stream factory method 
+to convert one into a Stream.</h4>
+
+<h3><u>Note:</u></h3><h4>Stream methods in java.lang.CharSequence:
+
+— default IntStream chars()
+
+— default IntStream codePoints()
+
+The difference between the two methods has to do with how Java handles 
+UTF-16-encoded characters as opposed to the full Unicode set of code points.
+</h4>
+
 --------------------------------------------------------------------------
