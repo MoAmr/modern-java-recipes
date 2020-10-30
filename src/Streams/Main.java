@@ -286,6 +286,14 @@ public class Main {
                 .collect(Collectors.counting());
         System.out.printf("There are %d elements in the stream%n", count2);
 
+        /** Counting string partitioned by length */
+        Map<Boolean, Long> numberLengthMap = strings1.stream()
+                .collect(Collectors.partitioningBy(
+                        n -> n.length() % 2 == 0, // Predicate
+                        Collectors.counting())); // Downstream collector
+
+        numberLengthMap.forEach((k, v) -> System.out.printf("%5s: %d%n", k, v));
+
     }
 
     /**
