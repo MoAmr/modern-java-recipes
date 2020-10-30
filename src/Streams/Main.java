@@ -276,6 +276,11 @@ public class Main {
         System.out.println("Is the word Anna Palindrome? " + palindromeDemo.isPalindrome("Anna"));
         System.out.println("Is the word Abc Palindrome? " + palindromeDemo.isPalindrome("Abc"));
 
+        /** Counting elements in a stream */
+        long count1 = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5).count();
+        System.out.printf("There are %d elements in the stream%n", count1);
+        // Prints There are 9 elements in the stream
+
     }
 
     /**

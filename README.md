@@ -349,4 +349,7 @@ The difference between the two methods has to do with how Java handles
 UTF-16-encoded characters as opposed to the full Unicode set of code points.
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you want to know how many elements are in a stream, 
+use either the Stream.count or Collectors.counting methods.</h4>
+
 --------------------------------------------------------------------------
