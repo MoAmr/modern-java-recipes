@@ -1,7 +1,6 @@
 package Streams;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -20,6 +19,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * @project Modern Java Recipes
  */
 public class Main {
+
+    private static PalindromeEvaluator palindromeDemo = new PalindromeEvaluator();
 
     public static void main(String[] args) throws Exception {
 
@@ -258,22 +259,22 @@ public class Main {
                 });
 
         /** Invoking testing doubling integers, filtering, and summing */
-        testingSumDoublesDivisibleBy3(100, 120);
+        //testingSumDoublesDivisibleBy3(100, 120);
 
         /** Invoking testing doubling integers, filtering, and summing and adding an identity map for printing */
-        testingSumDoublesDivisibleByNumber3(100, 120);
+        //testingSumDoublesDivisibleByNumber3(100, 120);
 
         /** Invoking using multiple peek method */
         int sumDoublesDivisibleBy3Val = sumDoublesDivisibleBy3UsingPeek(100, 120);
         System.out.println(sumDoublesDivisibleBy3Val);
 
         /** Invoking isPalindromeJava7OrEarlier method */
-        System.out.println("Is the word Anna Palindrome? " + isPalindromeJava7OrEarlier("Anna"));
-        System.out.println("Is the word Abc Palindrome? " + isPalindromeJava7OrEarlier("Abc"));
+        System.out.println("Is the word Anna Palindrome? " + palindromeDemo.isPalindromeJava7OrEarlier("Anna"));
+        System.out.println("Is the word Abc Palindrome? " + palindromeDemo.isPalindromeJava7OrEarlier("Abc"));
 
         /** Invoking isPalindrome using Java8 method */
-        System.out.println("Is the word Anna Palindrome? " + isPalindrome("Anna"));
-        System.out.println("Is the word Abc Palindrome? " + isPalindrome("Abc"));
+        System.out.println("Is the word Anna Palindrome? " + palindromeDemo.isPalindrome("Anna"));
+        System.out.println("Is the word Abc Palindrome? " + palindromeDemo.isPalindrome("Abc"));
 
     }
 
@@ -316,91 +317,29 @@ public class Main {
                 .sum();
     }
 
-    /** Checking for palindromes in Java 7 or earlier */
-    public static boolean isPalindromeJava7OrEarlier(String s) {
-        StringBuilder sb = new StringBuilder();
-        for (char c : s.toCharArray()) {
-            if (Character.isLetterOrDigit(c)) {
-                sb.append(c);
-            }
-        }
-        String forward = sb.toString().toLowerCase();
-        String backward = sb.reverse().toString().toLowerCase();
-        return forward.equals(backward);
-    }
-
-    /** Checking for palindromes using Java 8 streams */
-    public static boolean isPalindrome(String s) {
-        String forward = s.toLowerCase().codePoints() // Returns an IntStream
-                .filter(Character::isLetterOrDigit)
-                .collect(StringBuilder::new,
-                        StringBuilder::appendCodePoint,
-                        StringBuilder::append)
-                .toString();
-        String backward = new StringBuilder(forward).reverse().toString();
-        return forward.equals(backward);
-    }
-
-
     /** Testing sum doubles divisible by 3 */
     @Test
-    public static void testingSumDoublesDivisibleBy3(int start, int end) throws Exception {
-        assertEquals(1554, sumDoublesDivisibleBy3(start, end));
+    public void testingSumDoublesDivisibleBy3() throws Exception {
+        assertEquals(1554, sumDoublesDivisibleBy3(100, 120));
     }
 
     /** Testing sum doubles divisible by 3 while adding an identity map for printing */
-    public static void testingSumDoublesDivisibleByNumber3(int start, int end) throws Exception {
-        assertEquals(1554, sumDoublesDivisibleByNumber3(start, end));
+    @Test
+    public void testingSumDoublesDivisibleByNumber3() throws Exception {
+        assertEquals(1554, sumDoublesDivisibleByNumber3(100, 120));
     }
 
-    // A simple Book class
-    static class Book {
+    /** Testing the palindrome checker */
+    @Test
+    public void testIsPalindrome() throws Exception {
+        assertTrue(
+                Stream.of("Madam, in Eden, I'm Adam",
+                        "Go hang a salami; I'm a lasagna hog",
+                        "Flee to me, remote elf!",
+                        "A Santa pets rats as Pat taps a star step at NASA")
+                .allMatch(palindromeDemo::isPalindrome));
 
-        private Integer id;
-        private String title;
-
-        public Book(Integer id, String title) {
-            this.id = id;
-            this.title = title;
-        }
-
-        public Integer getId() {
-            return id;
-        }
-
-        public void setId(Integer id) {
-            this.id = id;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
-
-        @Override
-        public String toString() {
-            return "Book{" +
-                    "id=" + id +
-                    ", title='" + title + '\'' +
-                    '}';
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Book book = (Book) o;
-            return Objects.equals(id, book.id) &&
-                    Objects.equals(title, book.title);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(id, title);
-        }
+        assertFalse(palindromeDemo.isPalindrome("This is NOT a palindrome"));
     }
 
 }
