@@ -281,6 +281,11 @@ public class Main {
         System.out.printf("There are %d elements in the stream%n", count1);
         // Prints There are 9 elements in the stream
 
+        /** Counting the elements using Collectors.counting */
+        long count2 = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .collect(Collectors.counting());
+        System.out.printf("There are %d elements in the stream%n", count2);
+
     }
 
     /**
