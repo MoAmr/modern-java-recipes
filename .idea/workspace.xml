@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="387">
-                <caret line="352" selection-start-line="352" selection-end-line="352" />
+              <first_editor relative-caret-position="600">
+                <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,11 +33,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+            <state relative-caret-position="316">
+              <caret line="303" column="33" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12734#12735#0" expanded="true" />
+                <element signature="e#13459#13460#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,19 +46,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Streams/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
+            <state relative-caret-position="240">
               <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Streams/PalindromeEvaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="345">
               <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
             </state>
           </provider>
@@ -121,6 +115,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,9 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +270,8 @@
       <workItem from="1603655047131" duration="4400000" />
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
-      <workItem from="1603997395413" duration="16138000" />
+      <workItem from="1603997395413" duration="16671000" />
+      <workItem from="1604173453303" duration="2384000" />
     </task>
     <servers />
   </component>
@@ -313,7 +308,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58188000" />
+    <option name="totallyTimeSpent" value="61105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,10 +320,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="726" y="0" width="714" height="900" extended-state="6" />
+    <frame x="711" y="0" width="729" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22916667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22416303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -452,37 +447,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Streams/PalindromeEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/src/Streams/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Streams/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/Streams/PalindromeEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="387">
-            <caret line="352" selection-start-line="352" selection-end-line="352" />
+          <first_editor relative-caret-position="600">
+            <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
           </first_editor>
           <second_editor />
         </state>
@@ -490,11 +477,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="291" column="31" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+        <state relative-caret-position="316">
+          <caret line="303" column="33" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12734#12735#0" expanded="true" />
+            <element signature="e#13459#13460#0" expanded="true" />
           </folding>
         </state>
       </provider>

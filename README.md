@@ -352,4 +352,8 @@ UTF-16-encoded characters as opposed to the full Unicode set of code points.
 <h3><u>Note:</u></h3><h4>If you want to know how many elements are in a stream, 
 use either the Stream.count or Collectors.counting methods.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want the count, sum, min, max, and average of a 
+stream of numerical values, use the summaryStatistics method in IntStream, 
+DoubleStream, and LongStream.</h4>
+
 --------------------------------------------------------------------------

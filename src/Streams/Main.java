@@ -5,10 +5,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+import java.util.stream.*;
 
 import static java.util.stream.Collectors.toList;
 import static org.junit.jupiter.api.Assertions.*;
@@ -293,6 +290,18 @@ public class Main {
                         Collectors.counting())); // Downstream collector
 
         numberLengthMap.forEach((k, v) -> System.out.printf("%5s: %d%n", k, v));
+
+        /** Using SummaryStatistics method in IntStream, DoubleStream, and LongStream
+         * to get count, sum, min, max, and average of a stream of numerical values */
+        DoubleSummaryStatistics stats = DoubleStream.generate(Math::random)
+                .limit(1_000_000)
+                .summaryStatistics();
+        System.out.println(stats); // Print using the toString method
+        System.out.println("count: " + stats.getCount());
+        System.out.println("min: " + stats.getMin());
+        System.out.println("max: " + stats.getMax());
+        System.out.println("sum: " + stats.getSum());
+        System.out.println("ave: " + stats.getAverage());
 
     }
 
