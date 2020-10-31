@@ -343,6 +343,14 @@ public class Main {
 
         // Note: If the stream is empty, the return value is an empty Optional.
 
+        /** Using findFirst on an empty stream */
+        Optional<Integer> firstEvenGT10 = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .filter(n -> n > 10)
+                .filter(n -> n % 2 == 0)
+                .findFirst();
+        System.out.println(firstEvenGT10); // Prints Optional.empty
+
+
     }
 
     /**
