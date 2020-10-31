@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="600">
-                <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
+              <first_editor relative-caret-position="407">
+                <caret line="365" selection-start-line="365" selection-end-line="365" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,11 +32,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="329" column="37" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
+            <state relative-caret-position="227">
+              <caret line="338" column="48" selection-start-line="338" selection-start-column="48" selection-end-line="338" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14623#14624#0" expanded="true" />
+                <element signature="e#15063#15064#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/MethodReferences/Main.java" />
         <option value="$PROJECT_DIR$/src/Streams/PalindromeEvaluator.java" />
         <option value="$PROJECT_DIR$/src/Streams/Book.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Streams/Team.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
       </list>
     </option>
@@ -293,7 +294,7 @@
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
       <workItem from="1603997395413" duration="16671000" />
-      <workItem from="1604173453303" duration="4269000" />
+      <workItem from="1604173453303" duration="5320000" />
     </task>
     <servers />
   </component>
@@ -330,7 +331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62990000" />
+    <option name="totallyTimeSpent" value="64041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,16 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="600">
-            <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="721">
@@ -518,13 +509,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="407">
+            <caret line="365" selection-start-line="365" selection-end-line="365" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="329" column="37" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
+        <state relative-caret-position="227">
+          <caret line="338" column="48" selection-start-line="338" selection-start-column="48" selection-end-line="338" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14623#14624#0" expanded="true" />
+            <element signature="e#15063#15064#0" expanded="true" />
           </folding>
         </state>
       </provider>

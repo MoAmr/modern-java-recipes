@@ -356,4 +356,13 @@ use either the Stream.count or Collectors.counting methods.</h4>
 stream of numerical values, use the summaryStatistics method in IntStream, 
 DoubleStream, and LongStream.</h4>
 
+<h3><u>Note:</u></h3><h4>If you wish to find the first element in a stream 
+that satisfies a particular condition, use the findFirst or findAny method 
+after applying a filter.</h4>
+
+<h3><u>Note:</u></h3><h4>The findFirst and findAny methods in java.util.stream.Stream
+return an Optional describing the first element of a stream.
+Neither takes an argument, implying that any mapping or filtering 
+operations have already been done.</h4>
+
 --------------------------------------------------------------------------

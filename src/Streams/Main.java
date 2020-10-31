@@ -335,6 +335,13 @@ public class Main {
         System.out.println("sum = $" + teamStats1.getSum());
         System.out.println("ave = $" + teamStats1.getAverage());
 
+        /** Finding the first even integer in a stream using findFirst method */
+        Optional<Integer> firstEven = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .filter(n -> n % 2 == 0)
+                .findFirst();
+        System.out.println(firstEven); // Prints Optional[4]
+
+        // Note: If the stream is empty, the return value is an empty Optional.
 
     }
 
