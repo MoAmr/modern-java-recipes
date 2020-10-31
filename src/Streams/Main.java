@@ -303,6 +303,28 @@ public class Main {
         System.out.println("sum: " + stats.getSum());
         System.out.println("ave: " + stats.getAverage());
 
+        /** Collect with a Supplier, accumulator, and combiner */
+
+        Team[] teamsArr = { new Team(1, "IT", 500000d),
+                new Team(2, "HR", 300000d),
+                new Team(3, "Marketing", 700000d)};
+
+        List<Team> teams = Arrays.asList(teamsArr);
+
+        DoubleSummaryStatistics teamStats = teams.stream()
+                .mapToDouble(Team::getSalary)
+                .collect(DoubleSummaryStatistics::new,
+                        DoubleSummaryStatistics::accept,
+                        DoubleSummaryStatistics::combine);
+
+        System.out.println(teamStats);
+        System.out.println(teamStats.getCount() + " teams");
+        System.out.println("min = $" + teamStats.getMin());
+        System.out.println("max = $" + teamStats.getMax());
+        System.out.println("sum = $" + teamStats.getSum());
+        System.out.println("ave = $" + teamStats.getAverage());
+
+
     }
 
     /**
