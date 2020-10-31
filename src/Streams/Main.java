@@ -363,9 +363,22 @@ public class Main {
                 .parallel() // Use the common fork-join pool in parallel
                 .map(Main::delay) // Introduce a random delay
                 .findAny(); // Return the first element, regardless of encounter order
-
         System.out.println("Any: " + any);
         // The output now could be any of the given numbers, depending on which thread gets there first.
+
+        /** Using findAny on sequential and parallel streams */
+        Optional<Integer> any1 = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .unordered()
+                .map(Main::delay)
+                .findAny(); // Sequential stream (by default)
+        System.out.println("Sequential Any: " + any1);
+
+        Optional<Integer> anyParallel = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .unordered()
+                .parallel()
+                .map(Main::delay)
+                .findAny(); // Parallel stream
+        System.out.println("Parallel any: " + anyParallel);
 
     }
 

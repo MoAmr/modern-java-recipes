@@ -382,5 +382,15 @@ if it may terminate in finite time even when presented with infinite input.</h4>
 <h3><u>Note:</u></h3><h4>Streams are lazy, meaning they will only process 
 as many elements as are necessary to satisfy the pipeline.</h4>
 
+<h3><u>Note:</u></h3><h4>The sequential stream only needs to access one element,
+which it then returns, short-circuiting the process. The parallel stream 
+fires up eight different threads, finds one element, and shuts them all down. 
+The parallel stream therefore accesses many values it doesn’t need.</h4>
+
+<h3><u>Note:</u></h3><h4>The key concept is that of encounter order with streams. 
+If the stream has an encounter order, then findFirst will always return the 
+same value. The findAny method is allowed to return any element, 
+making it more appropriate for parallel operations.</h4>
+
 
 --------------------------------------------------------------------------
