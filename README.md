@@ -365,4 +365,10 @@ return an Optional describing the first element of a stream.
 Neither takes an argument, implying that any mapping or filtering 
 operations have already been done.</h4>
 
+<h3><u>Note:</u></h3><h4>The findAny method returns an Optional describing 
+some element of the stream, or an empty Optional if the stream is empty. 
+In this case, the behavior of the operation is explicitly nondeterministic, 
+meaning it is free to select any element of the stream. 
+This allows optimization in parallel operations.</h4>
+
 --------------------------------------------------------------------------

@@ -350,6 +350,13 @@ public class Main {
                 .findFirst();
         System.out.println(firstEvenGT10); // Prints Optional.empty
 
+        /** Using firstEven in parallel */
+        Optional<Integer> firstEvenParallel = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .parallel()
+                .filter(n -> n % 2 == 0)
+                .findFirst();
+        System.out.println(firstEvenParallel); // Always prints Optional[4]
+
 
     }
 
