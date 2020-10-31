@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="467">
-                <caret line="369" column="29" selection-start-line="369" selection-start-column="29" selection-end-line="369" selection-end-column="29" />
+              <first_editor relative-caret-position="372">
+                <caret line="379" selection-start-line="379" selection-end-line="379" />
               </first_editor>
               <second_editor />
             </state>
@@ -32,11 +32,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="335" column="35" selection-start-line="335" selection-start-column="35" selection-end-line="335" selection-end-column="35" />
+            <state relative-caret-position="172">
+              <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#15911#15912#0" expanded="true" />
+                <element signature="e#16471#16472#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -294,7 +294,7 @@
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
       <workItem from="1603997395413" duration="16671000" />
-      <workItem from="1604173453303" duration="6196000" />
+      <workItem from="1604173453303" duration="6993000" />
     </task>
     <servers />
   </component>
@@ -331,7 +331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64917000" />
+    <option name="totallyTimeSpent" value="65714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,13 +509,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="335" column="35" selection-start-line="335" selection-start-column="35" selection-end-line="335" selection-end-column="35" />
+        <state relative-caret-position="172">
+          <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#15911#15912#0" expanded="true" />
+            <element signature="e#16471#16472#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,8 +530,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="467">
-            <caret line="369" column="29" selection-start-line="369" selection-start-column="29" selection-end-line="369" selection-end-column="29" />
+          <first_editor relative-caret-position="372">
+            <caret line="379" selection-start-line="379" selection-end-line="379" />
           </first_editor>
           <second_editor />
         </state>

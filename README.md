@@ -371,4 +371,16 @@ In this case, the behavior of the operation is explicitly nondeterministic,
 meaning it is free to select any element of the stream. 
 This allows optimization in parallel operations.</h4>
 
+<h3><u>Note:</u></h3><h4>The InterruptedException is the only exception in
+Java that it is OK to catch and ignore.</h4>
+
+<h3><u>Note:</u></h3><h4>Both findFirst and findAny are short-circuiting, 
+terminal operations. A short-circuiting operation may produce a finite stream 
+when presented with an infinite one. A terminal operation is short-circuiting 
+if it may terminate in finite time even when presented with infinite input.</h4>
+
+<h3><u>Note:</u></h3><h4>Streams are lazy, meaning they will only process 
+as many elements as are necessary to satisfy the pipeline.</h4>
+
+
 --------------------------------------------------------------------------

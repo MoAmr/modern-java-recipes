@@ -357,6 +357,15 @@ public class Main {
                 .findFirst();
         System.out.println(firstEvenParallel); // Always prints Optional[4]
 
+        /** Using findAny in parallel after a random delay */
+        Optional<Integer> any = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                .unordered() // We don’t care about order
+                .parallel() // Use the common fork-join pool in parallel
+                .map(Main::delay) // Introduce a random delay
+                .findAny(); // Return the first element, regardless of encounter order
+
+        System.out.println("Any: " + any);
+        // The output now could be any of the given numbers, depending on which thread gets there first.
 
     }
 
@@ -397,6 +406,14 @@ public class Main {
                 .filter(n -> n % 3 == 0)
                 .peek(n -> System.out.printf("filtered: %d%n", n)) // Print value after filtering but before summing
                 .sum();
+    }
+
+    /** Using findAny in parallel after a random delay method */
+    public static Integer delay(Integer n) {
+        try {
+            Thread.sleep((long) (Math.random() * 100));
+        } catch(InterruptedException ignored) {} // The only exception in Java that it is OK to catch and ignore.
+        return n;
     }
 
     /** Testing sum doubles divisible by 3 */
