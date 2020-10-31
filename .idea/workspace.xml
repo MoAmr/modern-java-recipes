@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="" />
+    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +31,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="324" column="63" lean-forward="true" selection-start-line="324" selection-start-column="63" selection-end-line="324" selection-end-column="63" />
+            <state relative-caret-position="406">
+              <caret line="329" column="37" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14355#14356#0" expanded="true" />
+                <element signature="e#14623#14624#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -291,7 +293,7 @@
       <workItem from="1603660524447" duration="874000" />
       <workItem from="1603824719503" duration="5255000" />
       <workItem from="1603997395413" duration="16671000" />
-      <workItem from="1604173453303" duration="4063000" />
+      <workItem from="1604173453303" duration="4269000" />
     </task>
     <servers />
   </component>
@@ -328,7 +330,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62784000" />
+    <option name="totallyTimeSpent" value="62990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,11 +520,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="324" column="63" lean-forward="true" selection-start-line="324" selection-start-column="63" selection-end-line="324" selection-end-column="63" />
+        <state relative-caret-position="406">
+          <caret line="329" column="37" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14355#14356#0" expanded="true" />
+            <element signature="e#14623#14624#0" expanded="true" />
           </folding>
         </state>
       </provider>

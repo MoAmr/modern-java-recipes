@@ -324,6 +324,17 @@ public class Main {
         System.out.println("sum = $" + teamStats.getSum());
         System.out.println("ave = $" + teamStats.getAverage());
 
+        /** Computing the summary statistics of a Collection using Collect summarizingDouble */
+       DoubleSummaryStatistics teamStats1 = teams.stream()
+               .collect(Collectors.summarizingDouble(Team::getSalary));
+
+       System.out.println(teamStats1);
+        System.out.println(teamStats1.getCount() + " teams");
+        System.out.println("min = $" + teamStats1.getMin());
+        System.out.println("max = $" + teamStats1.getMax());
+        System.out.println("sum = $" + teamStats1.getSum());
+        System.out.println("ave = $" + teamStats1.getAverage());
+
 
     }
 
