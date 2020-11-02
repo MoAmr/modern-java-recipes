@@ -392,5 +392,10 @@ If the stream has an encounter order, then findFirst will always return the
 same value. The findAny method is allowed to return any element, 
 making it more appropriate for parallel operations.</h4>
 
+<h3><u>Note:</u></h3><h4>If you wish to determine if any elements in a stream
+match a Predicate, or if all match, or if none match, use the methods 
+anyMatch, allMatch, and noneMatch on the Stream interface, each of which 
+returns a boolean.</h4>
+
 
 --------------------------------------------------------------------------

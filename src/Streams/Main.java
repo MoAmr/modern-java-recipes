@@ -429,6 +429,14 @@ public class Main {
         return n;
     }
 
+    /** Prime number check using the noneMatch method of the Stream Interface */
+    public static boolean isPrime(int num) {
+
+        int limit = (int) (Math.sqrt(num) + 1); // Upper limit for check
+        return num == 2 || num > 1 && IntStream.range(2, limit)
+                .noneMatch(divisor -> num % divisor == 0); // Using noneMatch
+    }
+
     /** Testing sum doubles divisible by 3 */
     @Test
     public void testingSumDoublesDivisibleBy3() throws Exception {
