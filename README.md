@@ -397,5 +397,9 @@ match a Predicate, or if all match, or if none match, use the methods
 anyMatch, allMatch, and noneMatch on the Stream interface, each of which 
 returns a boolean.</h4>
 
+<h3><u>Note:</u></h3><h4>The allMatch and noneMatch methods return true 
+and the anyMatch method returns false on an empty stream regardless of the 
+supplied predicate. Any supplied predicate is not evaluated when the stream 
+is empty.</h4>
 
 --------------------------------------------------------------------------

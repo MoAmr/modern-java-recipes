@@ -19,6 +19,8 @@ public class Main {
 
     private static PalindromeEvaluator palindromeDemo = new PalindromeEvaluator();
 
+    private Primes calculator = new Primes();
+
     public static void main(String[] args) throws Exception {
 
         /** Creating a stream using Stream.of */
@@ -380,6 +382,8 @@ public class Main {
                 .findAny(); // Parallel stream
         System.out.println("Parallel any: " + anyParallel);
 
+
+
     }
 
     /**
@@ -429,14 +433,6 @@ public class Main {
         return n;
     }
 
-    /** Prime number check using the noneMatch method of the Stream Interface */
-    public static boolean isPrime(int num) {
-
-        int limit = (int) (Math.sqrt(num) + 1); // Upper limit for check
-        return num == 2 || num > 1 && IntStream.range(2, limit)
-                .noneMatch(divisor -> num % divisor == 0); // Using noneMatch
-    }
-
     /** Testing sum doubles divisible by 3 */
     @Test
     public void testingSumDoublesDivisibleBy3() throws Exception {
@@ -460,6 +456,29 @@ public class Main {
                 .allMatch(palindromeDemo::isPalindrome));
 
         assertFalse(palindromeDemo.isPalindrome("This is NOT a palindrome"));
+    }
+
+    /** Tests for the prime calculation */
+    @Test
+    // Use allMatch for simplicity
+    public void testIsPrimeUsingAllMatch() throws Exception {
+        assertTrue(IntStream.of(2, 3, 5, 7, 11, 13, 17, 19)
+        .allMatch(calculator::isPrime));
+    }
+
+    @Test
+    // Test with composites
+    public void testIsPrimeWithComposites() throws Exception {
+        assertFalse(Stream.of(4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20)
+        .anyMatch(calculator::isPrime));
+    }
+
+    /** Testing empty streams */
+    @Test
+    public void emptyStreamsDanger() throws Exception {
+        assertTrue(Stream.empty().allMatch(e -> false));
+        assertTrue(Stream.empty().noneMatch(e -> true));
+        assertFalse(Stream.empty().anyMatch(e -> true));
     }
 
 }

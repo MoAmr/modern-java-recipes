@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Streams/Primes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,13 +33,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="432" column="26" selection-start-line="432" selection-start-column="26" selection-end-line="432" selection-end-column="26" />
+            <state relative-caret-position="480">
+              <caret line="480" column="55" selection-start-line="480" selection-start-column="55" selection-end-line="480" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#17017#17018#0" expanded="true" />
                 <element signature="e#17061#17062#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Streams/Primes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -126,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/Streams/Book.java" />
         <option value="$PROJECT_DIR$/src/Streams/Team.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Streams/Primes.java" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
       </list>
     </option>
@@ -189,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Main.emptyStreamsDanger">
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java.util.function.Main" />
       <module name="Modern Java Recipes" />
@@ -216,7 +226,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testIsPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.emptyStreamsDanger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -226,13 +236,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Streams" />
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
-      <option name="METHOD_NAME" value="testIsPalindrome" />
+      <option name="METHOD_NAME" value="emptyStreamsDanger" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testingSumDoublesDivisibleBy3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.testIsPrimeUsingAllMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -242,13 +252,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Streams" />
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
-      <option name="METHOD_NAME" value="testingSumDoublesDivisibleBy3" />
+      <option name="METHOD_NAME" value="testIsPrimeUsingAllMatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testingSumDoublesDivisibleByNumber3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.testIsPrimeWithComposites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -258,7 +268,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Streams" />
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
-      <option name="METHOD_NAME" value="testingSumDoublesDivisibleByNumber3" />
+      <option name="METHOD_NAME" value="testIsPrimeWithComposites" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -266,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.emptyStreamsDanger" />
+        <item itemvalue="JUnit.Main.testIsPrimeWithComposites" />
+        <item itemvalue="JUnit.Main.testIsPrimeUsingAllMatch" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
-        <item itemvalue="JUnit.Main.testIsPalindrome" />
-        <item itemvalue="JUnit.Main.testingSumDoublesDivisibleByNumber3" />
-        <item itemvalue="JUnit.Main.testingSumDoublesDivisibleBy3" />
       </list>
     </recent_temporary>
   </component>
@@ -298,17 +308,11 @@
       <workItem from="1603824719503" duration="5255000" />
       <workItem from="1603997395413" duration="16671000" />
       <workItem from="1604173453303" duration="8444000" />
-      <workItem from="1604353733368" duration="410000" />
+      <workItem from="1604353733368" duration="1378000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_testingSumDoublesDivisibleBy3 - 2020.10.30 at 02h 31m 03s.xml">
-      <configuration name="Main.testingSumDoublesDivisibleBy3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_testingSumDoublesDivisibleBy3 - 2020.10.30 at 02h 31m 58s.xml">
-      <configuration name="Main.testingSumDoublesDivisibleBy3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_testingSumDoublesDivisibleByNumber3 - 2020.10.30 at 02h 32m 02s.xml">
       <configuration name="Main.testingSumDoublesDivisibleByNumber3" configurationId="JUnit" />
     </history-entry>
@@ -333,9 +337,15 @@
     <history-entry file="Main_testIsPalindrome - 2020.10.30 at 02h 49m 26s.xml">
       <configuration name="Main.testIsPalindrome" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_testIsPrimeUsingAllMatch - 2020.11.03 at 00h 23m 40s.xml">
+      <configuration name="Main.testIsPrimeUsingAllMatch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_testIsPrimeWithComposites - 2020.11.03 at 00h 23m 46s.xml">
+      <configuration name="Main.testIsPrimeWithComposites" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67575000" />
+    <option name="totallyTimeSpent" value="68543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +369,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,10 +540,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Streams/Primes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="432" column="26" selection-start-line="432" selection-start-column="26" selection-end-line="432" selection-end-column="26" />
+        <state relative-caret-position="480">
+          <caret line="480" column="55" selection-start-line="480" selection-start-column="55" selection-end-line="480" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#17017#17018#0" expanded="true" />
