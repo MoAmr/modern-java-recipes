@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Streams/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Streams/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
@@ -24,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="388">
-                <caret line="434" selection-start-line="434" selection-end-line="434" />
+              <first_editor relative-caret-position="387">
+                <caret line="461" column="80" selection-start-line="461" selection-start-column="80" selection-end-line="461" selection-end-column="80" />
               </first_editor>
               <second_editor />
             </state>
@@ -56,11 +53,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="411" column="44" selection-start-line="411" selection-start-column="44" selection-end-line="411" selection-end-column="44" />
+            <state relative-caret-position="465">
+              <caret line="515" column="42" selection-start-line="515" selection-start-column="42" selection-end-line="515" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#18430#18431#0" expanded="true" />
+                <element signature="e#18526#18527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,20 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java.util.function.Main" />
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java.util.function.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Main.concat">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
       <module name="Modern Java Recipes" />
@@ -246,6 +230,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.concat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Streams" />
+      <option name="MAIN_CLASS_NAME" value="Streams.Main" />
+      <option name="METHOD_NAME" value="concat" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -300,11 +300,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.concat" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.emptyStreamsDanger" />
         <item itemvalue="JUnit.Main.testIsPrimeWithComposites" />
         <item itemvalue="JUnit.Main.testIsPrimeUsingAllMatch" />
-        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +333,7 @@
       <workItem from="1603997395413" duration="16671000" />
       <workItem from="1604173453303" duration="8444000" />
       <workItem from="1604353733368" duration="2112000" />
-      <workItem from="1604379371636" duration="1937000" />
+      <workItem from="1604379371636" duration="2742000" />
     </task>
     <servers />
   </component>
@@ -370,7 +370,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71214000" />
+    <option name="totallyTimeSpent" value="72019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,8 +582,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="388">
-            <caret line="434" selection-start-line="434" selection-end-line="434" />
+          <first_editor relative-caret-position="387">
+            <caret line="461" column="80" selection-start-line="461" selection-start-column="80" selection-end-line="461" selection-end-column="80" />
           </first_editor>
           <second_editor />
         </state>
@@ -591,11 +591,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="411" column="44" selection-start-line="411" selection-start-column="44" selection-end-line="411" selection-end-column="44" />
+        <state relative-caret-position="465">
+          <caret line="515" column="42" selection-start-line="515" selection-start-column="42" selection-end-line="515" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#18430#18431#0" expanded="true" />
+            <element signature="e#18526#18527#0" expanded="true" />
           </folding>
         </state>
       </provider>

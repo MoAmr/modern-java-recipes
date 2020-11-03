@@ -509,4 +509,15 @@ public class Main {
         assertFalse(Stream.empty().anyMatch(e -> true));
     }
 
+    /** Concatenating two streams */
+    @Test
+    public void concat() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        List<String> strings = Stream.concat(first, second) // First elements followed by second elements
+                .collect(Collectors.toList());
+        List<String> stringList = Arrays.asList("a", "b", "c", "X", "Y", "Z");
+        assertEquals(stringList, strings);
+    }
+
 }

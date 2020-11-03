@@ -441,4 +441,24 @@ input argument, but produces a Stream of output types.</h4>
 
 If you keep those ideas in mind, you should find the flatMap method quite helpful.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to combine two or more streams into 
+a single one, the concat method on Stream combines two streams, which works 
+if the number of streams is small. Otherwise use flatMap.</h4>
+
+<h3><u>Note:</u></h3><h4>Say you acquire data from several locations, 
+and you want to process every element in all of them using streams. 
+One mechanism you can use is the concat method in Stream, whose signature is:
+
+static <T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)
+
+This method creates a lazily concatenated stream that accesses all the 
+elements of the first stream, followed by all the elements of the second stream.</h4>
+
+<h3><u>Note:</u></h3><h4>As the Javadocs say, the resulting stream is 
+ordered if the input streams are ordered, and the resulting stream is 
+parallel if either of the input streams are parallel. Closing the returned 
+stream also closes the underlying input streams.</h4>
+
+<h3><u>Note:</u></h3><h4>Both input streams must hold elements of the same type.</h4>
+
 --------------------------------------------------------------------------
