@@ -402,4 +402,43 @@ and the anyMatch method returns false on an empty stream regardless of the
 supplied predicate. Any supplied predicate is not evaluated when the stream 
 is empty.</h4>
 
+<h3><u>Note:</u></h3><h4>If you have a stream and you need to transform the 
+elements in some way, but you’re not sure whether to use map or flatMap, 
+use map if each element is transformed into a single value. 
+Use flatMap if each element will be transformed to multiple values and the 
+resulting stream needs to be “flattened.”</h4>
+
+<h3><u>Note:</u></h3><h4>Both the map and the flatMap methods on Stream 
+take a Function as an argument. 
+
+The signature for map is:
+
+<R> Stream<R> map(Function<? super T,? extends R> mapper)
+
+A Function takes a single input and transforms it into a single output. 
+In the case of map, a single input of type T is transformed into a single 
+output of type R. </h4>
+
+<h3><u>Note:</u></h3><h4>A map operation is done when there is a one-to-one 
+relationship between the input parameter and the output type.</h4>
+
+<h3><u>Note:</u></h3><h4>The flatMap method has the following signature:
+
+<R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)
+
+For each generic argument T, the function produces a Stream<R> rather than 
+just an R. The flatMap method then “flattens” the resulting stream by 
+removing each element from the individual streams and adding them to the output.</h4>
+
+<h3><u>Note:</u></h3><h4>The Function argument to flatMap takes a generic 
+input argument, but produces a Stream of output types.</h4>
+
+<h3><u>Note:</u></h3><h4>The two key concepts for flatMap are:
+
+• The Function argument to flatMap produces a Stream of output values.
+
+• The resulting stream of streams is flattened into a single stream of results.
+
+If you keep those ideas in mind, you should find the flatMap method quite helpful.</h4>
+
 --------------------------------------------------------------------------

@@ -383,6 +383,34 @@ public class Main {
         System.out.println("Parallel any: " + anyParallel);
 
 
+        /** Sample customers with orders */
+        Customer sheridan = new Customer("Sheridan");
+        Customer ivanova = new Customer("Ivanova");
+        Customer garibaldi = new Customer("Garibaldi");
+        sheridan.addOrder(new Order(1)) .addOrder(new Order(2))
+                .addOrder(new Order(3)); ivanova.addOrder(new Order(4))
+                .addOrder(new Order(5));
+        List<Customer> customers = Arrays.asList(sheridan, ivanova, garibaldi);
+
+        /** Using map on Customer to name */
+        customers.stream() // Stream<Customer>
+                .map(Customer::getName) // Stream<String>
+                .forEach(System.out::println); // Sheridan, Ivanova, Garibaldi
+
+        /**  Using map on Customer to orders */
+        customers.stream()
+                .map(Customer::getOrders) // Stream<List<Order>>
+                .forEach(System.out::println); // [Order{id=1}, Order{id=2}, Order{id=3}], [Order{id=4}, Order{id=5}], []
+
+        customers.stream()
+                .map(customer -> customer.getOrders().stream()) // Stream<Stream<Order>>
+                .forEach(System.out::println);
+
+        /** Using flatMap on Customer orders */
+        customers.stream() // Stream<Customer>
+                .flatMap(customer -> customer.getOrders().stream()) // Stream<Order>
+                .forEach(System.out::println); // Order{id=1}, Order{id=2}, Order{id=3}, Order{id=4}, Order{id=5}
+
 
     }
 

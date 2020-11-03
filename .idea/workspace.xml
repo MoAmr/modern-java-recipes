@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Streams/Primes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Streams/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Streams/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +24,31 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="660">
-                <caret line="397" selection-start-line="397" selection-end-line="397" />
+              <first_editor relative-caret-position="388">
+                <caret line="434" selection-start-line="434" selection-end-line="434" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Streams/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Streams/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,12 +56,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="480" column="55" selection-start-line="480" selection-start-column="55" selection-end-line="480" selection-end-column="55" />
+            <state relative-caret-position="141">
+              <caret line="411" column="44" selection-start-line="411" selection-start-column="44" selection-end-line="411" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#17017#17018#0" expanded="true" />
-                <element signature="e#17061#17062#0" expanded="true" />
+                <element signature="e#18430#18431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,8 +156,10 @@
         <option value="$PROJECT_DIR$/src/Streams/PalindromeEvaluator.java" />
         <option value="$PROJECT_DIR$/src/Streams/Book.java" />
         <option value="$PROJECT_DIR$/src/Streams/Team.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Streams/Primes.java" />
+        <option value="$PROJECT_DIR$/src/Streams/Customer.java" />
+        <option value="$PROJECT_DIR$/src/Streams/Order.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
       </list>
     </option>
@@ -151,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,7 +199,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
@@ -199,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.emptyStreamsDanger">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java.util.function.Main" />
       <module name="Modern Java Recipes" />
@@ -276,10 +300,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.emptyStreamsDanger" />
         <item itemvalue="JUnit.Main.testIsPrimeWithComposites" />
         <item itemvalue="JUnit.Main.testIsPrimeUsingAllMatch" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
@@ -308,14 +332,12 @@
       <workItem from="1603824719503" duration="5255000" />
       <workItem from="1603997395413" duration="16671000" />
       <workItem from="1604173453303" duration="8444000" />
-      <workItem from="1604353733368" duration="1378000" />
+      <workItem from="1604353733368" duration="2112000" />
+      <workItem from="1604379371636" duration="1937000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_testingSumDoublesDivisibleByNumber3 - 2020.10.30 at 02h 32m 02s.xml">
-      <configuration name="Main.testingSumDoublesDivisibleByNumber3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_testIsPalindrome - 2020.10.30 at 02h 32m 12s.xml">
       <configuration name="Main.testIsPalindrome" configurationId="JUnit" />
     </history-entry>
@@ -343,9 +365,12 @@
     <history-entry file="Main_testIsPrimeWithComposites - 2020.11.03 at 00h 23m 46s.xml">
       <configuration name="Main.testIsPrimeWithComposites" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_emptyStreamsDanger - 2020.11.03 at 00h 28m 32s.xml">
+      <configuration name="Main.emptyStreamsDanger" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68543000" />
+    <option name="totallyTimeSpent" value="71214000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,10 +382,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="704" y="0" width="736" height="900" extended-state="6" />
+    <frame x="713" y="0" width="727" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22190201" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21021898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -396,13 +421,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -491,6 +509,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Streams/Primes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -530,31 +562,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Streams/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Streams/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="660">
-            <caret line="397" selection-start-line="397" selection-end-line="397" />
+          <first_editor relative-caret-position="388">
+            <caret line="434" selection-start-line="434" selection-end-line="434" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Streams/Primes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="480" column="55" selection-start-line="480" selection-start-column="55" selection-end-line="480" selection-end-column="55" />
+        <state relative-caret-position="141">
+          <caret line="411" column="44" selection-start-line="411" selection-start-column="44" selection-end-line="411" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#17017#17018#0" expanded="true" />
-            <element signature="e#17061#17062#0" expanded="true" />
+            <element signature="e#18430#18431#0" expanded="true" />
           </folding>
         </state>
       </provider>
