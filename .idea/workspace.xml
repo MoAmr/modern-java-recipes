@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Streams/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="533" column="42" selection-start-line="533" selection-start-column="42" selection-end-line="533" selection-end-column="42" />
+            <state relative-caret-position="465">
+              <caret line="540" column="33" selection-start-line="540" selection-start-column="33" selection-end-line="540" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#18526#18527#0" expanded="true" />
@@ -157,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/Streams/Primes.java" />
         <option value="$PROJECT_DIR$/src/Streams/Customer.java" />
         <option value="$PROJECT_DIR$/src/Streams/Order.java" />
-        <option value="$PROJECT_DIR$/src/Streams/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Streams/Main.java" />
       </list>
     </option>
   </component>
@@ -221,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.concatThree">
+  <component name="RunManager" selected="JUnit.Main.reduce">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
       <module name="Modern Java Recipes" />
@@ -283,7 +281,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testIsPrimeWithComposites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.reduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -293,7 +291,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Streams" />
       <option name="MAIN_CLASS_NAME" value="Streams.Main" />
-      <option name="METHOD_NAME" value="testIsPrimeWithComposites" />
+      <option name="METHOD_NAME" value="reduce" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -301,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.reduce" />
         <item itemvalue="JUnit.Main.concatThree" />
         <item itemvalue="JUnit.Main.concat" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.emptyStreamsDanger" />
-        <item itemvalue="JUnit.Main.testIsPrimeWithComposites" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +332,7 @@
       <workItem from="1603997395413" duration="16671000" />
       <workItem from="1604173453303" duration="8444000" />
       <workItem from="1604353733368" duration="2112000" />
-      <workItem from="1604379371636" duration="3592000" />
+      <workItem from="1604379371636" duration="3800000" />
     </task>
     <servers />
   </component>
@@ -371,7 +369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72869000" />
+    <option name="totallyTimeSpent" value="73077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="533" column="42" selection-start-line="533" selection-start-column="42" selection-end-line="533" selection-end-column="42" />
+        <state relative-caret-position="465">
+          <caret line="540" column="33" selection-start-line="540" selection-start-column="33" selection-end-line="540" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#18526#18527#0" expanded="true" />

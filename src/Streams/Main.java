@@ -534,4 +534,21 @@ public class Main {
         assertEquals(stringList, strings);
     }
 
+    /** Concatenating Streams with reduce */
+    @Test
+    public void reduce() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        Stream<String> third = Stream.of("alpha", "beta", "gamma");
+        Stream<String> fourth = Stream.empty();
+
+        List<String> strings = Stream.of(first, second, third, fourth)
+                .reduce(Stream.empty(), Stream::concat) // Using reduce with an empty stream and a binary operator
+                .collect(Collectors.toList());
+
+        List<String> stringList = Arrays.asList("a", "b", "c",
+                "X", "Y", "Z", "alpha", "beta", "gamma");
+        assertEquals(stringList, strings);
+    }
+
 }
