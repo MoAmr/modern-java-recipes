@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="561" column="47" lean-forward="true" selection-start-line="560" selection-end-line="561" selection-end-column="47" />
+            <state relative-caret-position="450">
+              <caret line="588" column="41" selection-start-line="588" selection-start-column="41" selection-end-line="588" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#18562#18563#0" expanded="true" />
@@ -219,23 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.concatParallel">
-    <configuration name="Main.concat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Streams" />
-      <option name="MAIN_CLASS_NAME" value="Streams.Main" />
-      <option name="METHOD_NAME" value="concat" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Main.flatMapParallel">
     <configuration name="Main.concatParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
@@ -284,6 +268,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.flatMapParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Streams" />
+      <option name="MAIN_CLASS_NAME" value="Streams.Main" />
+      <option name="METHOD_NAME" value="flatMapParallel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.reduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
@@ -302,11 +302,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.flatMapParallel" />
         <item itemvalue="JUnit.Main.concatParallel" />
         <item itemvalue="JUnit.Main.flatMap" />
         <item itemvalue="JUnit.Main.reduce" />
         <item itemvalue="JUnit.Main.concatThree" />
-        <item itemvalue="JUnit.Main.concat" />
       </list>
     </recent_temporary>
   </component>
@@ -335,14 +335,11 @@
       <workItem from="1603997395413" duration="16671000" />
       <workItem from="1604173453303" duration="8444000" />
       <workItem from="1604353733368" duration="2112000" />
-      <workItem from="1604379371636" duration="5536000" />
+      <workItem from="1604379371636" duration="5818000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_testIsPalindrome - 2020.10.30 at 02h 49m 14s.xml">
-      <configuration name="Main.testIsPalindrome" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_testIsPalindrome - 2020.10.30 at 02h 49m 22s.xml">
       <configuration name="Main.testIsPalindrome" configurationId="JUnit" />
     </history-entry>
@@ -370,9 +367,12 @@
     <history-entry file="Main_flatMap - 2020.11.04 at 16h 43m 34s.xml">
       <configuration name="Main.flatMap" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_concatParallel - 2020.11.04 at 16h 48m 02s.xml">
+      <configuration name="Main.concatParallel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74813000" />
+    <option name="totallyTimeSpent" value="75095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="561" column="47" lean-forward="true" selection-start-line="560" selection-end-line="561" selection-end-column="47" />
+        <state relative-caret-position="450">
+          <caret line="588" column="41" selection-start-line="588" selection-start-column="41" selection-end-line="588" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#18562#18563#0" expanded="true" />

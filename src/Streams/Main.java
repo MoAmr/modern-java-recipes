@@ -583,4 +583,20 @@ public class Main {
         assertFalse(total.isParallel());
     }
 
+    /** Making a flatMap stream parallel */
+    @Test
+    public void flatMapParallel() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        Stream<String> third = Stream.of("alpha", "beta", "gamma");
+        Stream<String> fourth = Stream.empty();
+
+        Stream<String> total = Stream.of(first, second, third, fourth)
+                .flatMap(Function.identity());
+        assertFalse(total.isParallel());
+
+        total = total.parallel();
+        assertTrue(total.isParallel());
+    }
+
 }
