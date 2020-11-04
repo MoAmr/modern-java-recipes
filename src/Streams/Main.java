@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.*;
 
 import static java.util.stream.Collectors.toList;
@@ -549,6 +550,37 @@ public class Main {
         List<String> stringList = Arrays.asList("a", "b", "c",
                 "X", "Y", "Z", "alpha", "beta", "gamma");
         assertEquals(stringList, strings);
+    }
+
+    /** Using flatMap to concatenate Streams */
+    @Test
+    public void flatMap() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        Stream<String> third = Stream.of("alpha", "beta", "gamma");
+
+        Stream<String> total = Stream.concat(Stream.concat(first, second), third);
+        assertTrue(total.isParallel());
+    }
+
+    /** Parallel or not */
+    @Test
+    public void concatParallel() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel(); Stream<String> second = Stream.of("X", "Y", "Z"); Stream<String> third = Stream.of("alpha", "beta", "gamma");
+        Stream<String> total = Stream.concat(Stream.concat(first, second), third);
+        assertTrue(total.isParallel());
+    }
+
+    @Test
+    public void flatMapNotParallel() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        Stream<String> third = Stream.of("alpha", "beta", "gamma");
+        Stream<String> fourth = Stream.empty();
+
+        Stream<String> total = Stream.of(first, second, third, fourth)
+                .flatMap(Function.identity());
+        assertFalse(total.isParallel());
     }
 
 }
