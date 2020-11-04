@@ -520,4 +520,18 @@ public class Main {
         assertEquals(stringList, strings);
     }
 
+    /** Concatenating multiple streams */
+    @Test
+    public void concatThree() throws Exception {
+        Stream<String> first = Stream.of("a", "b", "c").parallel();
+        Stream<String> second = Stream.of("X", "Y", "Z");
+        Stream<String> third = Stream.of("alpha", "beta", "gamma");
+
+        List<String> strings = Stream.concat(Stream.concat(first, second), third)
+                .collect(Collectors.toList());
+        List<String> stringList = Arrays.asList("a", "b", "c",
+                "X", "Y", "Z", "alpha", "beta", "gamma");
+        assertEquals(stringList, strings);
+    }
+
 }

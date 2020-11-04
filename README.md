@@ -461,4 +461,10 @@ stream also closes the underlying input streams.</h4>
 
 <h3><u>Note:</u></h3><h4>Both input streams must hold elements of the same type.</h4>
 
+<h3><u>Note:</u></h3><h4>Use caution when constructing streams from repeated 
+concatenation. Accessing an element of a deeply concatenated stream can 
+result in deep call chains, or even StackOver flowException.
+The idea is that the concat method essentially builds a binary tree of 
+streams, which can grow unwieldy if too many are used.</h4>
+
 --------------------------------------------------------------------------
