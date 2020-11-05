@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------
 
-# Lambda Expressions:-
+## Lambda Expressions:-
  
 <h3><u>Note:</u></h3><h4>A functional interface is an interface with a single abstract
 method (SAM). A class implements any interface by providing implementations 
@@ -29,7 +29,7 @@ must be a functional interface.</h4>
 
 --------------------------------------------------------------------------
 
-# Method References:-
+## Method References:-
 
 <h3><u>Note:</u></h3><h4>You want to use a method reference to access
 an existing method and treat it like a lambda expression. 
@@ -48,7 +48,10 @@ and one is a bit misleading:
 
 object::instanceMethod
 Refer to an instance method using a reference to the supplied object, as in
+
+```java
 System.out::println
+```
 
 Class::staticMethod
 Refer to static method, as in Math::max
@@ -60,7 +63,7 @@ as in String::length
 
 --------------------------------------------------------------------------
 
-# Constructor References:-
+## Constructor References:-
 
 <h3><u>Note:</u></h3><h4>Problem:
 You want to instantiate an object using a method reference as part of a stream pipe‐ line.
@@ -71,7 +74,11 @@ Use the new keyword as part of a method reference.</h4>
 <h3><u>Note:</u></h3><h4>Constructor references can also be used with arrays.
 If you want an array of Person instances, Person[], instead of a list,
 you can use the toArray method on Stream, whose signature is:
-<A> A[] toArray(IntFunction<A[]> generator)</h4>
+
+```java
+<A> A[] toArray(IntFunction<A[]> generator)
+```
+</h4>
 
 <h3><u>Note:</u></h3><h4>The toArray method argument creates an array of 
 Person references of the proper size and populates it with the instantiated
@@ -79,11 +86,16 @@ Person instances.</h4>
 
 --------------------------------------------------------------------------
 
-# Functional Interfaces:-
+## Functional Interfaces:-
 
 <h3><u>Note:</u></h3><h4>If you want want to use an existing functional
 interface, or write your own, create an interface with a single,
-abstract method, and add the @FunctionalInter face annotation.</h4>
+abstract method, and add the
+ 
+```java
+@FunctionalInter 
+``` 
+face annotation.</h4>
 
 <h3><u>Note:</u></h3><h4>A functional interface in Java 8 is an interface
 with a single, abstract method. As such, it can be the target for a lambda
@@ -149,7 +161,7 @@ calls for it.</h4>
 
 --------------------------------------------------------------------------
 
-# The java.util.function Package:-
+## The java.util.function Package:-
 
 <h3><u>Note:</u></h3><h4>Specifically designed to contain only functional interfaces 
 that are reused in the rest of the library.</h4>
@@ -167,7 +179,7 @@ expect to have no result, like finding a value in an empty collection.</h4>
 
 --------------------------------------------------------------------------
 
-# The java.util.function Predicates:-
+## The java.util.function Predicates:-
 
 <h3><u>Note:</u></h3><h4>Predicates are used primarily to filter streams.
 Given a stream of items, the filter method in java.util.stream.Stream takes 
@@ -176,19 +188,27 @@ the given predicate.</h4>
 
 <h3><u>Note:</u></h3><h4>Other methods in the standard library that use 
 predicates include:
-
-• Optional.filter(Predicate<? super T> predicate)
+ 
+```java
+Optional.filter(Predicate<? super T> predicate)
+```
 If a value is present, and the value matches the given predicate,
 returns an Optional describing the value, otherwise returns an empty Optional.
 
-• Collection.removeIf(Predicate<? super E> filter)
+```java
+Collection.removeIf(Predicate<? super E> filter)
+```
 Removes all elements of this collection that satisfy the predicate.
 
-• Stream.allMatch(Predicate<? super T> predicate)
+```java 
+Stream.allMatch(Predicate<? super T> predicate)
+```
 Returns true if all elements of the stream satisfy the given predicate.
 The methods anyMatch and noneMatch work similarly.
-
-• Collectors.partitioningBy(Predicate<? super T> predicate)
+ 
+```java 
+Collectors.partitioningBy(Predicate<? super T> predicate)
+```
 Returns a Collector that splits a stream into two categories:
 those that satisfy the predicate and those that do not.</h4>
 
@@ -197,7 +217,7 @@ only return certain elements.</h4>
 
 --------------------------------------------------------------------------
 
-# The java.util.function Functions:-
+## The java.util.function Functions:-
 
 <h3><u>Note:</u></h3><h4>The functional interface java.util.function.Function 
 contains the single abstract method apply, which is invoked to transform a 
@@ -208,12 +228,12 @@ to the Stream.map method. For example, one way to transform a String into an
 integer would be to invoke the length method on each instance.</h4>
 
 <h3><u>Note:</u></h3><h4>The BiFunction interface is defined for two generic 
-input types and one generic out‐ put type, all of which are assumed to be different. 
-If all three are the same, the pack‐ age includes the BinaryOperator interface.</h4>
+input types and one generic output type, all of which are assumed to be different. 
+If all three are the same, the package includes the BinaryOperator interface.</h4>
 
 --------------------------------------------------------------------------
 
-# Streams:-
+## Streams:-
 
 <h3><u>Note:</u></h3><h4>A stream is a sequence of elements that does not
 save the elements or modify the original source.</h4>
@@ -228,7 +248,11 @@ passed through zero or more intermediate operations and reached a
 terminal operation, it is finished. To process the values again, 
 you need to make a new stream.</h4>
 
-<h3><u>Note:</u></h3><h4>The @SafeVarargs annotation is part of Java generics. 
+<h3><u>Note:</u></h3><h4>The annotation
+```java
+@SafeVarargs
+ ```
+is part of Java generics. 
 It comes up when you have an array as an argument, because it is possible to
 assign a typed array to an Object array and then violate type safety with an 
 added element. The @SafeVarargs annotation tells the compiler that the developer
@@ -259,26 +283,49 @@ primitives to List<T></h4>
 
 <h3><u>Note:</u></h3><h4>To summarize, here are the methods to create streams:
 
-• Stream.of(T... values) and Stream.of(T t)
+```java
+Stream.of(T... values) and Stream.of(T t)
+```
 
-• Arrays.stream(T[] array), with overloads for int[], double[], and long[] • Stream.iterate(T seed, UnaryOperator<T> f)
+```java
+Arrays.stream(T[] array), with overloads for int[], double[], and long[] 
+```
 
-• Stream.generate(Supplier<T> s)
+```java
+Stream.iterate(T seed, UnaryOperator<T> f)
+```
 
-• Collection.stream()
+```java
+Stream.generate(Supplier<T> s)
+```
 
-• Using range and rangeClosed:
+```java
+Collection.stream()
+```
 
-— IntStream.range(int startInclusive, int endExclusive)
+```java
+Using range() and rangeClosed()
+```
 
-— IntStream.rangeClosed(int startInclusive, int endInclusive) 
+```java
+IntStream.range(int startInclusive, int endExclusive)
+```
 
-— LongStream.range(long startInclusive, long endExclusive)
+```java
+IntStream.rangeClosed(int startInclusive, int endInclusive) 
+```
 
-— LongStream.rangeClosed(long startInclusive, long endInclusive)</h4>
+```java
+LongStream.range(long startInclusive, long endExclusive)
+```
+
+```java
+LongStream.rangeClosed(long startInclusive, long endInclusive)
+```
+</h4>
 
 <h3><u>Note:</u></h3><h4>Just as mapToInt, mapToLong, and mapToDouble parse 
-streamsof objects into the associated primitives, the mapToObj method 
+streams of objects into the associated primitives, the mapToObj method 
 from IntStream, LongStream, and Double Stream converts primitives to
 instances of the associated wrapper classes.</h4>
 
@@ -341,24 +388,35 @@ to convert one into a Stream.</h4>
 
 <h3><u>Note:</u></h3><h4>Stream methods in java.lang.CharSequence:
 
-— default IntStream chars()
+```java
+default IntStream chars()
+```
 
-— default IntStream codePoints()
+```java
+default IntStream codePoints()
+```
 
 The difference between the two methods has to do with how Java handles 
 UTF-16-encoded characters as opposed to the full Unicode set of code points.
 </h4>
 
 <h3><u>Note:</u></h3><h4>If you want to know how many elements are in a stream, 
-use either the Stream.count or Collectors.counting methods.</h4>
+use either the 
+```java
+Stream.count or Collectors.counting
+```
+methods.</h4>
 
 <h3><u>Note:</u></h3><h4>If you want the count, sum, min, max, and average of a 
 stream of numerical values, use the summaryStatistics method in IntStream, 
 DoubleStream, and LongStream.</h4>
 
 <h3><u>Note:</u></h3><h4>If you wish to find the first element in a stream 
-that satisfies a particular condition, use the findFirst or findAny method 
-after applying a filter.</h4>
+that satisfies a particular condition, use the 
+```java
+findFirst or findAny 
+```
+methods after applying a filter.</h4>
 
 <h3><u>Note:</u></h3><h4>The findFirst and findAny methods in java.util.stream.Stream
 return an Optional describing the first element of a stream.
@@ -413,7 +471,9 @@ take a Function as an argument.
 
 The signature for map is:
 
+```java
 <R> Stream<R> map(Function<? super T,? extends R> mapper)
+```
 
 A Function takes a single input and transforms it into a single output. 
 In the case of map, a single input of type T is transformed into a single 
@@ -424,7 +484,9 @@ relationship between the input parameter and the output type.</h4>
 
 <h3><u>Note:</u></h3><h4>The flatMap method has the following signature:
 
+```java
 <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)
+```
 
 For each generic argument T, the function produces a Stream<R> rather than 
 just an R. The flatMap method then “flattens” the resulting stream by 
@@ -449,7 +511,9 @@ if the number of streams is small. Otherwise use flatMap.</h4>
 and you want to process every element in all of them using streams. 
 One mechanism you can use is the concat method in Stream, whose signature is:
 
+```java
 static <T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)
+```
 
 This method creates a lazily concatenated stream that accesses all the 
 elements of the first stream, followed by all the elements of the second stream.</h4>
@@ -480,3 +544,28 @@ or generated by one of the static compare methods on the Comparator
 interface.</h4>
 
 --------------------------------------------------------------------------
+
+## Comparators and Collectors:-
+
+<h3><u>Note:</u></h3><h4>If you want to sort objects, use the sorted method
+on Stream with a Comparator, either implemented with a lambda expression or
+generated by one of the static compare methods on the Comparator interface.</h4>
+
+<h3><u>Note:</u></h3><h4>The sorted method on Stream produces a new, sorted 
+stream using the natural ordering for the class. The natural ordering is 
+specified by implementing the 
+```java
+java.util.Comparable interface
+```
+</h4>
+
+<h3><u>Note:</u></h3><h4>Comparator provides a default method called 
+```java
+thenComparing
+ ```
+Just like comparing, it also takes a Function as an argument, again known 
+as a keyExtractor. Chaining this to the comparing method returns a Comparator 
+that compares by the first quantity, then equal first by the second, and so on.</h4>
+
+--------------------------------------------------------------------------
+

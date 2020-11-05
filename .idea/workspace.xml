@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="7185">
-                <caret line="479" selection-start-line="479" selection-end-line="479" />
+              <first_editor relative-caret-position="728">
+                <caret line="564" selection-start-line="564" selection-end-line="564" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="49">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/src/Streams/Customer.java" />
         <option value="$PROJECT_DIR$/src/Streams/Order.java" />
         <option value="$PROJECT_DIR$/src/Streams/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -270,7 +270,7 @@
       <workItem from="1604173453303" duration="8444000" />
       <workItem from="1604353733368" duration="2112000" />
       <workItem from="1604379371636" duration="8773000" />
-      <workItem from="1604596283490" duration="780000" />
+      <workItem from="1604596283490" duration="2664000" />
     </task>
     <servers />
   </component>
@@ -307,7 +307,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78830000" />
+    <option name="totallyTimeSpent" value="80714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,16 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="7185">
-            <caret line="479" selection-start-line="479" selection-end-line="479" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8805">
@@ -540,11 +530,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="49">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="728">
+            <caret line="564" selection-start-line="564" selection-end-line="564" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

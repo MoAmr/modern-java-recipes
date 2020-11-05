@@ -44,6 +44,14 @@ public class Main {
     }
     /** Sorting streams using length comparator - END */
 
+    /** Sorting Streams by length, then equal lengths lexicographically */
+    public List<String> lengthSortThenAlphaSort() {
+        return sampleStrings.stream()
+                .sorted(Comparator.comparing(String::length) // Sort by length, then equal-length strings alphabetically
+                .thenComparing(Comparator.naturalOrder()))
+                .collect(toList());
+    }
+
     public static void main(String[] args) {
 
 
