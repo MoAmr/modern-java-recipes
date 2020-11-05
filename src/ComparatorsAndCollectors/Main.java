@@ -1,10 +1,8 @@
 package ComparatorsAndCollectors;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -16,6 +14,14 @@ import static java.util.stream.Collectors.toList;
 public class Main {
 
     private List<String> sampleStrings = Arrays.asList("this", "is", "a", "list", "of", "strings");
+
+    private static List<Golfer> golfers = Arrays.asList(
+            new Golfer("Jack", "Nicklaus", 68),
+            new Golfer("Tiger", "Woods", 70),
+            new Golfer("Tom", "Watson", 70),
+            new Golfer("Ty", "Webb", 68),
+            new Golfer("Bubba", "Watson", 70)
+    );
 
     /** Sorting strings lexicographically - START */
     public List<String> defaultSort() {
@@ -52,8 +58,30 @@ public class Main {
                 .collect(toList());
     }
 
+    /** Sorting golfers */
+    public static List<Golfer> sortByScoreThenLastThenFirst() {
+        return golfers.stream()
+                .sorted(Comparator.comparingInt(Golfer::getScore)
+                .thenComparing(Golfer::getLast)
+                .thenComparing(Golfer::getFirst))
+                .collect(toList());
+    }
+
     public static void main(String[] args) {
 
+        // Sorted golfers
+        List<Golfer> golferList = sortByScoreThenLastThenFirst();
+        golferList.forEach(golfer -> System.out.println(golfer));
 
+        /** Creating a List using Collectors Interface static methods */
+        List<String> superHeroes = Stream.of("Mr. Furious", "The Blue Raja", "The Shoveler",
+                "The Bowler", "Invisible Boy", "The Spleen", "The Sphinx")
+                .collect(Collectors.toList());
+
+        /** Creating a Set using Collectors Interface static methods */
+        Set<String> villains = Stream.of("Casanova Frankenstein", "The Disco Boys",
+                "The Not-So-Goodie Mob", "The Suits", "The Suzies",
+                "The Furriers", "The Furriers") // Duplicate name, removed when converting to a Set
+                .collect(Collectors.toSet());
     }
 }
