@@ -88,5 +88,9 @@ public class Main {
         List<String> actors = Stream.of("Hank Azaria", "Janeane Garofalo", "William H. Macy",
                 "Paul Reubens", "Ben Stiller", "Kel Mitchell", "Wes Studi")
                 .collect(Collectors.toCollection(LinkedList::new));
+
+        /** Creating an Array using Collectors Interface static methods */
+        String[] wannabes = Stream.of("The Waffler", "Reverse Psychologist", "PMS Avenger")
+                .toArray(String[]::new); // Array constructor reference as a Supplier
     }
 }
