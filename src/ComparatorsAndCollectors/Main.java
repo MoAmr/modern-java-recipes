@@ -83,5 +83,10 @@ public class Main {
                 "The Not-So-Goodie Mob", "The Suits", "The Suzies",
                 "The Furriers", "The Furriers") // Duplicate name, removed when converting to a Set
                 .collect(Collectors.toSet());
+
+        /** Creating a LinkedList using Collectors Interface static methods */
+        List<String> actors = Stream.of("Hank Azaria", "Janeane Garofalo", "William H. Macy",
+                "Paul Reubens", "Ben Stiller", "Kel Mitchell", "Wes Studi")
+                .collect(Collectors.toCollection(LinkedList::new));
     }
 }

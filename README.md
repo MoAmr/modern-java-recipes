@@ -590,9 +590,21 @@ or toCollection methods in the Collectors utility class.</h4>
 <h3><u>Note:</u></h3><h4>The Java 8 API frequently uses a static method called 
 of as a factory method.</h4>
 
-<h3><u>Note:</u></h3><h4> If you wish to specify a particular data structure, 
+<h3><u>Note:</u></h3><h4>If you wish to specify a particular data structure, 
 you should use the Collectors.toCollection method, which takes a Supplier 
-as an argument</h4>
+as an argument.</h4>
+
+<h3><u>Note:</u></h3><h4>The Collectors class also contains a method to 
+create an array of objects. There are two overloads of the toArray method:
+
+```java
+Object[] toArray();
+<A> A[] toArray(IntFunction<A[]> generator);
+```
+The former returns an array containing the elements of this stream, 
+but without specifying the type. The latter takes a function that produces
+a new array of desired type with length equal to the size of the stream,
+and is easiest to use with an array constructor reference. </h4>
 
 --------------------------------------------------------------------------
 
