@@ -92,5 +92,18 @@ public class Main {
         /** Creating an Array using Collectors Interface static methods */
         String[] wannabes = Stream.of("The Waffler", "Reverse Psychologist", "PMS Avenger")
                 .toArray(String[]::new); // Array constructor reference as a Supplier
+
+        /** Creating a Map using Collectors Interface static methods */
+        Set<Actor> actorSet = new HashSet<>();
+        actorSet.add(new Actor("Janeane Garofalo", "The Bowler"));
+        actorSet.add(new Actor("Greg Kinnear", "Captain Amazing"));
+        actorSet.add(new Actor("William H. Macy", "The Shoveler"));
+        actorSet.add(new Actor("Paul Reubens", "The Spleen"));
+        actorSet.add(new Actor("Ben Stiller", "Mr. Furious"));
+
+        Map<String, String> actorMap = actorSet.stream()
+                .collect(Collectors.toMap(Actor::getName, Actor::getRole)); // Functions to produce keys and values
+
+        actorMap.forEach((k, v) -> System.out.printf("%s played %s%n", k, v));
     }
 }

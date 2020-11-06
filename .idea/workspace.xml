@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="93" column="85" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
+            <state relative-caret-position="375">
+              <caret line="106" column="78" selection-start-line="106" selection-start-column="78" selection-end-line="106" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Golfer.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Actor.java" />
+        <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
       </list>
     </option>
   </component>
@@ -284,7 +282,7 @@
       <workItem from="1604173453303" duration="8444000" />
       <workItem from="1604353733368" duration="2112000" />
       <workItem from="1604379371636" duration="8773000" />
-      <workItem from="1604596283490" duration="7139000" />
+      <workItem from="1604596283490" duration="8091000" />
     </task>
     <servers />
   </component>
@@ -321,7 +319,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85189000" />
+    <option name="totallyTimeSpent" value="86141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="93" column="85" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
+        <state relative-caret-position="375">
+          <caret line="106" column="78" selection-start-line="106" selection-start-column="78" selection-end-line="106" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
