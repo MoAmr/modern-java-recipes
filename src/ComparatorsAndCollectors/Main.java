@@ -1,5 +1,8 @@
 package ComparatorsAndCollectors;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -13,6 +16,8 @@ import static java.util.stream.Collectors.toList;
  * @project Modern Java Recipes
  */
 public class Main {
+
+    private static final String dictionary = "/usr/share/dict/words";
 
     private List<String> sampleStrings = Arrays.asList("this", "is", "a", "list", "of", "strings");
 
@@ -123,6 +128,18 @@ public class Main {
 
         bookMap = books.stream()
                 .collect(Collectors.toMap(Book::getId, Function.identity())); // Static identity method in Function does the same thing
+
+        /** Reading the dictionary file into a Map */
+        System.out.println("\nNumber of words of each length:");
+        try (Stream<String> lines = Files.lines(Paths.get(dictionary))) { // try-with-resources block
+            lines.filter(s -> s.length() > 20)
+                    .collect(Collectors.groupingBy(
+                            String::length, Collectors.counting()))
+                    .forEach((len, num) -> System.out.printf("%d: %d%n", len, num));
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

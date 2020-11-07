@@ -610,5 +610,8 @@ and is easiest to use with an array constructor reference. </h4>
 where the key is one of the object properties and the value is the object
 itself, use the toMap method of Collectors, along with Function.identity.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to sort a Map by key or by value,
+use the new static methods in the Map.Entry interface.</h4>
+
 --------------------------------------------------------------------------
 
