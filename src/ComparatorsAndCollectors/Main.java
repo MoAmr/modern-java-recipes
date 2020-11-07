@@ -141,5 +141,20 @@ public class Main {
             e.printStackTrace();
         }
 
+        /**  Sorting the dictionary file map by key */
+        System.out.println("\nNumber of words of each length (desc order):");
+        try (Stream<String> lines = Files.lines(Paths.get(dictionary))) {
+            Map<Integer, Long> map = lines.filter(s -> s.length() > 20)
+                    .collect(Collectors.groupingBy(
+                            String::length, Collectors.counting()));
+
+            map.entrySet().stream()
+                    .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
+                    .forEach(e -> System.out.printf("Length %d: %2d words%n", e.getKey(), e.getValue()));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
