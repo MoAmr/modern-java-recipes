@@ -1,6 +1,7 @@
 package ComparatorsAndCollectors;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -105,5 +106,23 @@ public class Main {
                 .collect(Collectors.toMap(Actor::getName, Actor::getRole)); // Functions to produce keys and values
 
         actorMap.forEach((k, v) -> System.out.printf("%s played %s%n", k, v));
+
+        /** A collection of books */
+        List<Book> books = Arrays.asList(
+                new Book(1, "Modern Java Recipes", 49.99),
+                new Book(2, "Java 8 in Action", 49.99),
+                new Book(3, "Java SE8 for the Really Impatient", 39.99),
+                new Book(4, "Functional Programming in Java", 27.64),
+                new Book(5, "Making Java Groovy", 45.99),
+                new Book(6, "Gradle Recipes for Android", 23.76)
+        );
+
+        /** Adding a collection of objects to a Map using toMap of Collectors */
+        Map<Integer, Book> bookMap = books.stream()
+                .collect(Collectors.toMap(Book::getId, b -> b)); // Identity lambda: given an element, return it
+
+        bookMap = books.stream()
+                .collect(Collectors.toMap(Book::getId, Function.identity())); // Static identity method in Function does the same thing
+
     }
 }
