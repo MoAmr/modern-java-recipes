@@ -656,5 +656,16 @@ value in a stream, you have several choices: the maxBy and minBy methods
 on BinaryOperator, the max and min methods on Stream, or the maxBy and 
 minBy utility methods on Collectors.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to create an immutable list, set, 
+or map using the Stream API, use the new static method collectingAndThen 
+in the Collectors class.</h4>
+
+<h3><u>Note:</u></h3><h4>Functional programming favors using immutable 
+objects wherever possible.</h4>
+
+<h3><u>Note:</u></h3><h4>Creating Immutable Collections using Stream API,
+can be replaced with a very simple set of factory methods: List.of, Set.of, 
+and Map.of with Java 9.</h4>
+
 --------------------------------------------------------------------------
 

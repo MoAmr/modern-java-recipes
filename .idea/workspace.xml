@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="372">
-                <caret line="656" selection-start-line="656" selection-end-line="656" />
+              <first_editor relative-caret-position="380">
+                <caret line="663" column="26" selection-start-line="663" selection-start-column="26" selection-end-line="663" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="231" column="76" selection-start-line="231" selection-start-column="76" selection-end-line="231" selection-end-column="76" />
+            <state relative-caret-position="465">
+              <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Actor.java" />
         <option value="$PROJECT_DIR$/src/Streams/Book.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Book.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Employee.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
       </list>
     </option>
@@ -290,7 +291,7 @@
       <workItem from="1604379371636" duration="8773000" />
       <workItem from="1604596283490" duration="8251000" />
       <workItem from="1604783823949" duration="3042000" />
-      <workItem from="1604863994065" duration="6249000" />
+      <workItem from="1604863994065" duration="7214000" />
     </task>
     <servers />
   </component>
@@ -327,7 +328,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95592000" />
+    <option name="totallyTimeSpent" value="96557000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,8 +601,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="372">
-            <caret line="656" selection-start-line="656" selection-end-line="656" />
+          <first_editor relative-caret-position="380">
+            <caret line="663" column="26" selection-start-line="663" selection-start-column="26" selection-end-line="663" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
@@ -630,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="231" column="76" selection-start-line="231" selection-start-column="76" selection-end-line="231" selection-end-column="76" />
+        <state relative-caret-position="465">
+          <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -231,5 +231,14 @@ public class Main {
         map.forEach((house, emp) ->
                 System.out.println(house + ": " + emp.orElse(defaultEmployee)));
 
+        /** Creating an immutable Map */
+        Map<String, Integer> map1 = Collections.unmodifiableMap(
+                new HashMap<String, Integer>() {{
+                    put("have", 1);
+                    put("the", 2);
+                    put("high", 3);
+                    put("ground", 4);
+                }});
+
     }
 }
