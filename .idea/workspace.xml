@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
+            <state relative-caret-position="360">
+              <caret line="231" column="76" selection-start-line="231" selection-start-column="76" selection-end-line="231" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -293,7 +290,7 @@
       <workItem from="1604379371636" duration="8773000" />
       <workItem from="1604596283490" duration="8251000" />
       <workItem from="1604783823949" duration="3042000" />
-      <workItem from="1604863994065" duration="5932000" />
+      <workItem from="1604863994065" duration="6249000" />
     </task>
     <servers />
   </component>
@@ -330,7 +327,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95275000" />
+    <option name="totallyTimeSpent" value="95592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="221" column="53" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
+        <state relative-caret-position="360">
+          <caret line="231" column="76" selection-start-line="231" selection-start-column="76" selection-end-line="231" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

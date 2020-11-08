@@ -221,5 +221,15 @@ public class Main {
         System.out.println("Emp with max salary: " +
                 optionalEmp.orElse(defaultEmployee));
 
+        /** Using Collectors.maxBy as a downstream collector */
+        Map<String, Optional<Employee>> map = employees.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getDepartment,
+                        Collectors.maxBy(
+                                Comparator.comparingInt(Employee::getSalary))));
+
+        map.forEach((house, emp) ->
+                System.out.println(house + ": " + emp.orElse(defaultEmployee)));
+
     }
 }
