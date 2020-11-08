@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -177,6 +178,48 @@ public class Main {
                         Collectors.counting())); // Downstream collector
 
         numberLengthMap.forEach((k, v) -> System.out.printf("%5s: %d%n", k, v));
+
+
+        List<Employee> employees = Arrays.asList( // Collection of employees
+                new Employee("Cersei", 250_000, "Lannister"),
+                new Employee("Jamie", 150_000, "Lannister"),
+                new Employee("Tyrion", 1_000, "Lannister"),
+                new Employee("Tywin", 1_000_000, "Lannister"),
+                new Employee("Jon Snow", 75_000, "Stark"),
+                new Employee("Robb", 120_000, "Stark"),
+                new Employee("Eddard", 125_000, "Stark"),
+                new Employee("Sansa", 0, "Stark"),
+                new Employee("Arya", 1_000, "Stark"));
+
+        Employee defaultEmployee = // Default for when the stream is empty
+                new Employee("A man (or woamn) has no name", 0, "Black and Whites");
+
+        /** Using BinaryOperator.maxBy */
+        Optional<Employee> optionalEmp = employees.stream()
+                .reduce(BinaryOperator.maxBy(Comparator.comparingInt(Employee::getSalary)));
+
+        System.out.println("Emp with max salary: " +
+                optionalEmp.orElse(defaultEmployee));
+
+        /** Using Stream.max */
+        optionalEmp = employees.stream()
+                .max(Comparator.comparingInt(Employee::getSalary));
+
+        System.out.println("Emp with max salary: " +
+                optionalEmp.orElse(defaultEmployee));
+
+        /** Finding the highest salary */
+        OptionalInt maxSalary = employees.stream()
+                .mapToInt(Employee::getSalary)
+                .max();
+        System.out.println("The max salary is: " + maxSalary);
+
+        /** Using Collectors.maxBy */
+        optionalEmp = employees.stream()
+                .collect(Collectors.maxBy(Comparator.comparingInt(Employee::getSalary)));
+
+        System.out.println("Emp with max salary: " +
+                optionalEmp.orElse(defaultEmployee));
 
     }
 }

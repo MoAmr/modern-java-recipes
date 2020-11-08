@@ -651,5 +651,10 @@ methods from the java.util.stream.Collectors class.</h4>
 postprocess the collection of objects produced by an upstream operation, 
 like partitioning or grouping.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to determine the maximum or minimum 
+value in a stream, you have several choices: the maxBy and minBy methods 
+on BinaryOperator, the max and min methods on Stream, or the maxBy and 
+minBy utility methods on Collectors.</h4>
+
 --------------------------------------------------------------------------
 
