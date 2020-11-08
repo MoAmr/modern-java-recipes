@@ -164,5 +164,15 @@ public class Main {
                 .collect(Collectors.partitioningBy(s -> s.length() % 2 == 0)); // Partitioning by even or odd length
 
         lengthMap.forEach((k, v) -> System.out.printf("%5s: %s%n", k, v));
+
+        /** Using the Collectors.groupingBy method for grouping strings by length */
+        List<String> string1 = Arrays.asList("this", "is", "a", "long", "list", "of",
+                "strings", "to", "use", "as", "a", "demo");
+
+        Map<Integer, List<String>> lengthMap1 = string1.stream()
+                .collect(Collectors.groupingBy(String::length)); // Grouping strings by length
+
+        lengthMap1.forEach((k, v) -> System.out.printf("%d: %s%n", k, v));
+
     }
 }
