@@ -82,7 +82,7 @@ public class Main {
         /** Creating a List using Collectors Interface static methods */
         List<String> superHeroes = Stream.of("Mr. Furious", "The Blue Raja", "The Shoveler",
                 "The Bowler", "Invisible Boy", "The Spleen", "The Sphinx")
-                .collect(Collectors.toList());
+                .collect(toList());
 
         /** Creating a Set using Collectors Interface static methods */
         Set<String> villains = Stream.of("Casanova Frankenstein", "The Disco Boys",
@@ -166,13 +166,17 @@ public class Main {
         lengthMap.forEach((k, v) -> System.out.printf("%5s: %s%n", k, v));
 
         /** Using the Collectors.groupingBy method for grouping strings by length */
-        List<String> string1 = Arrays.asList("this", "is", "a", "long", "list", "of",
-                "strings", "to", "use", "as", "a", "demo");
-
-        Map<Integer, List<String>> lengthMap1 = string1.stream()
+        Map<Integer, List<String>> lengthMap1 = strings.stream()
                 .collect(Collectors.groupingBy(String::length)); // Grouping strings by length
 
         lengthMap1.forEach((k, v) -> System.out.printf("%d: %s%n", k, v));
+
+        /** Counting the partitioned strings using the Collectors.counting method */
+        Map<Boolean, Long> numberLengthMap = strings.stream()
+                .collect(Collectors.partitioningBy(s -> s.length() % 2 == 0,
+                        Collectors.counting())); // Downstream collector
+
+        numberLengthMap.forEach((k, v) -> System.out.printf("%5s: %d%n", k, v));
 
     }
 }

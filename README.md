@@ -643,5 +643,13 @@ in SQL. It returns a Map where the keys are the groups and the values are
 lists of elements in each group.
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you want to postprocess the collections returned 
+by a groupingBy or partitioningBy operation, use one of the static utility 
+methods from the java.util.stream.Collectors class.</h4>
+
+<h3><u>Note:</u></h3><h4>The purpose of a downstream collector is to 
+postprocess the collection of objects produced by an upstream operation, 
+like partitioning or grouping.</h4>
+
 --------------------------------------------------------------------------
 
