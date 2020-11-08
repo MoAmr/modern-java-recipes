@@ -156,5 +156,13 @@ public class Main {
             e.printStackTrace();
         }
 
+        /** Using the Collectors.partitionBy method for partitioning strings by even or odd lengths */
+        List<String> strings = Arrays.asList("this", "is", "a", "long", "list", "of",
+                "strings", "to", "use", "as", "a", "demo");
+
+        Map<Boolean, List<String>> lengthMap = strings.stream()
+                .collect(Collectors.partitioningBy(s -> s.length() % 2 == 0)); // Partitioning by even or odd length
+
+        lengthMap.forEach((k, v) -> System.out.printf("%5s: %s%n", k, v));
     }
 }

@@ -616,5 +616,32 @@ use the new static methods in the Map.Entry interface.</h4>
 <h3><u>Note:</u></h3><h4>The sorted method on Stream produces a new, 
 sorted stream that does not modify the source. The original Map is unaffected.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to divide a collection of elements 
+into categories, use the Collectors.partitioningBy method to split elements 
+into those that satisfy a Predicate and those that do not. 
+The Collectors.groupingBy method produces a Map of categories, where the 
+values are the elements in each category.</h4>
+
+<h3><u>Note:</u></h3><h4>The signature of the two partitioningBy methods are:
+
+```java
+static <T> Collector<T,?,Map<Boolean,List<T>>> partitioningBy(
+        Predicate<? super T> predicate)
+static <T,D,A> Collector<T,?,Map<Boolean,D>> partitioningBy( 
+        Predicate<? super T> predicate, Collector<? super T,A,D> downstream)
+```
+
+The signature for the groupingBy method is:
+
+```java
+static <T,K> Collector<T,?,Map<K,List<T>>> groupingBy(
+Function<? super T,? extends K> classifier)
+```
+
+The groupingBy method performs an operation like a “group by” statement 
+in SQL. It returns a Map where the keys are the groups and the values are 
+lists of elements in each group.
+</h4>
+
 --------------------------------------------------------------------------
 
