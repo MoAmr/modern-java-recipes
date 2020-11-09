@@ -74,6 +74,13 @@ public class Main {
                 .collect(toList());
     }
 
+    /**  Using collect to return a List */
+    public List<String> evenLengthStrings(String... strings) {
+        return Stream.of(strings)
+                .filter(s -> s.length() % 2 == 0)
+                .collect(Collectors.toList()); // Collect even-length strings into a List
+    }
+
     public static void main(String[] args) {
 
         // Sorted golfers

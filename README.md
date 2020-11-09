@@ -667,5 +667,17 @@ objects wherever possible.</h4>
 can be replaced with a very simple set of factory methods: List.of, Set.of, 
 and Map.of with Java 9.</h4>
 
+<h3><u>Note:</u></h3><h4>If you need to implement java.util.stream.Collector 
+manually, because none of the factory methods in the java.util.stream.Collectors 
+class give you exactly what you need, provide lambda expressions or method 
+references for the Supplier, accumulator, combiner, and finisher functions 
+used by the Collector.of factory methods, along with any desired characteristics.</h4>
+
+<h3><u>Note:</u></h3><h4>
+> A Supplier is used to create the container where temporary results are accumulated. 
+> A BiConsumer adds a single element to the accumulator. 
+> A BinaryOperator means that both input types and the output type are the same.
+</h4>
+
 --------------------------------------------------------------------------
 
