@@ -674,9 +674,9 @@ references for the Supplier, accumulator, combiner, and finisher functions
 used by the Collector.of factory methods, along with any desired characteristics.</h4>
 
 <h3><u>Note:</u></h3><h4>
-> A Supplier is used to create the container where temporary results are accumulated. 
-> A BiConsumer adds a single element to the accumulator. 
-> A BinaryOperator means that both input types and the output type are the same.
+* A Supplier is used to create the container where temporary results are accumulated. 
+* A BiConsumer adds a single element to the accumulator. 
+* A BinaryOperator means that both input types and the output type are the same.
 </h4>
 
 --------------------------------------------------------------------------
