@@ -674,10 +674,30 @@ references for the Supplier, accumulator, combiner, and finisher functions
 used by the Collector.of factory methods, along with any desired characteristics.</h4>
 
 <h3><u>Note:</u></h3><h4>
-* A Supplier is used to create the container where temporary results are accumulated. 
+
+* A Supplier is used to create the container where temporary results are accumulated.
+ 
 * A BiConsumer adds a single element to the accumulator. 
+
 * A BinaryOperator means that both input types and the output type are the same.
+
 </h4>
+
+<h3><u>Note:</u></h3><h4>Inside a lambda expression, if you want to access 
+a variable defined outside it. Local variables accessed inside lambda 
+expressions must be final or “effectively final.” Attributes can be both 
+accessed and modified.</h4>
+
+<h3><u>Note:</u></h3><h4>Code in inner classes can access and modify the 
+private attributes of the outer class.</h4>
+
+<h3><u>Note:</u></h3><h4>Technically, a function along with the accessible 
+variables defined in its environment is called a closure. By that definition, 
+Java is in somewhat of a gray area—local variables are accessible but cannot
+be modified. You could argue that Java 8 lambdas are actually closures, 
+in that they are closed over values rather than variables.</h4>
+
+<h3><u>Note:</u></h3><h4>You can access local variables but not modifying them.</h4>
 
 --------------------------------------------------------------------------
 
