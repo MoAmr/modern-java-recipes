@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,23 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="417">
-                <caret line="694" column="43" selection-start-line="694" selection-start-column="43" selection-end-line="694" selection-end-column="43" />
+              <first_editor relative-caret-position="372">
+                <caret line="700" lean-forward="true" selection-start-line="700" selection-end-line="700" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="75">
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +88,8 @@
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Book.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Employee.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
-        <option value="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" />
       </list>
     </option>
   </component>
@@ -152,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.testNonNulls">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Issues_with_Streams_Lambdas_and_Method_References.Main" />
       <module name="Modern Java Recipes" />
@@ -229,8 +229,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Main.testNonNulls" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.Main.testNonNulls" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.flatMapParallel" />
         <item itemvalue="JUnit.Main.concatParallel" />
@@ -266,7 +266,7 @@
       <workItem from="1604596283490" duration="8251000" />
       <workItem from="1604783823949" duration="3042000" />
       <workItem from="1604863994065" duration="10546000" />
-      <workItem from="1605024420051" duration="1632000" />
+      <workItem from="1605024420051" duration="3429000" />
     </task>
     <servers />
   </component>
@@ -303,7 +303,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101521000" />
+    <option name="totallyTimeSpent" value="103318000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,7 +315,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="627" y="0" width="813" height="900" extended-state="6" />
+    <frame x="668" y="0" width="772" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20470263" />
@@ -635,23 +635,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="417">
-            <caret line="694" column="43" selection-start-line="694" selection-start-column="43" selection-end-line="694" selection-end-column="43" />
+          <first_editor relative-caret-position="372">
+            <caret line="700" lean-forward="true" selection-start-line="700" selection-end-line="700" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
