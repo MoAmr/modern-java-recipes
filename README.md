@@ -699,8 +699,29 @@ in that they are closed over values rather than variables.</h4>
 
 <h3><u>Note:</u></h3><h4>You can access local variables but not modifying them.</h4>
 
-<h3><u>Note:</u></h3><h4>You can’t invoke collect(Collectors.toList()) on 
-a collection of primitives</h4>
+<h3><u>Note:</u></h3><h4>You can’t invoke 
+
+```java
+collect(Collectors.toList())
+```
+
+on a collection of primitives.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to add or replace elements in a Map
+only if they already exist or are absent, or other related operations, 
+use one of the many new default methods in the 
+
+```java
+java.util.Map interface
+```
+
+like 
+
+```java
+computeIfAbsent, computeIfPresent, replace, merge
+```
+
+and so on.</h4>
 
 --------------------------------------------------------------------------
 

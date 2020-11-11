@@ -2,6 +2,7 @@ package Issues_with_Streams_Lambdas_and_Method_References;
 
 import org.junit.Test;
 
+import java.math.BigInteger;
 import java.util.*;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,6 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * @project Modern Java Recipes
  */
 public class Main {
+
+    private Map<Long, BigInteger> cache = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -64,5 +67,14 @@ public class Main {
         return list.stream()
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
+    }
+
+    /**  Fibonacci calculation with a cache using computeIfAbsent default method of Map Interface */
+    public BigInteger fib(long i) {
+        if (i == 0) return BigInteger.ZERO;
+        if (i == 1) return BigInteger.ONE;
+
+        // Cache returns value if it exists, or computes and stores it if not
+        return cache.computeIfAbsent(i, n -> fib(n - 2).add(fib(n - 1)));
     }
 }
