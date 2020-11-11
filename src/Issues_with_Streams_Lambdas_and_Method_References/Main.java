@@ -47,6 +47,14 @@ public class Main {
                 .collect(LinkedList::new, LinkedList::add, LinkedList::addAll);
         System.out.println(litOfInts);
 
+        /** Calling the countWords method */
+
+        String passage = "NSA agent walks into a bar. Bartender says, " +
+                "'Hey, I have a new joke for you.' Agent says, 'heard it'.";
+
+        Map<String, Integer> counts = countWords(passage, "NSA", "agent", "joke");
+        counts.forEach((word, count) -> System.out.println(word + "=" + count));
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */
@@ -76,5 +84,19 @@ public class Main {
 
         // Cache returns value if it exists, or computes and stores it if not
         return cache.computeIfAbsent(i, n -> fib(n - 2).add(fib(n - 1)));
+    }
+
+    /** Update the word counts only for specific words using computeIfAbsent default method of Map Interface */
+    public static Map<String, Integer> countWords(String passage, String... strings) {
+        Map<String, Integer> wordCounts = new HashMap<>();
+
+        // Put the words we care about in the map with a count of zero
+        Arrays.stream(strings).forEach(s -> wordCounts.put(s, 0));
+
+        // Read the passage, updating the counts only for the words we care about
+        Arrays.stream(passage.split(" ")).forEach(word ->
+                wordCounts.computeIfPresent(word, (k, v) -> v + 1));
+
+        return wordCounts;
     }
 }

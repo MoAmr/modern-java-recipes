@@ -723,5 +723,13 @@ computeIfAbsent, computeIfPresent, replace, merge
 
 and so on.</h4>
 
+<h3><u>Note:</u></h3><h4>The replace method works like the put method,
+but only if the key already exists. If not, the replace method does nothing.</h4>
+
+<h3><u>Note:</u></h3><h4>The getOrDefault method solves the occasionally 
+annoying fact that calling get on a Map with a key that doesn’t exist
+returns null. That’s helpful, but the method only returns the default, 
+it doesn’t also add it to the map.</h4>
+
 --------------------------------------------------------------------------
 
