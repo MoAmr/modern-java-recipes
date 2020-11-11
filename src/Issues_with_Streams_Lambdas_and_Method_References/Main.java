@@ -99,4 +99,16 @@ public class Main {
 
         return wordCounts;
     }
+
+    /** Using the merge default method of Map Interface */
+    public Map<String, Integer> fullWordCounts(String passage) {
+        Map<String, Integer> wordCounts = new HashMap<>();
+        // Remove case sensitivity and punctuation
+        String testString = passage.toLowerCase().replaceAll("\\W", " ");
+        Arrays.stream(testString.split("\\s+")).forEach(word ->
+                // Add or update the count for a given word
+                wordCounts.merge(word, 1, Integer::sum));
+
+        return wordCounts;
+    }
 }
