@@ -816,9 +816,17 @@ void severe(Supplier<String> msgSupplier)
 ```
 </h4>
 
+<h3><u>Note:</u></h3><h4>Converting the log argument to a Supplier by 
+simply adding () -> in front of it means that the get method on the 
+Supplier will only be invoked if the message will be used.</h4>
+
 <h3><u>Note:</u></h3><h4>The technique of replacing an argument with a 
 Supplier of the same type is known as "deferred execution", and can be used 
 in any context where object creation might be expensive.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to apply a series of small, independent 
+functions consecutively, use the composition methods defined as defaults 
+in the Function, Consumer, and Predicate interfaces.</h4>
 
 --------------------------------------------------------------------------
 

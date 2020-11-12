@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
@@ -87,8 +88,18 @@ public class Main {
         map.forEach((num, agent) ->
                 System.out.printf("Agent %d, played by %s%n", num, agent));
 
+        /** Invoking logDataList to show log.info msgs with supplier */
         logDataList();
 
+        /** Using the compose and andThen default methods in the Function Interface. */
+        Function<Integer, Integer> add2 = x -> x + 2;
+        Function<Integer, Integer> mult3 = x -> x * 3;
+
+        Function<Integer, Integer> mult3add2 = add2.compose(mult3); // First mult3, then add2
+        Function<Integer, Integer> add2mult3 = add2.andThen(mult3); // First add2, then mult3
+
+        System.out.println("mult3add2(1): " + mult3add2.apply(1)); // because (1 * 3) + 2 == 5
+        System.out.println("add2mult3(1): " + add2mult3.apply(1)); // because (1 + 2) * 3 == 9
 
     }
 
