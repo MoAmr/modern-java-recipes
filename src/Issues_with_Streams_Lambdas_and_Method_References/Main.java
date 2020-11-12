@@ -74,6 +74,15 @@ public class Main {
 
         integers.forEach(System.out::println); // Method reference
 
+        /** Iterating over a Map */
+        Map<Long, String> map = new HashMap<>();
+        map.put(86L, "Don Adams (Maxwell Smart)");
+        map.put(99L, "Barbara Feldon");
+        map.put(13L, "David Ketchum");
+
+        map.forEach((num, agent) ->
+                System.out.printf("Agent %d, played by %s%n", num, agent));
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */

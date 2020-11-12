@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,23 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="720">
-                <caret line="779" column="65" selection-start-line="779" selection-start-column="65" selection-end-line="779" selection-end-column="65" />
+              <first_editor relative-caret-position="600">
+                <caret line="784" selection-start-line="784" selection-end-line="784" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="74" column="66" selection-start-line="74" selection-start-column="66" selection-end-line="74" selection-end-column="66" />
+            <state relative-caret-position="205">
+              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2272#2273#0" expanded="true" />
@@ -101,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Book.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Employee.java" />
         <option value="$PROJECT_DIR$/src/ComparatorsAndCollectors/Main.java" />
-        <option value="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" />
       </list>
     </option>
   </component>
@@ -281,7 +280,7 @@
       <workItem from="1604863994065" duration="10546000" />
       <workItem from="1605024420051" duration="8262000" />
       <workItem from="1605205617003" duration="113000" />
-      <workItem from="1605205899350" duration="2306000" />
+      <workItem from="1605205899350" duration="2736000" />
     </task>
     <servers />
   </component>
@@ -318,7 +317,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110570000" />
+    <option name="totallyTimeSpent" value="111000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +341,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -650,10 +649,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="600">
+            <caret line="784" selection-start-line="784" selection-end-line="784" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="74" column="66" selection-start-line="74" selection-start-column="66" selection-end-line="74" selection-end-column="66" />
+        <state relative-caret-position="205">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2272#2273#0" expanded="true" />
@@ -669,16 +678,6 @@
             <element signature="e#5098#5099#0" expanded="true" />
             <element signature="e#5142#5143#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="720">
-            <caret line="779" column="65" selection-start-line="779" selection-start-column="65" selection-end-line="779" selection-end-column="65" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
