@@ -101,6 +101,11 @@ public class Main {
         System.out.println("mult3add2(1): " + mult3add2.apply(1)); // because (1 * 3) + 2 == 5
         System.out.println("add2mult3(1): " + add2mult3.apply(1)); // because (1 + 2) * 3 == 9
 
+
+        /** Parse an integer from a string, then add 2 using the compose default method of Function Interface */
+        Function<String, Integer> parseThenAdd2 = add2.compose(Integer::parseInt);
+        System.out.println(parseThenAdd2.apply("1")); // prints 3
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="128">
+              <caret line="101" column="94" selection-start-line="101" selection-start-column="94" selection-end-line="101" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2469#2470#0" expanded="true" />
@@ -295,7 +292,7 @@
       <workItem from="1604863994065" duration="10546000" />
       <workItem from="1605024420051" duration="8262000" />
       <workItem from="1605205617003" duration="113000" />
-      <workItem from="1605205899350" duration="5795000" />
+      <workItem from="1605205899350" duration="6135000" />
     </task>
     <servers />
   </component>
@@ -332,7 +329,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114059000" />
+    <option name="totallyTimeSpent" value="114399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -677,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="128">
+          <caret line="101" column="94" selection-start-line="101" selection-start-column="94" selection-end-line="101" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2469#2470#0" expanded="true" />
