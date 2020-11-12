@@ -111,4 +111,54 @@ public class Main {
 
         return wordCounts;
     }
+
+    /** The Company interface with a default method */
+    public interface Company {
+        default String getName() {
+            return "Initech";
+        }
+
+        // other methods
+    }
+
+    /** The Employee interface with a default method */
+    public interface Employee {
+        String getFirst();
+
+        String getLast();
+
+        void convertCaffeineToCodeForMoney();
+
+        default String getName() {
+            return String.format("%s %s", getFirst(), getLast());
+        }
+    }
+
+    /** Fixed version of CompanyEmployee */
+    class CompanyEmployee implements Company, Employee {
+
+        private String first;
+        private String last;
+
+        @Override
+        public String getFirst() {
+            return first;
+        }
+
+        @Override
+        public String getLast() {
+            return last;
+        }
+
+        @Override
+        public void convertCaffeineToCodeForMoney() {
+            System.out.println("Coding...");
+        }
+
+        @Override
+        public String getName() { // Implement getName
+            return String.format("%s working for %s",
+                    Employee.super.getName(), Company.super.getName()); // Access default implementations using super
+        }
+    }
 }

@@ -731,5 +731,20 @@ annoying fact that calling get on a Map with a key that doesn’t exist
 returns null. That’s helpful, but the method only returns the default, 
 it doesn’t also add it to the map.</h4>
 
+<h3><u>Note:</u></h3><h4>If you have a class that implements two interfaces, 
+each of which contains the same default method with different implementations, 
+implement the method in your class. Your implementation can still use the 
+provided defaults from the interfaces through the 
+
+```java
+super 
+```
+
+keyword.</h4>
+
+<h3><u>Note:</u></h3><h4>Default methods provide an implementation, which is
+then inherited by the class. This allows interfaces to add new methods without
+breaking existing class implementations.</h4>
+
 --------------------------------------------------------------------------
 
