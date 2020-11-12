@@ -106,6 +106,10 @@ public class Main {
         Function<String, Integer> parseThenAdd2 = add2.compose(Integer::parseInt);
         System.out.println(parseThenAdd2.apply("1")); // prints 3
 
+        /** Add a number, then convert to a string using the compose default method of Function Interface */
+        Function<Integer, String> plus2toString = add2.andThen(Object::toString);
+        System.out.println(plus2toString.apply(1)); // prints "3"
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */
