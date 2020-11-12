@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,6 +17,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Main {
 
     private Map<Long, BigInteger> cache = new HashMap<>();
+    private static Logger logger = Logger.getLogger(String.valueOf(Main.class));
+
+    private static List<String> data = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -83,6 +87,9 @@ public class Main {
         map.forEach((num, agent) ->
                 System.out.printf("Agent %d, played by %s%n", num, agent));
 
+        logDataList();
+
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */
@@ -138,6 +145,18 @@ public class Main {
                 wordCounts.merge(word, 1, Integer::sum));
 
         return wordCounts;
+    }
+
+    /** Using a Supplier in the info method */
+    public static void logDataList() {
+
+        data.add("Modern Java Recipes");
+        data.add("Making Java Groovy");
+        data.add("Gradle Recipes for Android");
+
+        logger.info("The data is " + data.toString()); // Argument always constructed
+        logger.info(() -> "The data is " + data.toString()); // Argument only constructed if log level shows info messages
+
     }
 
     /** The Company interface with a default method */

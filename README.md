@@ -786,5 +786,39 @@ It represents a function that takes two generic arguments and returns void.
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you want to create a log message, but only if 
+the log level ensures it will be seen, use the new logging overloads in 
+the Logger class that take a Supplier.</h4>
+
+<h3><u>Note:</u></h3><h4>Overloaded logging methods java.util.logging.Logger:
+
+```java
+void config(String msg)
+void config(Supplier<String> msgSupplier)
+
+void fine(String msg)
+void fine(Supplier<String> msgSupplier)
+
+void finer(String msg)
+void finer(Supplier<String> msgSupplier)
+
+void finest(String msg)
+void finest(Supplier<String> msgSupplier)
+
+void info(String msg)
+void info(Supplier<String> msgSupplier)
+
+void warning(String msg)
+void warning(Supplier<String> msgSupplier)
+
+void severe(String msg)
+void severe(Supplier<String> msgSupplier)
+```
+</h4>
+
+<h3><u>Note:</u></h3><h4>The technique of replacing an argument with a 
+Supplier of the same type is known as "deferred execution", and can be used 
+in any context where object creation might be expensive.</h4>
+
 --------------------------------------------------------------------------
 
