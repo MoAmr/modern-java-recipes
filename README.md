@@ -828,5 +828,15 @@ in any context where object creation might be expensive.</h4>
 functions consecutively, use the composition methods defined as defaults 
 in the Function, Consumer, and Predicate interfaces.</h4>
 
+<h3><u>Note:</u></h3><h4>Composition methods in the Predicate interface:
+
+```java
+default Predicate<T>    and(Predicate<? super T> other)
+default Predicate<T>    negate()
+default Predicate<T>    or(Predicate<? super T> other)
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 

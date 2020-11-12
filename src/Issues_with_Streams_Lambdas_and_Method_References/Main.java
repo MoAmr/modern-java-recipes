@@ -6,8 +6,11 @@ import java.math.BigInteger;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.IntPredicate;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -110,6 +113,15 @@ public class Main {
         Function<Integer, String> plus2toString = add2.andThen(Object::toString);
         System.out.println(plus2toString.apply(1)); // prints "3"
 
+        /** Triangle numbers that are perfect squares */
+        IntPredicate triangular = Main::isTriangular;
+        IntPredicate perfect = Main::isPerfect;
+        IntPredicate both = triangular.and(perfect);
+
+        IntStream.rangeClosed(1, 10_000)
+                .filter(both)
+                .forEach(System.out::println); // Both (between 1 and 10,000): 1, 36, 1225
+
     }
 
     /** Using the Objects.deepEquals method for testing the filter */
@@ -177,6 +189,16 @@ public class Main {
         logger.info("The data is " + data.toString()); // Argument always constructed
         logger.info(() -> "The data is " + data.toString()); // Argument only constructed if log level shows info messages
 
+    }
+
+    /** Triangle numbers that are perfect squares */
+    public static boolean isPerfect(int x) { // Examples: 1, 4, 9, 16, 25, 36, 49, 64, 81, ...
+        return Math.sqrt(x) % 1 == 0;
+    }
+
+    public static boolean isTriangular(int x) { // Examples: 1, 3, 6, 10, 15, 21, 28, 36, 45, ...
+        double val = (Math.sqrt(8 * x + 1) - 1) / 2;
+        return val % 1 == 0;
     }
 
     /** The Company interface with a default method */

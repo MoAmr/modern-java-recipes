@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="" />
+    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="357">
-                <caret line="828" selection-start-line="828" selection-end-line="828" />
+              <first_editor relative-caret-position="313">
+                <caret line="835" column="54" selection-start-line="835" selection-start-column="54" selection-end-line="835" selection-end-column="54" />
               </first_editor>
               <second_editor />
             </state>
@@ -29,12 +32,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="106" column="54" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
+            <state relative-caret-position="113">
+              <caret line="122" column="90" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2469#2470#0" expanded="true" />
                 <element signature="e#2528#2529#0" expanded="true" />
+                <element signature="e#7719#7720#0" expanded="true" />
                 <element signature="e#4367#4368#0" expanded="true" />
                 <element signature="e#4399#4400#0" expanded="true" />
                 <element signature="e#4693#4694#0" expanded="true" />
@@ -292,7 +296,7 @@
       <workItem from="1604863994065" duration="10546000" />
       <workItem from="1605024420051" duration="8262000" />
       <workItem from="1605205617003" duration="113000" />
-      <workItem from="1605205899350" duration="6628000" />
+      <workItem from="1605205899350" duration="7663000" />
     </task>
     <servers />
   </component>
@@ -329,7 +333,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114892000" />
+    <option name="totallyTimeSpent" value="115927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,8 +669,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="357">
-            <caret line="828" selection-start-line="828" selection-end-line="828" />
+          <first_editor relative-caret-position="313">
+            <caret line="835" column="54" selection-start-line="835" selection-start-column="54" selection-end-line="835" selection-end-column="54" />
           </first_editor>
           <second_editor />
         </state>
@@ -674,12 +678,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="106" column="54" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
+        <state relative-caret-position="113">
+          <caret line="122" column="90" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2469#2470#0" expanded="true" />
             <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#7719#7720#0" expanded="true" />
             <element signature="e#4367#4368#0" expanded="true" />
             <element signature="e#4399#4400#0" expanded="true" />
             <element signature="e#4693#4694#0" expanded="true" />
