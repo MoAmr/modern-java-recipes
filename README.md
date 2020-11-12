@@ -746,5 +746,45 @@ keyword.</h4>
 then inherited by the class. This allows interfaces to add new methods without
 breaking existing class implementations.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to iterate over a collection or map,
+use the 
+
+```java
+forEach method
+```
+
+which was added as a default method to both Iterable and Map.
+From the Javadocs, its signature is:
+
+```java
+default void forEach(Consumer<? super T> action)
+```
+
+* The argument to forEach is of type Consumer, one of the functional interfaces 
+added to the java.util.function package. 
+
+* A Consumer represents an operation that takes a single generic parameter 
+and returns no result. As the docs say, “unlike most other functional interfaces,
+Consumer is expected to operate via side effects.”
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>A pure function operates without side effects, 
+so applying the function with the same parameters always gives the 
+same result. In functional programming, this is known as "referential transparency:,
+where a function can be replaced by its corresponding value.</h4>
+
+<h3><u>Note:</u></h3><h4>The Map interface also has a forEach method, 
+added as a default. In this case, the signature takes a BiConsumer:
+
+```java
+default void forEach(BiConsumer<? super K, ? super V> action)
+```
+
+* BiConsumer is another of the new interfaces in the java.util.function package. 
+It represents a function that takes two generic arguments and returns void.
+
+</h4>
+
 --------------------------------------------------------------------------
 

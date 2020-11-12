@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.math.BigInteger;
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -54,6 +55,24 @@ public class Main {
 
         Map<String, Integer> counts = countWords(passage, "NSA", "agent", "joke");
         counts.forEach((word, count) -> System.out.println(word + "=" + count));
+
+        /** Iterating over a linear collection */
+        List<Integer> integers = Arrays.asList(3, 1, 4, 1, 5, 9);
+
+        integers.forEach(new Consumer<Integer>() { // Anonymous inner class implementation
+            @Override
+            public void accept(Integer integer) {
+                System.out.println(integer);
+            }
+        });
+
+        integers.forEach((Integer n) -> { // Full verbose form of a block lambda
+            System.out.println(n);
+        });
+
+        integers.forEach(n -> System.out.println(n)); // Expression lambda
+
+        integers.forEach(System.out::println); // Method reference
 
     }
 
