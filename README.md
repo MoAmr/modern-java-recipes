@@ -848,5 +848,87 @@ exception, but you wish to use a generic wrapper that catches all checked
 exceptions and rethrows them as unchecked, create special exception classes 
 and add a generic method to accept them and return lambdas without exceptions.</h4>
 
+<h3><u>Note:</u></h3><h4>The Java 8 API introduced a new class called 
+
+```java
+java.util.Optional<T>
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>Optional is designed to communicate to the user 
+when a returned value may legitimately be null. This situation can arise 
+whenever a stream of values is filtered by some condition that happens to 
+leave no elements remaining.</h4>
+
+<h3><u>Note:</u></h3><h4>In the Stream API, the following methods return 
+an Optional if no elements remain in the stream:
+
+```java
+reduce, min, max, findFirst, findAny
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>An instance of Optional can be in one of two states:
+
+* A reference to an instance of type T.
+
+* Empty. 
+
+The former case is called present, and the latter is known as empty
+(as opposed to null).</h4>
+
+<h3><u>Note:</u></h3><h4>While Optional is a reference type, it should never
+be assigned a value of null. Doing so is a serious error.</h4>
+
+<h3><u>Note:</u></h3><h4>If you need to return an Optional from an existing
+value, use 
+
+```java
+optional.of, Optional.ofNullable, or Optional.empty
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>Like many other new classes in the Java 8 API, 
+instances of Optional are immutable.
+The API refers to Optional as a value-based class, meaning instances:
+
+* Are final and immutable (though they may contain references to mutable objects)</h4>
+
+* Have no public constructors, and thus must be instantiated by factory methods.
+
+* Have implementations of equals, hashCode, and toString that are based only on their state.
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>Instances of Optional are immutable, but the objects
+they wrap may not be. If you create an Optional that contains an instance 
+of a mutable object, you can still modify the instance.</h4>
+
+<h3><u>Note:</u></h3><h4>You can’t modify the Optional instance itself,
+because there are no methods available to do so.</h4>
+
+<h3><u>Note:</u></h3><h4>The static factory methods to create an Optional are:
+
+```java
+empty, of, and ofNullable
+```
+
+whose signatures are:
+
+```java
+static <T> Optional<T> empty()
+static <T> Optional<T> of(T value)
+static <T> Optional<T> ofNullable(T value)
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>The empty method returns, naturally enough, 
+an empty Optional. The of method returns an Optional that wraps the specified
+value or throws an exception if the argument is null.</h4>
+
 --------------------------------------------------------------------------
 
