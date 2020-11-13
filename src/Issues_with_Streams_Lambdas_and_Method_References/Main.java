@@ -223,6 +223,23 @@ public class Main {
         }
     }
 
+    /** Extracting a lambda into a method */
+    private Integer divide(Integer value, Integer factor) {
+        Integer val = 0;
+        try {
+            val =  value / factor;
+        } catch (ArithmeticException e) { // Handle the exception here
+            e.printStackTrace();
+        }
+        return val;
+    }
+
+    public List<Integer> divUsingMethod(List<Integer> values, Integer factor) {
+        return values.stream()
+                .map(n -> divide(n, factor)) // Stream code is simplified
+                .collect(Collectors.toList());
+    }
+
     /** Fixed version of CompanyEmployee */
     class CompanyEmployee implements Company, Employee {
 
