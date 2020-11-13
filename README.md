@@ -930,5 +930,18 @@ static <T> Optional<T> ofNullable(T value)
 an empty Optional. The of method returns an Optional that wraps the specified
 value or throws an exception if the argument is null.</h4>
 
+<h3><u>Note:</u></h3><h4>Incidentally, the classes OptionalInt, OptionalLong, 
+and OptionalDouble wrap primitives that can never be null, so they only have 
+an of method:
+
+```java
+static OptionalInt of(int value) 
+static OptionalLong of(longvalue) 
+static OptionalDouble of(double value)
+```
+
+Instead of get, the getter methods on those classes are getAsInt,
+getAsLong, and getAsDouble.</h4>
+
 --------------------------------------------------------------------------
 

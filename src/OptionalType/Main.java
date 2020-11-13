@@ -32,4 +32,9 @@ public class Main {
     public static <T> Optional<T> createOptionalTheHardWay(T value) {
         return value == null ? Optional.empty() : Optional.of(value);
     }
+
+    /** Creating an Optional with “ofNullable” */
+    public static <T> Optional<T> createOptionalTheEasyWay(T value) {
+        return Optional.ofNullable(value);
+    }
 }
