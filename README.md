@@ -843,5 +843,10 @@ checked exception, and the abstract method in the functional interface you
 are implementing does not declare that exception, add a try/catch block to 
 the lambda expression, or delegate to an extracted method to handle it.</h4>
 
+<h3><u>Note:</u></h3><h4>If you have a lambda expression that throws an 
+exception, but you wish to use a generic wrapper that catches all checked 
+exceptions and rethrows them as unchecked, create special exception classes 
+and add a generic method to accept them and return lambdas without exceptions.</h4>
+
 --------------------------------------------------------------------------
 

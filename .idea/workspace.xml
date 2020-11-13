@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="632">
-                <caret line="843" selection-start-line="843" selection-end-line="843" />
+              <first_editor relative-caret-position="630">
+                <caret line="848" selection-start-line="848" selection-end-line="848" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+            <state relative-caret-position="618">
+              <caret line="338" column="93" selection-start-line="338" selection-start-column="93" selection-end-line="338" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7625#7626#0" expanded="true" />
@@ -271,7 +272,7 @@
       <workItem from="1605024420051" duration="8262000" />
       <workItem from="1605205617003" duration="113000" />
       <workItem from="1605205899350" duration="7915000" />
-      <workItem from="1605279119534" duration="3384000" />
+      <workItem from="1605279119534" duration="4423000" />
     </task>
     <servers />
   </component>
@@ -308,7 +309,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119563000" />
+    <option name="totallyTimeSpent" value="120602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,8 +645,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="632">
-            <caret line="843" selection-start-line="843" selection-end-line="843" />
+          <first_editor relative-caret-position="630">
+            <caret line="848" selection-start-line="848" selection-end-line="848" />
           </first_editor>
           <second_editor />
         </state>
@@ -653,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+        <state relative-caret-position="618">
+          <caret line="338" column="93" selection-start-line="338" selection-start-column="93" selection-end-line="338" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7625#7626#0" expanded="true" />

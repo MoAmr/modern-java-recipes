@@ -314,4 +314,30 @@ public class Main {
                     Employee.super.getName(), Company.super.getName()); // Access default implementations using super
         }
     }
+
+    /** A functional interface based on Function that throws Exception */
+    @FunctionalInterface
+    public interface FunctionWithException<T, R, E extends Exception> {
+        R apply(T t) throws E;
+    }
+
+    /** A wrapper method to deal with exceptions */
+    private static <T, R, E extends Exception>
+        Function<T, R> wrapper(FunctionWithException<T, R, E> fe) {
+        return arg -> {
+            try {
+                return fe.apply(arg);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        };
+    }
+
+    /**  Using a generic static wrapper method */
+    public List<String> encodeValuesWithWrapper(String... values) {
+        return Arrays.stream(values)
+                .map(wrapper(s -> URLEncoder.encode(s, "UTF-8"))) // Using the wrapper method
+                .collect(Collectors.toList());
+    }
+
 }
