@@ -2,7 +2,9 @@ package Issues_with_Streams_Lambdas_and_Method_References;
 
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
+import java.net.URLEncoder;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -225,18 +227,47 @@ public class Main {
 
     /** Extracting a lambda into a method */
     private Integer divide(Integer value, Integer factor) {
-        Integer val = 0;
         try {
-            val =  value / factor;
+            return value / factor;
         } catch (ArithmeticException e) { // Handle the exception here
             e.printStackTrace();
+            return 0;
         }
-        return val;
     }
 
     public List<Integer> divUsingMethod(List<Integer> values, Integer factor) {
         return values.stream()
                 .map(n -> divide(n, factor)) // Stream code is simplified
+                .collect(Collectors.toList());
+    }
+
+    /** URL encoding a collection of strings using try/catch block within a Lambda Expression. */
+    public List<String> encodeValuesAnonInnerClass(String... values) {
+        return Arrays.stream(values)
+                .map(new Function<String, String>() { // Anonymous inner class
+                    @Override
+                    public String apply(String s) { // Contains code that will throw a checked exception
+                        try {
+                            return URLEncoder.encode(s, "UTF-8");
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                            return "";
+                        }
+                    }
+                })
+                .collect(Collectors.toList());
+    }
+
+    public List<String> encodeValues(String... values) { // Lambda expression version
+        return Arrays.stream(values)
+                .map(s -> {
+                    try {
+                        return URLEncoder.encode(s, "UTF-8");
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                        return "";
+                    }
+                })
                 .collect(Collectors.toList());
     }
 

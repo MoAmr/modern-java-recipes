@@ -838,5 +838,10 @@ default Predicate<T>    or(Predicate<? super T> other)
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you have a lambda expression that throws a 
+checked exception, and the abstract method in the functional interface you 
+are implementing does not declare that exception, add a try/catch block to 
+the lambda expression, or delegate to an extracted method to handle it.</h4>
+
 --------------------------------------------------------------------------
 
