@@ -271,6 +271,22 @@ public class Main {
                 .collect(Collectors.toList());
     }
 
+    /** URL encoding delegating to a method */
+    private static String encodeString(String s) { // Extracted method for exception handling
+        try {
+            return URLEncoder.encode(s, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    public List<String> encodeValuesUsingMethod(String... values) {
+        return Arrays.stream(values)
+                .map(Main::encodeString) // Method reference to the extracted method
+                .collect(Collectors.toList());
+    }
+
     /** Fixed version of CompanyEmployee */
     class CompanyEmployee implements Company, Employee {
 
