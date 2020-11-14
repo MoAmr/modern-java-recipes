@@ -40,6 +40,12 @@ public class Main {
         // Only call get if isPresent returns true
         System.out.println(firstEven1.isPresent() ? firstEven1.get() : "No even length strings!");
 
+        /** Retrieving the first odd-length string with a protected get using orElse method of Optional */
+        Optional<String> firstOdd = Stream.of("five", "even", "length", "string", "values")
+                .filter(s -> s.length() % 2 != 0)
+                .findFirst();
+        System.out.println(firstOdd.orElse("No odd length strings!"));
+
     }
 
     /** Creating an Optional with “of ” */

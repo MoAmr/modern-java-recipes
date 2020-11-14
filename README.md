@@ -951,5 +951,36 @@ use ifPresent if you only want to execute a Consumer when a value is present.</h
 <h3><u>Note:</u></h3><h4>You should never call get on an Optional unless 
 you’re sure it contains a value or you risk throwing NoSuchElementException.</h4>
 
+<h3><u>Note:</u></h3><h4>The orElse method returns the contained value if 
+one is present, or a supplied default otherwise. It’s therefore a convenient 
+method to use if you have a fallback value in mind.</h4>
+
+<h3><u>Note:</u></h3><h4>There are a few variations of orElse:
+
+```java
+orElse(T other) 
+```
+
+returns the value if present, otherwise it returns the default value, other.
+
+```java
+orElseGet(Supplier<? extends T> other) 
+```
+
+returns the value if present, otherwise it invokes the Supplier and returns the result.
+
+```java
+orElseThrow(Supplier<? extends X> exceptionSupplier) 
+```
+
+returns the value if present, otherwise throws the exception created by the Supplier.
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>The difference between orElse and orElseGet is that 
+the former returns a string that is always created, whether the value exists 
+in the Optional or not, while the latter uses a Supplier, which is only 
+executed if the Optional is empty.</h4>
+
 --------------------------------------------------------------------------
 
