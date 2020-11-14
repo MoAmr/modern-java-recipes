@@ -53,6 +53,19 @@ public class Main {
                 .findFirst();
         System.out.println(first.orElseThrow(NoSuchElementException::new));
 
+        /** Using the ifPresent method of Optional */
+        Optional<String> firstEven2 = Stream.of("five", "even", "length", "string", "values")
+                .filter(s -> s.length() % 2 == 0)
+                .findFirst();
+
+        firstEven2.ifPresent(val -> System.out.println("Found an even-length string!"));
+
+        Optional<String> firstOdd1 = Stream.of("five", "even", "cat", "length", "string", "values")
+                .filter(s -> s.length() % 2 != 0)
+                .findFirst();
+
+        firstOdd1.ifPresent(val -> System.out.println("Found an odd-length string!"));
+
     }
 
     /** Creating an Optional with “of ” */
