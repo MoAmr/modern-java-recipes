@@ -1,5 +1,6 @@
 package OptionalType;
 
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
@@ -45,6 +46,12 @@ public class Main {
                 .filter(s -> s.length() % 2 != 0)
                 .findFirst();
         System.out.println(firstOdd.orElse("No odd length strings!"));
+
+        /** Using orElseThrow of Optional as a Supplier */
+        Optional<String> first = Stream.of("five", "even", "length", "string", "values")
+                .filter(s -> s.length() % 2 == 0)
+                .findFirst();
+        System.out.println(first.orElseThrow(NoSuchElementException::new));
 
     }
 

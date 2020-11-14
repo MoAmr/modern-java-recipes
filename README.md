@@ -982,5 +982,9 @@ the former returns a string that is always created, whether the value exists
 in the Optional or not, while the latter uses a Supplier, which is only 
 executed if the Optional is empty.</h4>
 
+<h3><u>Note:</u></h3><h4>Using a Supplier as a method argument is an example
+of _deferred_ or _lazy execution_. It allows you to avoid invoking the get 
+method on the Supplier until necessary.</h4>
+
 --------------------------------------------------------------------------
 
