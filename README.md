@@ -943,5 +943,13 @@ static OptionalDouble of(double value)
 Instead of get, the getter methods on those classes are getAsInt,
 getAsLong, and getAsDouble.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to extract a contained value from an
+Optional, use the get method, but only if you’re sure a value exists inside 
+the Optional. Otherwise use one of the variations of orElse. You can also 
+use ifPresent if you only want to execute a Consumer when a value is present.</h4>
+
+<h3><u>Note:</u></h3><h4>You should never call get on an Optional unless 
+you’re sure it contains a value or you risk throwing NoSuchElementException.</h4>
+
 --------------------------------------------------------------------------
 

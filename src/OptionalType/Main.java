@@ -2,6 +2,7 @@ package OptionalType;
 
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 /**
  * @author Mohammed Amr
@@ -25,6 +26,12 @@ public class Main {
         System.out.println(optional); // Optional[2]
 
         optional = Optional.ofNullable(new AtomicInteger()); // Optional reference can be reassigned
+
+        /** Retrieving the first even-length string from an optional */
+        Optional<String> firstEven = Stream.of("five", "even", "length", "string", "values")
+                .filter(s -> s.length() % 2 == 0)
+                .findFirst();
+        System.out.println(firstEven);
 
     }
 
