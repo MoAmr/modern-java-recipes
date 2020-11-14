@@ -31,7 +31,14 @@ public class Main {
         Optional<String> firstEven = Stream.of("five", "even", "length", "string", "values")
                 .filter(s -> s.length() % 2 == 0)
                 .findFirst();
-        System.out.println(firstEven);
+        System.out.println(firstEven.get());
+
+        /** Retrieving the first even-length string with a protected get using isPresent method of Optional */
+        Optional<String> firstEven1 = Stream.of("five", "even", "length", "string", "values") // Same as before
+                .filter(s -> s.length()  % 2 == 0)
+                .findFirst();
+        // Only call get if isPresent returns true
+        System.out.println(firstEven1.isPresent() ? firstEven1.get() : "No even length strings!");
 
     }
 
