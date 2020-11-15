@@ -66,6 +66,16 @@ public class Main {
 
         firstOdd1.ifPresent(val -> System.out.println("Found an odd-length string!"));
 
+        /**  Returning an Optional */
+        Manager mrSlate = new Manager("Mr. State");
+
+        Department d = new Department();
+        d.setBoss(mrSlate); // Department with a nonnull manager
+        System.out.println("Boss: " + d.getBoss()); // Prints Boss: Optional[Manager{name='Mr. Slate'}]
+
+        Department d1 = new Department(); // Department without a manager
+        System.out.println("Boss: " + d1.getBoss()); // Prints Boss: Optional.empty
+
     }
 
     /** Creating an Optional with “of ” */

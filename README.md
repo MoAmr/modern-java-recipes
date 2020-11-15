@@ -895,7 +895,7 @@ optional.of, Optional.ofNullable, or Optional.empty
 instances of Optional are immutable.
 The API refers to Optional as a value-based class, meaning instances:
 
-* Are final and immutable (though they may contain references to mutable objects)</h4>
+* Are final and immutable (though they may contain references to mutable objects).
 
 * Have no public constructors, and thus must be instantiated by factory methods.
 
@@ -985,6 +985,17 @@ executed if the Optional is empty.</h4>
 <h3><u>Note:</u></h3><h4>Using a Supplier as a method argument is an example
 of _deferred_ or _lazy execution_. It allows you to avoid invoking the get 
 method on the Supplier until necessary.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to avoid wrapping an Optional inside
+another Optional, use the flatMap method in Optional.</h4>
+
+<h3><u>Note:</u></h3><h4>The signature of the flatMap method in Optional is:
+
+```java
+<U> Optional<U> flatMap(Function<? super T, Optional<U>> mapper)
+```
+
+</h4>
 
 --------------------------------------------------------------------------
 
