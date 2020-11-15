@@ -1010,5 +1010,9 @@ or java.nio .file.Files to return the contents of a file as a stream.</h4>
 <h3><u>Note:</u></h3><h4>If your source of data is not a File, the BufferedReader 
 class also has a lines method.</h4>
 
+<h3><u>Note:</u></h3><h4>since Stream implements AutoCloseable, when the 
+try-with-resources block closes the stream, it will then close the 
+underlying BufferedReader.</h4>
+
 --------------------------------------------------------------------------
 

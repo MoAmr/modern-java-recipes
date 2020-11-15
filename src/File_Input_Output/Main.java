@@ -1,5 +1,7 @@
 package File_Input_Output;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -41,8 +43,28 @@ public class Main {
             e.printStackTrace();
         }
 
+        System.out.println("\nUsing Files.lines\n");
+
         /** Determining number of words of each length, in descending order */
         try (Stream<String> lines = Files.lines(Paths.get("/usr/share/dict/web2"))) {
+            Map<Integer, Long> map = lines.filter(s -> s.length() > 20)
+                    .collect(Collectors.groupingBy(String::length, Collectors.counting()));
+
+            map.entrySet().stream()
+                    .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
+                    .forEach(e -> System.out.printf("Length %d: %d words%n",
+                            e.getKey(), e.getValue()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("\nUsing BufferedReader.lines\n");
+
+        /** Determining number of words of each length, in descending order using BufferedReader.lines */
+        // Use BufferReader lines method if your source of data is not a File
+        try (Stream<String> lines = new BufferedReader(
+                new FileReader("/usr/share/dict/words")).lines()) {
+
             Map<Integer, Long> map = lines.filter(s -> s.length() > 20)
                     .collect(Collectors.groupingBy(String::length, Collectors.counting()));
 

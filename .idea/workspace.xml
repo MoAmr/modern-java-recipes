@@ -20,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="366">
-                <caret line="1007" selection-start-line="1007" selection-end-line="1007" />
+              <first_editor relative-caret-position="402">
+                <caret line="1010" column="30" selection-start-line="1010" selection-start-column="30" selection-end-line="1010" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/File_Input_Output/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="188">
+              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,9 +92,9 @@
         <option value="$PROJECT_DIR$/src/OptionalType/Manager.java" />
         <option value="$PROJECT_DIR$/src/OptionalType/Department.java" />
         <option value="$PROJECT_DIR$/src/OptionalType/Company.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/OptionalType/Employee.java" />
         <option value="$PROJECT_DIR$/src/OptionalType/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/File_Input_Output/Main.java" />
       </list>
     </option>
@@ -272,7 +272,7 @@
       <workItem from="1605205899350" duration="7915000" />
       <workItem from="1605279119534" duration="7376000" />
       <workItem from="1605377010742" duration="3989000" />
-      <workItem from="1605468225207" duration="7452000" />
+      <workItem from="1605468225207" duration="7996000" />
     </task>
     <servers />
   </component>
@@ -309,7 +309,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134996000" />
+    <option name="totallyTimeSpent" value="135540000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,8 +684,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="366">
-            <caret line="1007" selection-start-line="1007" selection-end-line="1007" />
+          <first_editor relative-caret-position="402">
+            <caret line="1010" column="30" selection-start-line="1010" selection-start-column="30" selection-end-line="1010" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
@@ -693,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/File_Input_Output/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="188">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
