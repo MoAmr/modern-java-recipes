@@ -134,27 +134,27 @@ public class Main {
     }
 
     /** Finding Employees by ID */
-    public List<Employee> findEmployeesByIds(List<Integer> ids) {
-        return ids.stream()
-                // Stream<Optional<Employee>>
-                .map(Employee::findEmployeeById)
-                // Remove empty Optionals
-                .filter(Optional::isPresent)
-                // Retrieve values you know exist
-                .map(Optional::get)
-                .collect(Collectors.toList());
-    }
+//    public List<Employee> findEmployeesByIds(List<Integer> ids) {
+//        return ids.stream()
+//                // Stream<Optional<Employee>>
+//                .map(Employee::findEmployeeById)
+//                // Remove empty Optionals
+//                .filter(Optional::isPresent)
+//                // Retrieve values you know exist
+//                .map(Optional::get)
+//                .collect(Collectors.toList());
+//    }
 
     /** Using Optional.map */
-    public List<Employee> findEmployeesByIdsUsingFlatMap(List<Integer> ids) {
-        return ids.stream()
-                // Stream<Optional<Employee>>
-                .map(Employee::findEmployeeById)
-                .flatMap(optional ->
-                        // Turns nonempty Optional<Employee> into Optional<Stream<Employee>>
-                        optional.map(Stream::of)
-                                // Extracts the Stream<Employee> from the Optional
-                                .orElseGet(Stream::empty))
-                .collect(Collectors.toList());
-    }
+//    public List<Employee> findEmployeesByIdsUsingFlatMap(List<Integer> ids) {
+//        return ids.stream()
+//                // Stream<Optional<Employee>>
+//                .map(Employee::findEmployeeById)
+//                .flatMap(optional ->
+//                        // Turns nonempty Optional<Employee> into Optional<Stream<Employee>>
+//                        optional.map(Stream::of)
+//                                // Extracts the Stream<Employee> from the Optional
+//                                .orElseGet(Stream::empty))
+//                .collect(Collectors.toList());
+//    }
 }

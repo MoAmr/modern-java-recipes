@@ -1001,5 +1001,11 @@ another Optional, use the flatMap method in Optional.</h4>
 Optional instances, but only if they contain a value, use the map method 
 of Optional.</h4>
 
+<h3><u>Note:</u></h3><h4>All the methods in the Files class are static.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to process the contents of a text file 
+using streams, use the static lines method in either java.io.BufferedReader
+or java.nio .file.Files to return the contents of a file as a stream.</h4>
+
 --------------------------------------------------------------------------
 
