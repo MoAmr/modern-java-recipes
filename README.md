@@ -1007,5 +1007,8 @@ of Optional.</h4>
 using streams, use the static lines method in either java.io.BufferedReader
 or java.nio .file.Files to return the contents of a file as a stream.</h4>
 
+<h3><u>Note:</u></h3><h4>If your source of data is not a File, the BufferedReader 
+class also has a lines method.</h4>
+
 --------------------------------------------------------------------------
 
