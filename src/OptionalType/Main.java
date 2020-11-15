@@ -1,8 +1,10 @@
 package OptionalType;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -129,5 +131,30 @@ public class Main {
     /** Creating an Optional with “ofNullable” */
     public static <T> Optional<T> createOptionalTheEasyWay(T value) {
         return Optional.ofNullable(value);
+    }
+
+    /** Finding Employees by ID */
+    public List<Employee> findEmployeesByIds(List<Integer> ids) {
+        return ids.stream()
+                // Stream<Optional<Employee>>
+                .map(Employee::findEmployeeById)
+                // Remove empty Optionals
+                .filter(Optional::isPresent)
+                // Retrieve values you know exist
+                .map(Optional::get)
+                .collect(Collectors.toList());
+    }
+
+    /** Using Optional.map */
+    public List<Employee> findEmployeesByIdsUsingFlatMap(List<Integer> ids) {
+        return ids.stream()
+                // Stream<Optional<Employee>>
+                .map(Employee::findEmployeeById)
+                .flatMap(optional ->
+                        // Turns nonempty Optional<Employee> into Optional<Stream<Employee>>
+                        optional.map(Stream::of)
+                                // Extracts the Stream<Employee> from the Optional
+                                .orElseGet(Stream::empty))
+                .collect(Collectors.toList());
     }
 }

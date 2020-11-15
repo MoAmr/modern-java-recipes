@@ -997,5 +997,9 @@ another Optional, use the flatMap method in Optional.</h4>
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you want to apply a function to a collection of
+Optional instances, but only if they contain a value, use the map method 
+of Optional.</h4>
+
 --------------------------------------------------------------------------
 
