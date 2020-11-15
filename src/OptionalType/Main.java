@@ -86,6 +86,39 @@ public class Main {
         System.out.println("Name: " + d.getBoss().map(Manager::getName));
         System.out.println("Name: " + d1.getBoss().map(Manager::getName));
 
+        /** An Optional wrapped inside an Optional */
+        Company co = new Company();
+        co.setDepartment(d);
+
+        // Prints Company Dept: Optional[Department{boss=Manager{name='Mr.Slate'}}]
+        System.out.println("Company Dept: " + co.getDepartment());
+
+        // Prints Company Dept Manager: Optional[Optional[Manager{name='Mr. Slate'}]]
+        System.out.println("Company Dept Manager: " + co.getDepartment()
+        .map(Department::getBoss));
+
+        /** Using flatMap on a company */
+        System.out.println(
+                co.getDepartment() // Optional<Department>
+                        .flatMap(Department::getBoss) // Optional<Manager>
+                        .map(Manager::getName)); // Optional<String>
+
+        /** Using flatMap on an optional company */
+        Optional<Company> company = Optional.of(co);
+
+        System.out.println(
+                // Optional<Company>
+                company
+                        // Optional<Department>
+                        .flatMap(Company::getDepartment)
+                        // Optional<Manager>
+                        .flatMap(Department::getBoss)
+                        // Optional<String>
+                        .map(Manager::getName)
+        );
+
+
+
     }
 
     /** Creating an Optional with “of ” */
