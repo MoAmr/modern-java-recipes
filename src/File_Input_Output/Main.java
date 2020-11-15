@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Comparator;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -28,6 +29,16 @@ public class Main {
 
         /** Note: By opening the stream in a try-with-resources block, the system will automatically close it, and the
         * dictionary file, when the try block completes. */
-        
+
+        /** Determining number of words of each length by applying Collectors.counting as a downstream collector */
+        try (Stream<String> lines = Files.lines(Paths.get("/usr/share/dict/web2"))) {
+
+            lines.filter(s -> s.length() > 20)
+                    .collect(Collectors.groupingBy(String::length, Collectors.counting()))
+                    .forEach((len, num) -> System.out.println(len + ": " + num));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+    
 }
