@@ -76,6 +76,16 @@ public class Main {
         Department d1 = new Department(); // Department without a manager
         System.out.println("Boss: " + d1.getBoss()); // Prints Boss: Optional.empty
 
+        /** Extracting a value from an Optional */
+        // Extract boss from Optional before calling getName
+        System.out.println("Name: " + d.getBoss().orElse(new Manager("Unknown")).getName());
+
+        System.out.println("Name: " + d1.getBoss().orElse(new Manager("Unknown")).getName());
+
+        // Use Optional.map to apply getName to contained Manager
+        System.out.println("Name: " + d.getBoss().map(Manager::getName));
+        System.out.println("Name: " + d1.getBoss().map(Manager::getName));
+
     }
 
     /** Creating an Optional with “of ” */
