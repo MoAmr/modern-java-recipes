@@ -95,6 +95,18 @@ public class Main {
             e.printStackTrace();
         }
 
+        System.out.println("\nUsing Files.find\n");
+
+        /** Searching the Filesystem using Files.find method */
+        try (Stream<Path> paths = Files.find(Paths.get("/My Development/Java Workspace/Modern Java Recipes/src"),
+                Integer.MAX_VALUE, (path, attributes) ->
+                !attributes.isDirectory() && path.toString().contains("File_Input_Output"))) {
+
+            paths.forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
     
 }

@@ -1023,5 +1023,8 @@ resource results in a NotDirectoryException./h4>
 <h3><u>Note:</u></h3><h4>If you need to perform a depth-first traversal of 
 the filesystem, use the Files.walk method./h4>
 
+<h3><u>Note:</u></h3><h4>If you want to find files in a file tree that satisfy
+given properties, use the static Files.find method in the java.nio.file package./h4>
+
 --------------------------------------------------------------------------
 
