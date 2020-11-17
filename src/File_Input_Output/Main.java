@@ -77,9 +77,20 @@ public class Main {
             e.printStackTrace();
         }
 
+        System.out.println("\nUsing Files.list(path)\n");
+
         /** Using Files.list(path) */
         try (Stream<Path> list = Files.list(Paths.get("/My Development/Java Workspace/Modern Java Recipes/src"))) {
             list.forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("\nUsing Files.walk(path)\n");
+
+        /** Walking the Filesystem using Files.walk method */
+        try (Stream<Path> paths = Files.walk(Paths.get("/My Development/Java Workspace/Modern Java Recipes/src"))) {
+            paths.forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
         }

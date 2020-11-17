@@ -1020,5 +1020,8 @@ as a Stream, use the static Files.list method.</h4>
 <h3><u>Note:</u></h3><h4>Executing the method Files.list on a non-directory 
 resource results in a NotDirectoryException./h4>
 
+<h3><u>Note:</u></h3><h4>If you need to perform a depth-first traversal of 
+the filesystem, use the Files.walk method./h4>
+
 --------------------------------------------------------------------------
 
