@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.Map;
@@ -72,6 +73,13 @@ public class Main {
                     .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
                     .forEach(e -> System.out.printf("Length %d: %d words%n",
                             e.getKey(), e.getValue()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        /** Using Files.list(path) */
+        try (Stream<Path> list = Files.list(Paths.get("/My Development/Java Workspace/Modern Java Recipes/src"))) {
+            list.forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
         }

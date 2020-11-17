@@ -1014,5 +1014,11 @@ class also has a lines method.</h4>
 try-with-resources block closes the stream, it will then close the 
 underlying BufferedReader.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to process all the files in a directory
+as a Stream, use the static Files.list method.</h4>
+
+<h3><u>Note:</u></h3><h4>Executing the method Files.list on a non-directory 
+resource results in a NotDirectoryException./h4>
+
 --------------------------------------------------------------------------
 
