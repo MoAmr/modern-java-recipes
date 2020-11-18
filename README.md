@@ -848,6 +848,10 @@ exception, but you wish to use a generic wrapper that catches all checked
 exceptions and rethrows them as unchecked, create special exception classes 
 and add a generic method to accept them and return lambdas without exceptions.</h4>
 
+--------------------------------------------------------------------------
+
+## The Optional Type:-
+
 <h3><u>Note:</u></h3><h4>The Java 8 API introduced a new class called 
 
 ```java
@@ -1001,6 +1005,10 @@ another Optional, use the flatMap method in Optional.</h4>
 Optional instances, but only if they contain a value, use the map method 
 of Optional.</h4>
 
+--------------------------------------------------------------------------
+
+## File I/O
+
 <h3><u>Note:</u></h3><h4>All the methods in the Files class are static.</h4>
 
 <h3><u>Note:</u></h3><h4>If you want to process the contents of a text file 
@@ -1025,6 +1033,10 @@ the filesystem, use the Files.walk method.</h4>
 
 <h3><u>Note:</u></h3><h4>If you want to find files in a file tree that satisfy
 given properties, use the static Files.find method in the java.nio.file package.</h4>
+
+--------------------------------------------------------------------------
+
+## The java.time Package:-
 
 [Date-Time library](https://docs.oracle.com/javase/tutorial/datetime/TOC.html)
 
@@ -1148,6 +1160,28 @@ Temporal subtractFrom(Temporal temporal)
 If you follow the call stack, invoking minus delegates to plus with a negated 
 argument, which delegates to TemporalAmount.addTo(Temporal), which calls back
 to plus(long, TemporalUnit), which actually does the work.</h4>
+
+<h3><u>Note:</u></h3><h4>When the API calls for TemporalUnit, remember that
+the provided implementation class is ChronoUnit, which has many convenient
+constants.</h4>
+
+<h3><u>Note:</u></h3><h4>There are a series of with methods on each class 
+that can be used to change one field at a time.
+The signatures range from withNano to withYear, with a few interesting ones
+thrown in. Here is the set from LocalDateTime:
+
+```java
+LocalDateTime withNano(int nanoOfSecond)
+LocalDateTime withSecond(int second) 
+LocalDateTime withMinute(int minute) 
+LocalDateTime withHour(int hour) 
+LocalDateTime withDayOfMonth(int dayOfMonth) 
+LocalDateTime withDayOfYear(int dayOfYear) 
+LocalDateTime withMonth(int month) 
+LocalDateTime withYear(int year)
+```
+
+</h4>
 
 --------------------------------------------------------------------------
 

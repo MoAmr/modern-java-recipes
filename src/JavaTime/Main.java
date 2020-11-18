@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -111,6 +112,30 @@ public class Main {
 
         end = start.plusHours(5);
         assertEquals("16:30:00", end.format(formatter));
+
+    }
+
+    /** The plus and minus methods */
+    @Test
+    public void plus_minus() throws Exception {
+
+        Period period = Period.of(2, 3, 4); // 2 years, 3 months, 4 days
+        LocalDateTime start = LocalDateTime.of(2020, Month.NOVEMBER, 19, 00, 45);
+        LocalDateTime end = start.plus(period);
+
+        assertEquals("2023-02-23T00:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.plus(3, ChronoUnit.HALF_DAYS);
+        assertEquals("2020-11-20T12:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.minus(period);
+        assertEquals("2018-08-15T00:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.minus(2, ChronoUnit.CENTURIES);
+        assertEquals("1820-11-19T00:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.plus(3, ChronoUnit.MILLENNIA);
+        assertEquals("5020-11-19T00:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
     }
 }
