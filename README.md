@@ -1042,5 +1042,24 @@ to accept a Month enum, like Month.JANUARY, or an integer that starts at 1.
 Since integer constants in Calendar start at 0 (that is, Calendar.JANUARY is 0),
 watch out for off-by-one errors. Use the Month enum wherever possible.</h4>
 
+<h3><u>Note:</u></h3><h4>There are two types of zone IDs:
+
+* Fixed offsets, relative to UTC/Greenwich, like -05:00
+
+* Geographical regions, like America/Chicago.
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>You can get the current value of the ZoneId from 
+the static systemDefault method. The complete list of available region IDs 
+comes from the static getAvailableZoneIds method:
+
+```java
+Set<String> regionNames = ZoneId.getAvailableZoneIds();
+System.out.println("There are " + regionNames.size() + " region names");
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 
