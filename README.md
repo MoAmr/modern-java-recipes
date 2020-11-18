@@ -1018,13 +1018,29 @@ underlying BufferedReader.</h4>
 as a Stream, use the static Files.list method.</h4>
 
 <h3><u>Note:</u></h3><h4>Executing the method Files.list on a non-directory 
-resource results in a NotDirectoryException./h4>
+resource results in a NotDirectoryException.</h4>
 
 <h3><u>Note:</u></h3><h4>If you need to perform a depth-first traversal of 
-the filesystem, use the Files.walk method./h4>
+the filesystem, use the Files.walk method.</h4>
 
 <h3><u>Note:</u></h3><h4>If you want to find files in a file tree that satisfy
-given properties, use the static Files.find method in the java.nio.file package./h4>
+given properties, use the static Files.find method in the java.nio.file package.</h4>
+
+[Date-Time library](https://docs.oracle.com/javase/tutorial/datetime/TOC.html)
+
+<h3><u>Note:</u></h3><h4>If you want to use the new date and time classes 
+in the java.time package, work with the factory methods in classes like 
+Instant, Duration, Period, LocalDate, LocalTime, LocalDateTime, 
+ZonedDateTime, and others.</h4>
+
+<h3><u>Note:</u></h3><h4>The classes in Date-Time all produce immutable 
+instances, so they are thread safe. They also do not have public constructors, 
+so each is instantiated using factory methods.</h4>
+
+<h3><u>Note:</u></h3><h4>The month field in all the of methods is overloaded 
+to accept a Month enum, like Month.JANUARY, or an integer that starts at 1. 
+Since integer constants in Calendar start at 0 (that is, Calendar.JANUARY is 0),
+watch out for off-by-one errors. Use the Month enum wherever possible.</h4>
 
 --------------------------------------------------------------------------
 
