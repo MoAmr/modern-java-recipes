@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="372">
-                <caret line="1064" column="10" selection-start-line="1064" selection-start-column="7" selection-end-line="1064" selection-end-column="10" />
+              <first_editor relative-caret-position="304">
+                <caret line="1066" column="26" lean-forward="true" selection-start-line="1066" selection-start-column="26" selection-end-line="1066" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="240">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,6 +60,7 @@
       <find>``java Stream.count or Collectors.counting ````java Stream.count or Collectors.counting ``` met``java Stream.count or Collectors.counting ``` meth</find>
       <find>Collectors.counting</find>
       <find>```java</find>
+      <find>Africa/C</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,7 +277,7 @@
       <workItem from="1605377010742" duration="3989000" />
       <workItem from="1605468225207" duration="8293000" />
       <workItem from="1605537308247" duration="3978000" />
-      <workItem from="1605728991689" duration="2540000" />
+      <workItem from="1605728991689" duration="3911000" />
     </task>
     <servers />
   </component>
@@ -313,7 +314,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142355000" />
+    <option name="totallyTimeSpent" value="143726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="240">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -741,8 +742,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="372">
-            <caret line="1064" column="10" selection-start-line="1064" selection-start-column="7" selection-end-line="1064" selection-end-column="10" />
+          <first_editor relative-caret-position="304">
+            <caret line="1066" column="26" lean-forward="true" selection-start-line="1066" selection-start-column="26" selection-end-line="1066" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>

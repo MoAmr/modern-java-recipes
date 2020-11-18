@@ -1064,5 +1064,18 @@ System.out.println("There are " + regionNames.size() + " region names");
 <h3><u>Note:</u></h3><h4>Date-Time **is** method the **immutable** equivalent 
 of a **set** method.</h4>
 
+<h3><u>Note:</u></h3><h4> 
+
+```java
+ZonedDateTime.withZoneSameInstant()
+```
+
+method allows you to take one Zoned DateTime and find out what it would be 
+in another time zone.</h4>
+
+<h3><u>Note:</u></h3><h4>There are two enums in the package: Month and DayOfWeek.
+Month has constants for each month in the standard calendar (JANUARY through
+DECEMBER). Month also has many convenient methods.</h4>
+
 --------------------------------------------------------------------------
 

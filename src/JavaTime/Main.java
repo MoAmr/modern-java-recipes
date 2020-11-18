@@ -41,5 +41,19 @@ public class Main {
         regionNames.forEach(r -> System.out.println(r));
         System.out.println("\nThere are " + regionNames.size() + " region names");
 
+        /** Applying a time zone to a LocalDateTime */
+        System.out.println("\nApplying a time zone to a LocalDateTime\n");
+
+//        LocalDateTime dateTime = LocalDateTime.of(2020, Month.NOVEMBER, 18, 23, 03, 10);
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        ZonedDateTime cai = currentDateTime.atZone(ZoneId.of("Africa/Cairo"));
+        System.out.println(cai);
+
+        ZonedDateTime nyc = cai.withZoneSameInstant(ZoneId.of("America/New_York"));
+        System.out.println(nyc);
+
+        ZonedDateTime london = cai.withZoneSameInstant(ZoneId.of("Europe/London"));
+        System.out.println(london);
+
     }
 }
