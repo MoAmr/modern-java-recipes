@@ -1089,5 +1089,65 @@ follows the ISO standard, so that MONDAY is 1 and SUNDAY is 7.</h4>
 of the Date-Time classes, if you need a simple addition or subtraction, 
 use one of the plus or minus methods. Otherwise use the with method.</h4>
 
+<h3><u>Note:</u></h3><h4>One of the features of the new Date-Time API is 
+that all of the instances are immutable. Once you’ve created a LocalDate, 
+LocalTime, LocalDateTime, or ZonedDateTime, it can no longer be changed.
+This has the great advantage of making them thread safe.</h4>
+
+<h3><u>Note:</u></h3><h4>what if you want to make a new instance based on 
+the existing one? The LocalDate class has several methods for adding and 
+subtracting values from dates. Specifically, there are:
+
+```java
+LocalDate plusDays(long daysToAdd)
+LocalDate plusWeeks(long weeksToAdd)
+LocalDate plusMonths(long monthsToAdd)
+LocalDate plusYears(long yearsToAdd)
+```
+
+Each method returns a new LocalDate, which is a copy of the current date 
+with the specified value added to it.
+
+The LocalTime class has similar methods:
+
+```java
+LocalTime plusNanos(long nanosToAdd)
+LocalTime plusSeconds(long secondsToAdd)
+LocalTime plusMinutes(long minutesToAdd)
+LocalTime plusHours(long hoursToAdd)
+```
+
+Again, each returns a new instance, which is a copy of the original with the
+added amount. LocalDateTime has all the methods for both LocalDate and LocalTime.</h4>
+
+<h3><u>Note:</u></h3><h4>The classes also have two additional plus and minus 
+methods. Here are the signatures for those methods in LocalDateTime:
+
+```java
+LocalDateTime plus(long amountToAdd, TemporalUnit unit)
+LocalDateTime plus(TemporalAmount amountToAdd)
+
+LocalDateTime minus(long amountToSubtract, TemporalUnit unit)
+LocalDateTime minus(TemporalAmount amountToSubtract)
+```
+
+The corresponding methods in LocalDate and LocalTime are the same, with 
+the corresponding return types. Interestingly enough, the minus versions 
+just call the plus versions with the amounts negated.</h4>
+
+<h3><u>Note:</u></h3><h4>For the methods that take a TemporalAmount, the 
+argument is usually a Period or a Duration, but may be any type implementing
+the TemporalAmount interface. That interface has methods called addTo and
+subtractFrom:
+
+```java
+Temporal addTo(Temporal temporal)
+Temporal subtractFrom(Temporal temporal)
+```
+
+If you follow the call stack, invoking minus delegates to plus with a negated 
+argument, which delegates to TemporalAmount.addTo(Temporal), which calls back
+to plus(long, TemporalUnit), which actually does the work.</h4>
+
 --------------------------------------------------------------------------
 

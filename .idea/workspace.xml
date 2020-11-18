@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,25 +17,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="364">
-                <caret line="1077" column="50" selection-start-line="1077" selection-start-column="50" selection-end-line="1077" selection-end-column="50" />
+              <first_editor relative-caret-position="359">
+                <caret line="1135" column="53" selection-start-line="1135" selection-start-column="53" selection-end-line="1135" selection-end-column="53" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+            <state relative-caret-position="415">
+              <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="49" />
+              <folding>
+                <element signature="e#18518#18519#0" expanded="true" />
+                <element signature="e#18562#18563#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/OptionalType/Employee.java" />
         <option value="$PROJECT_DIR$/src/OptionalType/Main.java" />
         <option value="$PROJECT_DIR$/src/File_Input_Output/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -112,6 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -131,12 +147,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaTime" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Modern Java Recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Modern Java Recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Streams" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,20 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Issues_with_Streams_Lambdas_and_Method_References.Main" />
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Issues_with_Streams_Lambdas_and_Method_References.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Main.localTimePlus">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OptionalType.Main" />
       <module name="Modern Java Recipes" />
@@ -214,17 +221,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testNonNulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.localDatePlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Issues_with_Streams_Lambdas_and_Method_References.*" />
+          <option name="PATTERN" value="JavaTime.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Issues_with_Streams_Lambdas_and_Method_References" />
-      <option name="MAIN_CLASS_NAME" value="Issues_with_Streams_Lambdas_and_Method_References.Main" />
-      <option name="METHOD_NAME" value="testNonNulls" />
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="localDatePlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.localTimePlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaTime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="localTimePlus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.localTimePlus" />
+        <item itemvalue="JUnit.Main.localDatePlus" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="JUnit.Main.testNonNulls" />
       </list>
     </recent_temporary>
   </component>
@@ -276,44 +299,44 @@
       <workItem from="1605377010742" duration="3989000" />
       <workItem from="1605468225207" duration="8293000" />
       <workItem from="1605537308247" duration="3978000" />
-      <workItem from="1605728991689" duration="4914000" />
+      <workItem from="1605728991689" duration="7141000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_testIsPrimeUsingAllMatch - 2020.11.03 at 00h 23m 40s.xml">
-      <configuration name="Main.testIsPrimeUsingAllMatch" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 11m 35s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_testIsPrimeWithComposites - 2020.11.03 at 00h 23m 46s.xml">
-      <configuration name="Main.testIsPrimeWithComposites" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 12m 04s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_emptyStreamsDanger - 2020.11.03 at 00h 28m 32s.xml">
-      <configuration name="Main.emptyStreamsDanger" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 12m 23s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_concat - 2020.11.03 at 07h 59m 47s.xml">
-      <configuration name="Main.concat" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 12m 59s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_concatThree - 2020.11.04 at 07h 48m 59s.xml">
-      <configuration name="Main.concatThree" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 13m 04s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_reduce - 2020.11.04 at 08h 00m 37s.xml">
-      <configuration name="Main.reduce" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 13m 14s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_flatMap - 2020.11.04 at 16h 43m 34s.xml">
-      <configuration name="Main.flatMap" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 13m 49s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_concatParallel - 2020.11.04 at 16h 48m 02s.xml">
-      <configuration name="Main.concatParallel" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 14m 14s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_flatMapParallel - 2020.11.04 at 16h 55m 04s.xml">
-      <configuration name="Main.flatMapParallel" configurationId="JUnit" />
+    <history-entry file="Main_localDatePlus - 2020.11.19 at 00h 14m 36s.xml">
+      <configuration name="Main.localDatePlus" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_testNonNulls - 2020.11.10 at 21h 36m 55s.xml">
-      <configuration name="Main.testNonNulls" configurationId="JUnit" />
+    <history-entry file="Main_localTimePlus - 2020.11.19 at 00h 21m 18s.xml">
+      <configuration name="Main.localTimePlus" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144729000" />
+    <option name="totallyTimeSpent" value="146956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,7 +351,7 @@
     <frame x="680" y="0" width="760" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20833333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20752089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -348,6 +371,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32891566" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3286908" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -359,41 +383,14 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32891566" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Mongo Explorer" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Modern_Java_Recipes$Main_localDatePlus.ic" NAME="Main.localDatePlus Coverage Results" MODIFIED="1605737673645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>JavaTime.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/test.txt">
@@ -613,18 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="220" column="29" selection-start-line="220" selection-start-column="29" selection-end-line="220" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#18518#18519#0" expanded="true" />
-            <element signature="e#18562#18563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues_with_Streams_Lambdas_and_Method_References/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
@@ -728,23 +713,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="364">
-            <caret line="1077" column="50" selection-start-line="1077" selection-start-column="50" selection-end-line="1077" selection-end-column="50" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/Streams/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="e#18518#18519#0" expanded="true" />
+            <element signature="e#18562#18563#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+        <state relative-caret-position="415">
+          <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="359">
+            <caret line="1135" column="53" selection-start-line="1135" selection-start-column="53" selection-end-line="1135" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,12 @@
 package JavaTime;
 
+import org.junit.Test;
+
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author Mohammed Amr
@@ -64,6 +69,48 @@ public class Main {
         System.out.println("Month.of(1): " + Month.of(1));
         System.out.println("Adding two months: " + Month.JANUARY.plus(2));
         System.out.println("Subtracting a month: " + Month.MARCH.minus(1));
+
+    }
+
+    /** Using plus methods on LocalDate */
+    @Test
+    public void localDatePlus() throws Exception {
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate start = LocalDate.of(2020, Month.NOVEMBER, 19);
+
+        LocalDate end = start.plusDays(3);
+        assertEquals("2020-11-22", end.format(formatter));
+
+        end = start.plusWeeks(5);
+        assertEquals("2020-12-24", end.format(formatter));
+
+        end = start.plusMonths(7);
+        assertEquals("2021-06-19", end.format(formatter));
+
+        end = start.plusYears(2);
+        assertEquals("2022-11-19", end.format(formatter));
+
+    }
+
+    /** Using plus methods on LocalTime */
+    @Test
+    public void localTimePlus() throws Exception {
+
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_TIME;
+        LocalTime start = LocalTime.of(11, 30, 0, 0);
+
+        LocalTime end = start.plusNanos(1_000_000);
+        assertEquals("11:30:00.001", end.format(formatter));
+
+        end = start.plusSeconds(20);
+        assertEquals("11:30:20", end.format(formatter));
+
+        end = start.plusMinutes(45);
+        assertEquals("12:15:00", end.format(formatter));
+
+        end = start.plusHours(5);
+        assertEquals("16:30:00", end.format(formatter));
 
     }
 }
