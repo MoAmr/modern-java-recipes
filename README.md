@@ -1077,5 +1077,17 @@ in another time zone.</h4>
 Month has constants for each month in the standard calendar (JANUARY through
 DECEMBER). Month also has many convenient methods.</h4>
 
+<h3><u>Note:</u></h3><h4>Because the java.time classes are immutable,
+any instance method that seems to modify one, like plus, minus, or with, 
+produces a new instance.</h4>
+
+<h3><u>Note:</u></h3><h4>The DayOfWeek enum has constants representing the 
+seven weekdays, from MONDAY through SUNDAY. Again the int value for each 
+follows the ISO standard, so that MONDAY is 1 and SUNDAY is 7.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to modify an existing instance of one
+of the Date-Time classes, if you need a simple addition or subtraction, 
+use one of the plus or minus methods. Otherwise use the with method.</h4>
+
 --------------------------------------------------------------------------
 

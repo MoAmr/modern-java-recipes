@@ -55,5 +55,15 @@ public class Main {
         ZonedDateTime london = cai.withZoneSameInstant(ZoneId.of("Europe/London"));
         System.out.println(london);
 
+        /** Some methods in the Month enum */
+        System.out.println("\nSome methods in the Month enum\n");
+        System.out.println("Days in Feb in a leap year: " +
+                Month.FEBRUARY.length(true)); // Argument is boolean leapYear
+        System.out.println("Days of year for first day of Aug (leap year): " +
+                Month.AUGUST.firstDayOfYear(true)); // Argument is boolean leapYear
+        System.out.println("Month.of(1): " + Month.of(1));
+        System.out.println("Adding two months: " + Month.JANUARY.plus(2));
+        System.out.println("Subtracting a month: " + Month.MARCH.minus(1));
+
     }
 }
