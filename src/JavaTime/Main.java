@@ -1,6 +1,7 @@
 package JavaTime;
 
 import java.time.*;
+import java.util.Set;
 
 /**
  * @author Mohammed Amr
@@ -33,5 +34,12 @@ public class Main {
         LocalTime walkTime = LocalTime.of(20, 2, 56, 150_000_000);
         LocalDateTime walk = LocalDateTime.of(moonLandingDate, walkTime);
         System.out.println(walk);
+
+        /** Getting the complete list of available region IDs */
+        System.out.println("\nGetting the complete list of available region IDs:\n");
+        Set<String> regionNames = ZoneId.getAvailableZoneIds();
+        regionNames.forEach(r -> System.out.println(r));
+        System.out.println("\nThere are " + regionNames.size() + " region names");
+
     }
 }

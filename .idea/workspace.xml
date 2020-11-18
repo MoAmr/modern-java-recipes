@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="447">
-                <caret line="1054" column="51" selection-start-line="1054" selection-start-column="51" selection-end-line="1054" selection-end-column="51" />
+              <first_editor relative-caret-position="372">
+                <caret line="1064" column="10" selection-start-line="1064" selection-start-column="7" selection-end-line="1064" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -32,8 +32,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+            <state relative-caret-position="360">
+              <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -273,7 +276,7 @@
       <workItem from="1605377010742" duration="3989000" />
       <workItem from="1605468225207" duration="8293000" />
       <workItem from="1605537308247" duration="3978000" />
-      <workItem from="1605728991689" duration="1637000" />
+      <workItem from="1605728991689" duration="2540000" />
     </task>
     <servers />
   </component>
@@ -310,7 +313,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141452000" />
+    <option name="totallyTimeSpent" value="142355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,16 +730,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        <state relative-caret-position="360">
+          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="447">
-            <caret line="1054" column="51" selection-start-line="1054" selection-start-column="51" selection-end-line="1054" selection-end-column="51" />
+          <first_editor relative-caret-position="372">
+            <caret line="1064" column="10" selection-start-line="1064" selection-start-column="7" selection-end-line="1064" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
