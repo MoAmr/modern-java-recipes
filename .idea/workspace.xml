@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="199" column="79" selection-start-line="199" selection-start-column="79" selection-end-line="199" selection-end-column="79" />
+            <state relative-caret-position="195">
+              <caret line="188" column="40" selection-start-line="188" selection-start-column="40" selection-end-line="188" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -302,14 +300,11 @@
       <workItem from="1605468225207" duration="8293000" />
       <workItem from="1605537308247" duration="3978000" />
       <workItem from="1605728991689" duration="9417000" />
-      <workItem from="1605903014878" duration="4801000" />
+      <workItem from="1605903014878" duration="5220000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_adjusters - 2020.11.20 at 23h 08m 17s.xml">
-      <configuration name="Main.adjusters" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_adjusters - 2020.11.20 at 23h 10m 23s.xml">
       <configuration name="Main.adjusters" configurationId="JUnit" />
     </history-entry>
@@ -337,9 +332,12 @@
     <history-entry file="Main_payDay - 2020.11.20 at 23h 34m 29s.xml">
       <configuration name="Main.payDay" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_payDay - 2020.11.20 at 23h 36m 33s.xml">
+      <configuration name="Main.payDay" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154033000" />
+    <option name="totallyTimeSpent" value="154452000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -782,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="199" column="79" selection-start-line="199" selection-start-column="79" selection-end-line="199" selection-end-column="79" />
+        <state relative-caret-position="195">
+          <caret line="188" column="40" selection-start-line="188" selection-start-column="40" selection-end-line="188" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
