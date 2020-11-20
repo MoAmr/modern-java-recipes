@@ -1183,5 +1183,39 @@ LocalDateTime withYear(int year)
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>Given a temporal value, you want to adjust it to a 
+new one based on your own logic, or you want to retrieve information about it,
+create a TemporalAdjuster or formulate a TemporalQuery.</h4>
+
+<h3><u>Note:</u></h3><h4>The TemporalAdjuster interface provides methods 
+that take a Temporal value and return an adjusted one. 
+The TemporalAdjusters class contains a set of adjusters as static methods 
+you might find convenient:
+
+```java
+static TemporalAdjuster firstDayOfNextMonth() 
+static TemporalAdjuster firstDayOfNextYear() 
+static TemporalAdjuster firstDayOfYear()
+static TemporalAdjuster firstInMonth(DayOfWeek dayOfWeek) 
+static TemporalAdjuster lastDayOfMonth()
+static TemporalAdjuster lastDayOfYear()
+static TemporalAdjuster lastInMonth(DayOfWeek dayOfWeek)
+static TemporalAdjuster next(DayOfWeek dayOfWeek)
+static TemporalAdjuster nextOrSame(DayOfWeek dayOfWeek) 
+static TemporalAdjuster previous(DayOfWeek dayOfWeek) 
+static TemporalAdjuster previousOrSame(DayOfWeek dayOfWeek)
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>TemporalAdjuster is a functional interface, 
+whose single abstract method is:
+
+```java
+Temporal adjustInto(Temporal temporal)
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 

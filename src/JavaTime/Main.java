@@ -6,6 +6,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -166,5 +167,19 @@ public class Main {
         LocalDateTime start = LocalDateTime.of(2020, Month.NOVEMBER, 30, 22, 16);
         LocalDateTime end = start.with(ChronoField.MONTH_OF_YEAR, 2);
         assertEquals("2020-02-20T22:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+    }
+
+    /** Using static methods in TemporalAdjusters */
+    @Test
+    public void adjusters() throws Exception {
+        LocalDateTime start = LocalDateTime.of(2020, Month.NOVEMBER, 20, 22, 16);
+        LocalDateTime end = start.with(TemporalAdjusters.firstDayOfNextMonth());
+        assertEquals("2020-12-01T22:16", end.toString());
+
+        end = start.with(TemporalAdjusters.next(DayOfWeek.THURSDAY));
+        assertEquals("2020-11-26T22:16", end.toString());
+
+        end = start.with(TemporalAdjusters.previousOrSame(DayOfWeek.THURSDAY));
+        assertEquals("2020-11-19T22:16", end.toString());
     }
 }
