@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 import java.util.Set;
 
@@ -137,5 +138,33 @@ public class Main {
         end = start.plus(3, ChronoUnit.MILLENNIA);
         assertEquals("5020-11-19T00:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
+    }
+
+    /** Using with methods on LocalDateTime */
+    @Test
+    public void with() throws Exception {
+        LocalDateTime start = LocalDateTime.of(2020, Month.NOVEMBER, 20, 22, 16);
+        LocalDateTime end = start.withMinute(45);
+        assertEquals("2020-11-20T22:45:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.withHour(16);
+        assertEquals("2020-11-20T16:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.withDayOfMonth(28);
+        assertEquals("2020-11-28T22:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.withDayOfYear(300);
+        assertEquals("2020-10-26T22:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+        end = start.withYear(2021);
+        assertEquals("2021-11-20T22:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+    }
+
+    /** Adjusting the month to an invalid value */
+    @Test
+    public void temporalField() throws Exception {
+        LocalDateTime start = LocalDateTime.of(2020, Month.NOVEMBER, 30, 22, 16);
+        LocalDateTime end = start.with(ChronoField.MONTH_OF_YEAR, 2);
+        assertEquals("2020-02-20T22:16:00", end.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
     }
 }
