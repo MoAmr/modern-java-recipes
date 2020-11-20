@@ -200,4 +200,22 @@ public class Main {
                 .forEach(date ->
                         assertEquals(31, date.with(adjuster).getDayOfMonth()));
     }
+
+    /**  Using a method reference for the temporal adjuster */
+    @Test
+    public void payDayWithMethodRef() throws Exception {
+
+        IntStream.rangeClosed(1, 14)
+                .mapToObj(day -> LocalDate.of(2020, Month.AUGUST, day))
+                .forEach(date ->
+                        assertEquals(14,
+                                date.with(Adjusters::adjustInto).getDayOfMonth()));
+
+        IntStream.rangeClosed(15, 31)
+                .mapToObj(day -> LocalDate.of(2020, Month.AUGUST, day))
+                .forEach(date ->
+                        assertEquals(31,
+                                date.with(Adjusters::adjustInto).getDayOfMonth())); // Method reference to adjustInto
+
+    }
 }
