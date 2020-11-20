@@ -6,8 +6,10 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Set;
+import java.util.stream.IntStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -181,5 +183,21 @@ public class Main {
 
         end = start.with(TemporalAdjusters.previousOrSame(DayOfWeek.THURSDAY));
         assertEquals("2020-11-19T22:16", end.toString());
+    }
+
+    /** Testing the PayDay adjuster for August 2020 */
+    // In August 2020, the 15th occurred on a Saturday and the 31st was on a Monday.
+    @Test
+    public void payDay() throws Exception {
+        TemporalAdjuster adjuster = new PaydayAdjuster();
+        IntStream.rangeClosed(1, 14)
+                .mapToObj(day -> LocalDate.of(2020, Month.AUGUST, day))
+                .forEach(date ->
+                        assertEquals(14, date.with(adjuster).getDayOfMonth()));
+
+        IntStream.rangeClosed(15, 31)
+                .mapToObj(day -> LocalDate.of(2020, Month.AUGUST, day))
+                .forEach(date ->
+                        assertEquals(31, date.with(adjuster).getDayOfMonth()));
     }
 }
