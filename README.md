@@ -1217,5 +1217,14 @@ Temporal adjustInto(Temporal temporal)
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>The TemporalQuery interface has only a single 
+abstract method:
+
+```java
+R queryFrom(TemporalAccessor temporal)
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 

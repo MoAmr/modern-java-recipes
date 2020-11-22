@@ -4,10 +4,7 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoField;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAdjuster;
-import java.time.temporal.TemporalAdjusters;
+import java.time.temporal.*;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -216,6 +213,23 @@ public class Main {
                 .forEach(date ->
                         assertEquals(31,
                                 date.with(Adjusters::adjustInto).getDayOfMonth())); // Method reference to adjustInto
+
+    }
+
+    /** Using the methods from TemporalQueries */
+    @Test
+    public void queries() throws Exception {
+        assertEquals(ChronoUnit.DAYS,
+                LocalDate.now().query(TemporalQueries.precision()));
+
+        assertEquals(ChronoUnit.NANOS,
+                LocalTime.now().query(TemporalQueries.precision()));
+
+        assertEquals(ZoneId.systemDefault(),
+                ZonedDateTime.now().query(TemporalQueries.zone()));
+
+        assertEquals(ZoneId.systemDefault(),
+                ZonedDateTime.now().query(TemporalQueries.zoneId()));
 
     }
 }
