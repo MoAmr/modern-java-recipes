@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.*;
+import java.util.Date;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -85,6 +86,11 @@ public class Main {
             tlapd = tlapd.plusYears(1);
         }
         return ChronoUnit.DAYS.between(date, tlapd);
+    }
+
+    /** Converting java.util.Date to java.time.LocalDate via Instant */
+    public LocalDate convertFromUtilDateUsingInstant(Date date) {
+        return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
 
     /** Using plus methods on LocalDate */

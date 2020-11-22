@@ -1226,5 +1226,27 @@ R queryFrom(TemporalAccessor temporal)
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>If you want to convert from java.util.Date or 
+java.util.Calendar to the new classes in the java.time package, use the 
+Instant class as a bridge, or use java.sql.Date and java.sql.Timestamp 
+methods, or even strings or integers for the conversion.</h4>
+
+<h3><u>Note:</u></h3><h4>Conversion methods in java.sql.Date:
+
+```java
+LocalDate toLocalDate()
+static Date valueOf(LocalDate date)
+
+```
+
+Conversion methods in java.sql.Timestamp:
+
+```java
+LocalDateTime toLocalDateTime()
+static Timestamp valueOf(LocalDateTime dateTime)
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 

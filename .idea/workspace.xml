@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="387">
-                <caret line="1223" column="38" selection-start-line="1223" selection-start-column="38" selection-end-line="1223" selection-end-column="38" />
+              <first_editor relative-caret-position="376">
+                <caret line="1231" selection-start-line="1231" selection-end-line="1231" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
+            <state relative-caret-position="440">
+              <caret line="92" column="77" selection-start-line="92" selection-start-column="77" selection-end-line="92" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -316,14 +317,11 @@
       <workItem from="1605537308247" duration="3978000" />
       <workItem from="1605728991689" duration="9417000" />
       <workItem from="1605903014878" duration="5777000" />
-      <workItem from="1606079681355" duration="1804000" />
+      <workItem from="1606079681355" duration="2158000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_adjusters - 2020.11.20 at 23h 12m 29s.xml">
-      <configuration name="Main.adjusters" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_payDay - 2020.11.20 at 23h 30m 50s.xml">
       <configuration name="Main.payDay" configurationId="JUnit" />
     </history-entry>
@@ -351,9 +349,12 @@
     <history-entry file="Main_queries - 2020.11.22 at 23h 32m 06s.xml">
       <configuration name="Main.queries" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_pirateDay - 2020.11.22 at 23h 48m 15s.xml">
+      <configuration name="Main.pirateDay" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156813000" />
+    <option name="totallyTimeSpent" value="157167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,8 +798,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="387">
-            <caret line="1223" column="38" selection-start-line="1223" selection-start-column="38" selection-end-line="1223" selection-end-column="38" />
+          <first_editor relative-caret-position="376">
+            <caret line="1231" selection-start-line="1231" selection-end-line="1231" />
           </first_editor>
           <second_editor />
         </state>
@@ -806,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
+        <state relative-caret-position="440">
+          <caret line="92" column="77" selection-start-line="92" selection-start-column="77" selection-end-line="92" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
