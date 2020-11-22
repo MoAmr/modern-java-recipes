@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+            <state relative-caret-position="480">
+              <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.queries">
+  <component name="RunManager" selected="JUnit.Main.pirateDay">
     <configuration name="Main.adjusters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
@@ -236,6 +236,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.pirateDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaTime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="pirateDay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.queries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
@@ -252,29 +268,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.temporalField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaTime.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JavaTime" />
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
-      <option name="METHOD_NAME" value="temporalField" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.pirateDay" />
         <item itemvalue="JUnit.Main.queries" />
         <item itemvalue="JUnit.Main.payDayWithMethodRef" />
         <item itemvalue="JUnit.Main.payDay" />
         <item itemvalue="JUnit.Main.adjusters" />
-        <item itemvalue="JUnit.Main.temporalField" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +316,7 @@
       <workItem from="1605537308247" duration="3978000" />
       <workItem from="1605728991689" duration="9417000" />
       <workItem from="1605903014878" duration="5777000" />
-      <workItem from="1606079681355" duration="1515000" />
+      <workItem from="1606079681355" duration="1804000" />
     </task>
     <servers />
   </component>
@@ -353,7 +353,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156524000" />
+    <option name="totallyTimeSpent" value="156813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+        <state relative-caret-position="480">
+          <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

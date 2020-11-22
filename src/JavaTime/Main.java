@@ -245,4 +245,19 @@ public class Main {
                 ZonedDateTime.now().query(TemporalQueries.zoneId()));
 
     }
+
+    /** Using a TemporalQuery via a method reference */
+    @Test
+    public void pirateDay() throws Exception {
+        IntStream.range(10, 19)
+                .mapToObj(n -> LocalDate.of(2020, Month.SEPTEMBER, n))
+                .forEach(date ->
+                        assertTrue(date.query(this::dayUntilPirateDay) <= 9));
+
+        IntStream.rangeClosed(20, 30)
+                .mapToObj(n -> LocalDate.of(2020, Month.SEPTEMBER, n))
+                .forEach(date -> {
+                    Long days = date.query(this::dayUntilPirateDay);
+                });
+    }
 }
