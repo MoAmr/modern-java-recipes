@@ -28,4 +28,9 @@ public class ConvertDate {
     public Timestamp convertFromLDTToTimestamp(LocalDateTime localDateTime) {
         return Timestamp.valueOf(localDateTime);
     }
+
+    /** Converting a java.util.Date to a java.time.LocalDate */
+    public LocalDate convertUtilDateToLocalDate(java.util.Date date) {
+        return new java.sql.Date(date.getTime()).toLocalDate();
+    }
 }

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/JavaTime/ConvertDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,19 +16,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="312">
-                <caret line="1245" column="48" selection-start-line="1245" selection-start-column="48" selection-end-line="1245" selection-end-column="48" />
+              <first_editor relative-caret-position="372">
+                <caret line="1251" selection-start-line="1251" selection-end-line="1251" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/ConvertDate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -144,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/JavaTime/PaydayAdjuster.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/Adjusters.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/JavaTime/ConvertDate.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -338,7 +337,7 @@
       <workItem from="1605537308247" duration="3978000" />
       <workItem from="1605728991689" duration="9417000" />
       <workItem from="1605903014878" duration="5777000" />
-      <workItem from="1606079681355" duration="2984000" />
+      <workItem from="1606079681355" duration="3224000" />
     </task>
     <servers />
   </component>
@@ -375,7 +374,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157993000" />
+    <option name="totallyTimeSpent" value="158233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,16 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="312">
-            <caret line="1245" column="48" selection-start-line="1245" selection-start-column="48" selection-end-line="1245" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/ConvertDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -818,6 +807,16 @@
             <element signature="e#736#737#0" expanded="true" />
             <element signature="e#767#768#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="372">
+            <caret line="1251" selection-start-line="1251" selection-end-line="1251" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

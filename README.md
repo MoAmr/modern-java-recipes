@@ -1249,5 +1249,10 @@ static Timestamp valueOf(LocalDateTime dateTime)
 </h4>
 
 [Year_2038_problem](https://en.wikipedia.org/wiki/Year_2038_problem)
+
+<h3><u>Note:</u></h3><h4>Converting between calendar instances and the new 
+java.time package can be done with the toInstant method, adjusting for the 
+time zone </h4>
+
 --------------------------------------------------------------------------
 
