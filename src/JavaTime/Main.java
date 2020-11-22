@@ -74,6 +74,19 @@ public class Main {
 
     }
 
+    /** Method to calculate days until Talk Like A Pirate Day */
+    private long dayUntilPirateDay(TemporalAccessor temporal) {
+        int day = temporal.get(ChronoField.DAY_OF_MONTH);
+        int month = temporal.get(ChronoField.MONTH_OF_YEAR);
+        int year = temporal.get(ChronoField.YEAR);
+        LocalDate date = LocalDate.of(year, month, day);
+        LocalDate tlapd = LocalDate.of(year, Month.SEPTEMBER, 19);
+        if (date.isAfter(tlapd)) {
+            tlapd = tlapd.plusYears(1);
+        }
+        return ChronoUnit.DAYS.between(date, tlapd);
+    }
+
     /** Using plus methods on LocalDate */
     @Test
     public void localDatePlus() throws Exception {
