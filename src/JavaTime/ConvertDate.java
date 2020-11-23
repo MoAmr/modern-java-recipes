@@ -7,10 +7,14 @@ package JavaTime;
  */
 
 import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
+import java.util.Date;
 
 /** Converting java.util classes to java.time classes */
 public class ConvertDate {
@@ -49,5 +53,12 @@ public class ConvertDate {
                 cal.get(Calendar.HOUR),
                 cal.get(Calendar.MINUTE),
                 cal.get(Calendar.SECOND));
+    }
+
+    /** Generating and parsing a timestamp string */
+    public LocalDateTime convertFromUtilDateToLDUUsingString(Date date) {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        return LocalDateTime.parse(df.format(date),
+                DateTimeFormatter.ISO_LOCAL_DATE_TIME);
     }
 }
