@@ -40,4 +40,14 @@ public class ConvertDate {
     public ZonedDateTime convertFromCalendar(Calendar cal) {
         return ZonedDateTime.ofInstant(cal.toInstant(), cal.getTimeZone().toZoneId());
     }
+
+    /** Using getter methods from Calendar to LocalDateTime */
+    public LocalDateTime cinvertFromCalendarUsingGetters(Calendar cal) {
+        return LocalDateTime.of(cal.get(Calendar.YEAR),
+                cal.get(Calendar.MONDAY),
+                cal.get(Calendar.DAY_OF_MONTH),
+                cal.get(Calendar.HOUR),
+                cal.get(Calendar.MINUTE),
+                cal.get(Calendar.SECOND));
+    }
 }
