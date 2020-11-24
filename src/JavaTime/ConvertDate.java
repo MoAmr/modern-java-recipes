@@ -15,6 +15,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /** Converting java.util classes to java.time classes */
 public class ConvertDate {
@@ -60,5 +61,10 @@ public class ConvertDate {
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         return LocalDateTime.parse(df.format(date),
                 DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+    }
+
+    /** Converting a GregorianCalendar to a ZonedDateTime */
+    public ZonedDateTime convertFromGregoianCalendar(Calendar cal) {
+        return ((GregorianCalendar) cal).toZonedDateTime();
     }
 }
