@@ -11,6 +11,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
@@ -67,4 +68,10 @@ public class ConvertDate {
     public ZonedDateTime convertFromGregoianCalendar(Calendar cal) {
         return ((GregorianCalendar) cal).toZonedDateTime();
     }
+
+    /** Converting java.util.Dat to java.time.LocalDate (JAVA 9 ONLY) */
+    public LocalDate convertFromUtilDateJava9(Date date) {
+        return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
+    }
+    
 }
