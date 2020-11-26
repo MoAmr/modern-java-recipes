@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,12 +16,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
+              <first_editor relative-caret-position="357">
+                <caret line="1306" column="21" lean-forward="true" selection-start-line="1306" selection-start-column="21" selection-end-line="1306" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
+            <state relative-caret-position="429">
+              <caret line="155" column="61" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/JavaTime/Adjusters.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/ConvertDate.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java" />
-        <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
       </list>
     </option>
   </component>
@@ -215,9 +214,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.getRegionNamesForChicago">
-    <configuration name="FunnyOffsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaTime.FunnyOffsets" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -295,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.getRegionNamesForChicago" />
         <item itemvalue="JUnit.Main.getRegionNamesForNepal" />
         <item itemvalue="JUnit.Main.getRegionNamesForGMT" />
         <item itemvalue="JUnit.Main.getRegionNamesForSystemDefault" />
-        <item itemvalue="Application.FunnyOffsets" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +342,7 @@
       <workItem from="1605903014878" duration="5777000" />
       <workItem from="1606079681355" duration="3812000" />
       <workItem from="1606145331599" duration="5416000" />
-      <workItem from="1606400270772" duration="7811000" />
+      <workItem from="1606400270772" duration="8408000" />
     </task>
     <servers />
   </component>
@@ -380,7 +379,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172048000" />
+    <option name="totallyTimeSpent" value="172645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,23 +840,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
+          <first_editor relative-caret-position="357">
+            <caret line="1306" column="21" lean-forward="true" selection-start-line="1306" selection-start-column="21" selection-end-line="1306" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="155" column="61" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1306,5 +1306,20 @@ before the first argument. The return value is the number of “units” between
 the arguments. This becomes convenient when using the constants in the 
 ChronoUnit enum.</h4>
 
+<h3><u>Note:</u></h3><h4>Other constants in ChronoUnit include HOURS, WEEKS,
+MONTHS, YEARS, DECADES, CENTURIES, and more.</h4>
+
+<h3><u>Note:</u></h3><h4>Using the Period class:
+If you’re interested in a breakdown into years, months, and days, use the 
+Period class. The until method in many of the basic classes has an overload 
+that returns a Period:
+
+```java
+// In java.time.LocalDate
+Period until(ChronoLocalDate endDateExclusive)
+```
+
+</h4>
+
 --------------------------------------------------------------------------
 

@@ -147,6 +147,17 @@ public class Main {
         ZonedDateTime zdt = ZonedDateTime.of(2020, 11, 26, 2, 30, 0, 0,
                 ZoneId.of("America/New_York"));
         System.out.println(zdt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL)));
+
+        /** Using the between method of ChronoUnit enum - Days to Election Day */
+        LocalDate electionDay = LocalDate.of(2020, Month.DECEMBER, 1);
+        LocalDate today = LocalDate.now();
+
+        System.out.printf("%d day(s) to go...%n",
+                ChronoUnit.DAYS.between(today, electionDay));
+
+        // Since the between method is invoked on the DAYS enum value, this will return the number of days.
+
+
     }
 
     /** Getting region names given an offset */
