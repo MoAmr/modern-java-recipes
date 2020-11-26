@@ -169,6 +169,12 @@ public class Main {
         return getRegionNamesForOffset(offset);
     }
 
+    /** Getting region names given an hour and minute offset */
+    public static List<String> getRegionNamesForOffset(int hours, int minutes) {
+        ZoneOffset offset = ZoneOffset.ofHoursMinutes(hours, minutes);
+        return getRegionNamesForOffset(offset);
+    }
+
     /** Method to calculate days until Talk Like A Pirate Day */
     private long dayUntilPirateDay(TemporalAccessor temporal) {
         int day = temporal.get(ChronoField.DAY_OF_MONTH);
@@ -370,4 +376,7 @@ public class Main {
 
         assertTrue(names.contains(zoneId.getId()));
     }
+
+
+
 }
