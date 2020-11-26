@@ -1321,5 +1321,10 @@ Period until(ChronoLocalDate endDateExclusive)
 
 </h4>
 
+<h3><u>Note:</u></h3><h4>The Period class is used when you need to deal with 
+human-readable times, like days, months, and years.</h4>
+
+
+
 --------------------------------------------------------------------------
 

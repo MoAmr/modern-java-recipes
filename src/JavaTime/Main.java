@@ -157,6 +157,13 @@ public class Main {
 
         // Since the between method is invoked on the DAYS enum value, this will return the number of days.
 
+        /** Using Period to get days, months, and years */
+        Period until = today.until(electionDay); // Equivalent to Period.between(today, electionDay)
+        int years = until.getYears();
+        int months = until.getMonths();
+        int days = until.getDays();
+        System.out.printf("%d year(s), %d month(s), and %d day(s)%n",
+                years, months, days);
 
     }
 
