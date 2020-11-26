@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="383">
-                <caret line="1276" selection-start-line="1276" selection-end-line="1276" />
+              <first_editor relative-caret-position="365">
+                <caret line="1280" column="65" lean-forward="true" selection-start-line="1280" selection-start-column="65" selection-end-line="1280" selection-end-column="65" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,11 +42,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="144" column="63" lean-forward="true" selection-start-line="144" selection-start-column="63" selection-end-line="144" selection-end-column="65" />
+            <state relative-caret-position="142">
+              <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +150,9 @@
         <option value="$PROJECT_DIR$/src/JavaTime/PaydayAdjuster.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/Adjusters.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/ConvertDate.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java" />
       </list>
     </option>
   </component>
@@ -153,6 +168,8 @@
     </navigator>
     <panes>
       <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,8 +192,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,9 +216,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+  <component name="RunManager" selected="Application.FunnyOffsets">
+    <configuration name="FunnyOffsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaTime.FunnyOffsets" />
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -215,7 +230,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.payDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -223,10 +239,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="JavaTime" />
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
-      <option name="METHOD_NAME" value="payDay" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FunnyOffsets" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.pirateDay" />
         <item itemvalue="JUnit.Main.queries" />
         <item itemvalue="JUnit.Main.payDayWithMethodRef" />
-        <item itemvalue="JUnit.Main.payDay" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +341,7 @@
       <workItem from="1605903014878" duration="5777000" />
       <workItem from="1606079681355" duration="3812000" />
       <workItem from="1606145331599" duration="5416000" />
-      <workItem from="1606400270772" duration="3133000" />
+      <workItem from="1606400270772" duration="5222000" />
     </task>
     <servers />
   </component>
@@ -366,7 +378,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167370000" />
+    <option name="totallyTimeSpent" value="169459000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,7 +393,7 @@
     <frame x="726" y="0" width="714" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.09012876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24404761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -390,7 +402,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -820,8 +832,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="383">
-            <caret line="1276" selection-start-line="1276" selection-end-line="1276" />
+          <first_editor relative-caret-position="365">
+            <caret line="1280" column="65" lean-forward="true" selection-start-line="1280" selection-start-column="65" selection-end-line="1280" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>
@@ -829,8 +841,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="144" column="63" lean-forward="true" selection-start-line="144" selection-start-column="63" selection-end-line="144" selection-end-column="65" />
+        <state relative-caret-position="142">
+          <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

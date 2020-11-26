@@ -1276,5 +1276,9 @@ String format(DateTimeFormatter formatter)
 and DateTime Exception, respectively, so you might want to consider catching 
 them in your own code.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to find all the time zones with 
+non-integral hour offsets, get the time zone offset for each time zone and 
+determine its remainder when dividing the total seconds by 3,600.</h4>
+
 --------------------------------------------------------------------------
 
