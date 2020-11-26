@@ -125,7 +125,26 @@ public class Main {
                 date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
                 .withLocale(loc)));
 
+        /** Defining your own format pattern */
+        ZonedDateTime moonLanding = ZonedDateTime.of(
+                LocalDate.of(1969, Month.JULY, 20),
+                LocalTime.of(20, 18),
+                ZoneId.of("UTC")
+        );
 
+        System.out.println(moonLanding.format(DateTimeFormatter.ISO_ZONED_DATE_TIME));
+
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern("uuuu/MMMM/dd hh:mm:ss a zzz GG");
+        System.out.println(moonLanding.format(formatter));
+
+        formatter = DateTimeFormatter.ofPattern("uuuu/MMMM/dd hh:mm:ss a VV xxxxx");
+        System.out.println(moonLanding.format(formatter));
+
+        /** Move the clocks forward */
+        ZonedDateTime zdt = ZonedDateTime.of(2020, 11, 26, 2, 30, 0, 0,
+                ZoneId.of("America/New_York"));
+        System.out.println(zdt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL)));
     }
 
     /** Method to calculate days until Talk Like A Pirate Day */
