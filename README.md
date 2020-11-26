@@ -1254,5 +1254,27 @@ static Timestamp valueOf(LocalDateTime dateTime)
 java.time package can be done with the toInstant method, adjusting for the 
 time zone </h4>
 
+<h3><u>Note:</u></h3><h4>If You want to parse and/or format the new 
+date-time classes, use the DateTimeFormatter class creates date-time formats, 
+which can be used for both parsing and formatting.</h4>
+
+<h3><u>Note:</u></h3><h4>The DateTimeFormatter class has a wide variety of 
+options, from constants like ISO_LOCAL_DATE to pattern letters like 
+uuuu-MMM-dd to localized styles for any given Locale.</h4>
+
+<h3><u>Note:</u></h3><h4>Methods to parse and format LocalDate instances:
+
+```java
+static LocalDate parse(CharSequence text) // Uses ISO_LOCAL_DATE
+static LocalDate parse(CharSequence text, DateTimeFormatter formatter)
+String format(DateTimeFormatter formatter)
+```
+
+</h4>
+
+<h3><u>Note:</u></h3><h4>The parse and format methods throw a DateTimeParseException 
+and DateTime Exception, respectively, so you might want to consider catching 
+them in your own code.</h4>
+
 --------------------------------------------------------------------------
 

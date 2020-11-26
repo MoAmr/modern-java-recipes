@@ -4,8 +4,10 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.temporal.*;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -72,6 +74,57 @@ public class Main {
         System.out.println("Month.of(1): " + Month.of(1));
         System.out.println("Adding two months: " + Month.JANUARY.plus(2));
         System.out.println("Subtracting a month: " + Month.MARCH.minus(1));
+
+        /**  Parsing and formatting a LocalDate */
+        System.out.println("\nParsing and formatting a LocalDate\n");
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+        String text = now.format(DateTimeFormatter.ISO_DATE_TIME); // Format from LocalDateTime to string
+        LocalDateTime dateTime = LocalDateTime.parse(text); // Parse from string to LocalDateTime
+        System.out.println(dateTime);
+
+        /** Formatting dates */
+        System.out.println("\n Formatting dates\n");
+
+        LocalDate date = LocalDate.of(2020, Month.NOVEMBER, 26);
+
+        System.out.println("Full   : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)));
+
+        System.out.println("Long   : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
+
+        System.out.println("Medium : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)));
+
+        System.out.println("Short  : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
+
+        System.out.println("France : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(Locale.FRANCE)));
+
+        System.out.println("India  : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(new Locale("hin", "IN"))));
+
+        System.out.println("Brazil : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(new Locale("pt", "BR"))));
+
+        System.out.println("Japan  : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(Locale.JAPAN)));
+
+        Locale loc = new Locale.Builder()
+                .setLanguage("sr")
+                .setScript("Latn")
+                .setRegion("RS")
+                .build();
+        System.out.println("Serbian : " +
+                date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(loc)));
+
 
     }
 
