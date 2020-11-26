@@ -1280,5 +1280,8 @@ them in your own code.</h4>
 non-integral hour offsets, get the time zone offset for each time zone and 
 determine its remainder when dividing the total seconds by 3,600.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to know the ISO 8601 region name given 
+an offset from UTC, filter all the available zone IDs by the given offset.</h4>
+
 --------------------------------------------------------------------------
 

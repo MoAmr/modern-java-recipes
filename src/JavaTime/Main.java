@@ -7,8 +7,10 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.*;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -145,6 +147,26 @@ public class Main {
         ZonedDateTime zdt = ZonedDateTime.of(2020, 11, 26, 2, 30, 0, 0,
                 ZoneId.of("America/New_York"));
         System.out.println(zdt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL)));
+    }
+
+    /** Getting region names given an offset */
+    public static List<String> getRegionNamesForOffset(ZoneOffset offset) {
+        LocalDateTime now = LocalDateTime.now();
+        return ZoneId.getAvailableZoneIds().stream()
+                .map(ZoneId::of)
+                .filter(zoneId -> now.atZone(zoneId).getOffset().equals(offset))
+                .map(ZoneId::toString)
+                .sorted()
+                .collect(Collectors.toList());
+    }
+
+    /**  Get region names for a given offset */
+    public static List<String> getRegionNamesForZoneId(ZoneId zoneId) {
+        LocalDateTime now = LocalDateTime.now();
+        ZonedDateTime zdt = now.atZone(zoneId);
+        ZoneOffset offset = zdt.getOffset();
+
+        return getRegionNamesForOffset(offset);
     }
 
     /** Method to calculate days until Talk Like A Pirate Day */
@@ -337,5 +359,15 @@ public class Main {
                 .forEach(date -> {
                     Long days = date.query(this::dayUntilPirateDay);
                 });
+    }
+
+    /** Getting the current region names */
+    @Test
+    public void getRegionNamesForSystemDefault() throws Exception {
+        ZonedDateTime now = ZonedDateTime.now();
+        ZoneId zoneId = now.getZone();
+        List<String> names = getRegionNamesForZoneId(zoneId);
+
+        assertTrue(names.contains(zoneId.getId()));
     }
 }
