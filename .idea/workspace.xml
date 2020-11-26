@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="376">
-                <caret line="1283" column="74" lean-forward="true" selection-start-line="1283" selection-start-column="74" selection-end-line="1283" selection-end-column="74" />
+              <first_editor relative-caret-position="360">
+                <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="174" column="47" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
+            <state relative-caret-position="394">
+              <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="360">
               <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -149,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/JavaTime/Adjusters.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/ConvertDate.java" />
         <option value="$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -214,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.getRegionNamesForSystemDefault">
+  <component name="RunManager" selected="JUnit.Main.getRegionNamesForChicago">
     <configuration name="FunnyOffsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaTime.FunnyOffsets" />
       <module name="Modern Java Recipes" />
@@ -228,8 +229,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+    <configuration name="Main.getRegionNamesForChicago" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -237,6 +237,42 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="getRegionNamesForChicago" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.getRegionNamesForGMT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaTime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="getRegionNamesForGMT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.getRegionNamesForNepal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern Java Recipes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaTime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JavaTime" />
+      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+      <option name="METHOD_NAME" value="getRegionNamesForNepal" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,45 +293,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.pirateDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaTime.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JavaTime" />
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
-      <option name="METHOD_NAME" value="pirateDay" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main.queries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Modern Java Recipes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaTime.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JavaTime" />
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
-      <option name="METHOD_NAME" value="queries" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.getRegionNamesForChicago" />
+        <item itemvalue="JUnit.Main.getRegionNamesForNepal" />
+        <item itemvalue="JUnit.Main.getRegionNamesForGMT" />
         <item itemvalue="JUnit.Main.getRegionNamesForSystemDefault" />
         <item itemvalue="Application.FunnyOffsets" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Main.pirateDay" />
-        <item itemvalue="JUnit.Main.queries" />
       </list>
     </recent_temporary>
   </component>
@@ -339,20 +343,11 @@
       <workItem from="1605903014878" duration="5777000" />
       <workItem from="1606079681355" duration="3812000" />
       <workItem from="1606145331599" duration="5416000" />
-      <workItem from="1606400270772" duration="6907000" />
+      <workItem from="1606400270772" duration="7811000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_payDay - 2020.11.20 at 23h 32m 21s.xml">
-      <configuration name="Main.payDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_payDay - 2020.11.20 at 23h 33m 16s.xml">
-      <configuration name="Main.payDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_payDay - 2020.11.20 at 23h 34m 29s.xml">
-      <configuration name="Main.payDay" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_payDay - 2020.11.20 at 23h 36m 33s.xml">
       <configuration name="Main.payDay" configurationId="JUnit" />
     </history-entry>
@@ -374,9 +369,18 @@
     <history-entry file="Main_getRegionNamesForSystemDefault - 2020.11.27 at 00h 58m 39s.xml">
       <configuration name="Main.getRegionNamesForSystemDefault" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_getRegionNamesForGMT - 2020.11.27 at 01h 06m 26s.xml">
+      <configuration name="Main.getRegionNamesForGMT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_getRegionNamesForNepal - 2020.11.27 at 01h 08m 16s.xml">
+      <configuration name="Main.getRegionNamesForNepal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_getRegionNamesForChicago - 2020.11.27 at 01h 13m 38s.xml">
+      <configuration name="Main.getRegionNamesForChicago" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171144000" />
+    <option name="totallyTimeSpent" value="172048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -829,8 +833,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/FunnyOffsets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="360">
           <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -840,20 +854,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="376">
-            <caret line="1283" column="74" lean-forward="true" selection-start-line="1283" selection-start-column="74" selection-end-line="1283" selection-end-column="74" />
+          <first_editor relative-caret-position="360">
+            <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="174" column="47" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

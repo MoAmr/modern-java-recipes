@@ -1283,5 +1283,28 @@ determine its remainder when dividing the total seconds by 3,600.</h4>
 <h3><u>Note:</u></h3><h4>If you want to know the ISO 8601 region name given 
 an offset from UTC, filter all the available zone IDs by the given offset.</h4>
 
+<h3><u>Note:</u></h3><h4>[A complete list of region names can be found in Wikipedia at](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)</h4>
+
+<h3><u>Note:</u></h3><h4>If you need to know the amount of time between 
+two events, use the between or until methods on the temporal classes or 
+between method on Period to generate a Period object. Otherwise use the
+Duration class for seconds and nanoseconds on the timeline.</h4>
+
+<h3><u>Note:</u></h3><h4>The Date-Time API includes the interface 
+java.time.temporal.TemporalUnit, which is implemented by the enum ChronoUnit 
+in the same package. The between method on that interface takes two 
+TemporalUnit instances and returns a long:
+
+```java
+long between(Temporal temporal1Inclusive, Temporal temporal2Exclusive)
+```
+
+The start and end times must be of compatible types. The implementation 
+converts the second argument to be an instance of the first type before 
+calculating the amount. The result is negative if the second argument occurs 
+before the first argument. The return value is the number of “units” between 
+the arguments. This becomes convenient when using the constants in the 
+ChronoUnit enum.</h4>
+
 --------------------------------------------------------------------------
 
