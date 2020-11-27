@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaTime/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTime/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="198">
-                <caret line="1309" column="44" selection-start-line="1309" selection-start-column="44" selection-end-line="1309" selection-end-column="44" />
+              <first_editor relative-caret-position="357">
+                <caret line="1331" selection-start-line="1331" selection-end-line="1331" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="165" column="37" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
+            <state relative-caret-position="90">
+              <caret line="169" column="92" selection-start-line="169" selection-start-column="92" selection-end-line="169" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,6 +110,11 @@
       <find>```java</find>
       <find>Africa/C</find>
       <find>convertUtilDateToLocalDate</find>
+      <find>Instant</find>
+      <find>toInstant</find>
+      <find>ZoneId</find>
+      <find>ZoneOffset</find>
+      <find>getRegionNamesForOffset</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -342,7 +348,7 @@
       <workItem from="1605903014878" duration="5777000" />
       <workItem from="1606079681355" duration="3812000" />
       <workItem from="1606145331599" duration="5416000" />
-      <workItem from="1606400270772" duration="8942000" />
+      <workItem from="1606400270772" duration="10786000" />
     </task>
     <servers />
   </component>
@@ -379,7 +385,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173179000" />
+    <option name="totallyTimeSpent" value="175023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,23 +846,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="1309" column="44" selection-start-line="1309" selection-start-column="44" selection-end-line="1309" selection-end-column="44" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaTime/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="165" column="37" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
+        <state relative-caret-position="90">
+          <caret line="169" column="92" selection-start-line="169" selection-start-column="92" selection-end-line="169" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="357">
+            <caret line="1331" selection-start-line="1331" selection-end-line="1331" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

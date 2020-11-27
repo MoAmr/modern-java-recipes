@@ -165,6 +165,12 @@ public class Main {
         System.out.printf("%d year(s), %d month(s), and %d day(s)%n",
                 years, months, days);
 
+        /** Using Duration.between for timing */
+        LocalDateTime oldDay = LocalDateTime.of(2020, Month.NOVEMBER, 27, 01, 45, 0);
+        Instant convertedOldDayToInstant = oldDay.toInstant(ZoneOffset.ofHoursMinutes(01, 45));
+        System.out.println("Calling getTiming Method");
+        Instant end = Instant.now();
+        System.out.println(getTiming(convertedOldDayToInstant, end) + " seconds");
     }
 
     /** Getting region names given an offset */
@@ -191,6 +197,11 @@ public class Main {
     public static List<String> getRegionNamesForOffset(int hours, int minutes) {
         ZoneOffset offset = ZoneOffset.ofHoursMinutes(hours, minutes);
         return getRegionNamesForOffset(offset);
+    }
+
+    /** Timing a method */
+    public static double getTiming(Instant start, Instant end) {
+        return Duration.between(start, end).toMillis() / 1000.0;
     }
 
     /** Method to calculate days until Talk Like A Pirate Day */

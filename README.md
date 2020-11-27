@@ -1324,7 +1324,12 @@ Period until(ChronoLocalDate endDateExclusive)
 <h3><u>Note:</u></h3><h4>The Period class is used when you need to deal with 
 human-readable times, like days, months, and years.</h4>
 
-
+<h3><u>Note:</u></h3><h4>Using the Duration class:
+The Duration class represents an amount of time in terms of seconds and 
+nanoseconds, which makes it suitable for working with Instant. The result 
+can be converted to many other types. The class stores a long representing 
+seconds and an int representing nanoseconds, and can be negative if the end 
+point comes before the starting point.</h4>
 
 --------------------------------------------------------------------------
 
