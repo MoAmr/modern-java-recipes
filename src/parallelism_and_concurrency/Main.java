@@ -49,4 +49,12 @@ public class Main {
         assertFalse(numbers.parallelStream().isParallel());
     }
 
+    /**  Using the parallel method on a stream */
+    @Test
+    public void parallelMethodOnStream() throws Exception {
+        assertTrue(Stream.of(3, 1, 4, 1, 5, 9)
+        .parallel()
+        .isParallel());
+    }
+
 }

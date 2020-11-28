@@ -1362,4 +1362,7 @@ parallelStream method to yield a (possibly) parallel stream. The reason for
 the “possibly” qualification is that it is allowable for this method to 
 return a sequential stream, but by default the stream will be parallel.</h4>
 
+<h3><u>Note:</u></h3><h4>The other way to create a parallel stream is to use 
+the method parallel on an existing stream.</h4>
+
 --------------------------------------------------------------------------

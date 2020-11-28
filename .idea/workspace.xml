@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="447">
-                <caret line="1362" column="43" selection-start-line="1362" selection-start-column="43" selection-end-line="1362" selection-end-column="43" />
+              <first_editor relative-caret-position="372">
+                <caret line="1362" column="71" lean-forward="true" selection-start-line="1362" selection-start-column="71" selection-end-line="1362" selection-end-column="71" />
               </first_editor>
               <second_editor />
             </state>
@@ -33,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state relative-caret-position="465">
+              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,16 +165,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.sequentialCollectionStream">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaTime.Main" />
+  <component name="RunManager" selected="JUnit.Main.parallelMethodOnStream">
+    <configuration name="Main.parallelMethodOnStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaTime.*" />
+          <option name="PATTERN" value="parallelism_and_concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
+      <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
+      <option name="METHOD_NAME" value="parallelMethodOnStream" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.parallelMethodOnStream" />
         <item itemvalue="JUnit.Main.sequentialCollectionStream" />
         <item itemvalue="JUnit.Main.sequentialGenerateStream" />
         <item itemvalue="JUnit.Main.sequentialIterateStream" />
         <item itemvalue="JUnit.Main.sequentialStreamOf" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +297,7 @@
       <workItem from="1606079681355" duration="3812000" />
       <workItem from="1606145331599" duration="5416000" />
       <workItem from="1606400270772" duration="11558000" />
-      <workItem from="1606586162412" duration="2067000" />
+      <workItem from="1606586162412" duration="2341000" />
     </task>
     <servers />
   </component>
@@ -335,7 +334,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177862000" />
+    <option name="totallyTimeSpent" value="178136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="465">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -819,8 +818,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="447">
-            <caret line="1362" column="43" selection-start-line="1362" selection-start-column="43" selection-end-line="1362" selection-end-column="43" />
+          <first_editor relative-caret-position="372">
+            <caret line="1362" column="71" lean-forward="true" selection-start-line="1362" selection-start-column="71" selection-end-line="1362" selection-end-column="71" />
           </first_editor>
           <second_editor />
         </state>
