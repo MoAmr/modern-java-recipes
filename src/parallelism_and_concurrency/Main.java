@@ -57,4 +57,14 @@ public class Main {
         .isParallel());
     }
 
+    /** Converting a parallel stream to sequential*/
+    @Test
+    public void parallelStreamThenSequential() throws Exception {
+        List<Integer> numbers = Arrays.asList(3, 1, 4, 1, 5, 9);
+        assertFalse(numbers.parallelStream()
+                .sequential()
+                .isParallel());
+    }
+
+
 }
