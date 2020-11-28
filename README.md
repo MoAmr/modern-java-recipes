@@ -1283,7 +1283,7 @@ determine its remainder when dividing the total seconds by 3,600.</h4>
 <h3><u>Note:</u></h3><h4>If you want to know the ISO 8601 region name given 
 an offset from UTC, filter all the available zone IDs by the given offset.</h4>
 
-<h3><u>Note:</u></h3><h4>[A complete list of region names can be found in Wikipedia at](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)</h4>
+[A complete list of region names can be found in Wikipedia at](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 <h3><u>Note:</u></h3><h4>If you need to know the amount of time between 
 two events, use the between or until methods on the temporal classes or 
@@ -1333,3 +1333,33 @@ point comes before the starting point.</h4>
 
 --------------------------------------------------------------------------
 
+## Parallelism and Concurrency:-
+
+<h3><u>Note:</u></h3><h4>
+
+* Concurrency is when multiple tasks can run in overlapping time periods.
+
+* Parallelism is when multiple tasks run at literally the same time.
+
+- You design for concurrency—the ability to decompose your problem into 
+independent operations that can run simultaneously, even if they aren’t 
+doing so at the moment. A concurrent application is composed of independently 
+executing processes. You can then implement the concurrent tasks in parallel,
+which may or may not improve performance, assuming you have multiple 
+processing units.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want to make a stream either sequential or 
+parallel, regardless of the default, use the stream or parallelStream methods 
+on Collection, or the sequential or parallel methods on Stream.</h4>
+
+<h3><u>Note:</u></h3><h4>By default, when you create a stream in Java the 
+result is sequential. In BaseStream (the superclass of the Stream interface), 
+you can use the method isParallel to determine whether the stream is 
+operating sequentially or in parallel.</h4>
+
+<h3><u>Note:</u></h3><h4>If the source was a collection, you can use the 
+parallelStream method to yield a (possibly) parallel stream. The reason for 
+the “possibly” qualification is that it is allowable for this method to 
+return a sequential stream, but by default the stream will be parallel.</h4>
+
+--------------------------------------------------------------------------
