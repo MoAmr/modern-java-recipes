@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,6 +34,18 @@ public class Main {
                 .limit(10)
                 .parallel()
                 .reduce(0L, Long::sum);
+    }
+
+    /** Using LongStream */
+    public long sequentialLongStreamSum() {
+        return LongStream.rangeClosed(1, 10)
+                .sum();
+    }
+
+    public long parallelLongStream() {
+        return LongStream.rangeClosed(1, 10)
+                .parallel()
+                .sum();
     }
 
     /** Creating sequential streams (parts of a JUnit test) */

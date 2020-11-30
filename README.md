@@ -1380,4 +1380,8 @@ fork-join pool to distribute the work. The size of that pool is equal to the
 number of processors, which you can determine via 
 Runtime.getRuntime().availableProcessors()</h4>
 
+<h3><u>Note:</u></h3><h4>Using LongStream with a rangeClosed method is so 
+fast that there is very little difference between sequential and parallel 
+performance at all.</h4>
+
 --------------------------------------------------------------------------
