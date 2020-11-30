@@ -1368,4 +1368,16 @@ the method parallel on an existing stream.</h4>
 <h3><u>Note:</u></h3><h4>Interestingly enough, there is also a sequential
 method, which returns a sequential stream.</h4>
 
+<h3><u>Note:</u></h3><h4>Remember that with streams, no processing is done
+until the terminal expression is reached</h4>
+
+<h3><u>Note:</u></h3><h4>When executing, a stream can be either parallel or 
+sequential. The parallel or sequential methods effectively set or unset a 
+boolean, which is checked when the terminal expression is reached.</h4>
+
+<h3><u>Note:</u></h3><h4>By default, Java 8 parallel streams use a common 
+fork-join pool to distribute the work. The size of that pool is equal to the
+number of processors, which you can determine via 
+Runtime.getRuntime().availableProcessors()</h4>
+
 --------------------------------------------------------------------------

@@ -20,6 +20,21 @@ public class Main {
 
     }
 
+    /** Summing generic sequential streams */
+    public long sequentialStreamSum() {
+        return Stream.iterate(1L, i -> i + 1)
+                .limit(10)
+                .reduce(0L, Long::sum);
+    }
+
+    /** Summing generic parallel streams */
+    public long paralleStreamSum() {
+        return Stream.iterate(1L, i -> i + 1)
+                .limit(10)
+                .parallel()
+                .reduce(0L, Long::sum);
+    }
+
     /** Creating sequential streams (parts of a JUnit test) */
     @Test
     public void sequentialStreamOf() throws Exception {
