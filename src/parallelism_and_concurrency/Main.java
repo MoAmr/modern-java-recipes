@@ -46,6 +46,18 @@ public class Main {
 
         getIfNotCancelled(future);
 
+        /** Cancelling the Future */
+        future = service.submit(() -> {
+            Thread.sleep(10);
+            return "Hello, World!";
+        });
+
+        future.cancel(true);
+
+        System.out.println("Even more processing...");
+
+        getIfNotCancelled(future);
+
     }
 
     /** Summing generic sequential streams */

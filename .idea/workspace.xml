@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -30,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+            <state relative-caret-position="480">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/JavaTime/Main.java" />
         <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/JunitTest.java" />
         <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/DoublingDemo.java" />
-        <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" />
       </list>
     </option>
   </component>
@@ -306,7 +304,7 @@
       <workItem from="1606145331599" duration="5416000" />
       <workItem from="1606400270772" duration="11558000" />
       <workItem from="1606586162412" duration="3303000" />
-      <workItem from="1606747667295" duration="4537000" />
+      <workItem from="1606747667295" duration="4792000" />
     </task>
     <servers />
   </component>
@@ -343,7 +341,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183635000" />
+    <option name="totallyTimeSpent" value="183890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -805,6 +793,16 @@
             <caret line="1393" selection-start-line="1393" selection-end-line="1393" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
