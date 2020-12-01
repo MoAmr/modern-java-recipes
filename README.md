@@ -1384,4 +1384,13 @@ Runtime.getRuntime().availableProcessors()</h4>
 fast that there is very little difference between sequential and parallel 
 performance at all.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to represent the result of an asynchronous 
+computation, check if it is complete, cancel if necessary, and retrieve 
+the result, use a class that implements the java.util.concurrent.Future interface.</h4>
+
+<h3><u>Note:</u></h3><h4>Using isDone in a loop is called busy waiting and 
+is not generally a good idea because of the potentially millions of calls 
+it generates. The CompletableFuture class, discussed in the rest of this 
+chapter, provides a better way to react when a Future completes.</h4>
+
 --------------------------------------------------------------------------

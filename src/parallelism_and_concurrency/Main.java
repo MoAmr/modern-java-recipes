@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.*;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
@@ -18,6 +19,32 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Main {
 
     public static void main(String[] args) {
+
+        /** Submitting a Callable and returning the Future */
+        ExecutorService service = Executors.newCachedThreadPool();
+        Future<String> future = service.submit(new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                Thread.sleep(100);
+                return "Hello, Wolrd!";
+            }
+        });
+        System.out.println("Processing...");
+        getIfNotCancelled(future);
+
+        /** Using a lambda expression and checking if the Future is done */
+        future = service.submit(() -> { // Lambda expression for the Callable
+            Thread.sleep(10);
+            return "Hello, World!";
+        });
+
+        System.out.println("More processing...");
+
+        while (!future.isDone()) { // Wait until Future is finished
+            System.out.println("Waiting...");
+        }
+
+        getIfNotCancelled(future);
 
     }
 
@@ -46,6 +73,20 @@ public class Main {
         return LongStream.rangeClosed(1, 10)
                 .parallel()
                 .sum();
+    }
+
+    /** Retrieving a value from a Future */
+    public static void getIfNotCancelled(Future<String> future) {
+
+        try {
+            if (!future.isCancelled()) { // Check status of Future
+                System.out.println(future.get()); // Blocking call to retrieve its value
+            } else {
+                System.out.println("Cancelled");
+            }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 
     /** Creating sequential streams (parts of a JUnit test) */
