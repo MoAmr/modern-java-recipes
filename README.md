@@ -1393,4 +1393,9 @@ is not generally a good idea because of the potentially millions of calls
 it generates. The CompletableFuture class, discussed in the rest of this 
 chapter, provides a better way to react when a Future completes.</h4>
 
+<h3><u>Note:</u></h3><h4>If you want to explicitly complete a CompletableFuture, 
+giving it a value or causing it to throw an exception when the get method
+is invoked, use the completedFuture, complete, or the completeExceptionally
+methods.</h4>
+
 --------------------------------------------------------------------------
