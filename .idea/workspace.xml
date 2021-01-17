@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
+            <state relative-caret-position="429">
+              <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.combine">
+  <component name="RunManager" selected="JUnit.Main.handleWithException">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
       <module name="Modern Java Recipes" />
@@ -221,7 +221,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.parallelMethodOnStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.handleWithException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -231,7 +231,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
       <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
-      <option name="METHOD_NAME" value="parallelMethodOnStream" />
+      <option name="METHOD_NAME" value="handleWithException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.handleWithException" />
         <item itemvalue="JUnit.Main.combine" />
         <item itemvalue="JUnit.Main.compose" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Main.parallelStreamThenSequential" />
-        <item itemvalue="JUnit.Main.parallelMethodOnStream" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +308,7 @@
       <workItem from="1606747667295" duration="5260000" />
       <workItem from="1606945708816" duration="1259000" />
       <workItem from="1607032488221" duration="410000" />
-      <workItem from="1610912093534" duration="4634000" />
+      <workItem from="1610912093534" duration="4918000" />
     </task>
     <servers />
   </component>
@@ -345,7 +345,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190661000" />
+    <option name="totallyTimeSpent" value="190945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
+        <state relative-caret-position="429">
+          <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

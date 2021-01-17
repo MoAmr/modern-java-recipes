@@ -123,6 +123,8 @@ public class Main {
     }
 
     /** Using the handle method */
+    // The example simply parses a string, looking for an integer. If the parse is successful,
+    // the integer is returned. Otherwise a ParseException is thrown and the handle method returns zero.
     private CompletableFuture<Integer> getIntegerCompletableFuture(String num) {
         return CompletableFuture.supplyAsync(() -> Integer.parseInt(num))
                 .handle((val, exc) -> val != null ? val : 0);
@@ -201,6 +203,14 @@ public class Main {
                         (n1, n2) -> n1 + n2);
 
         assertTrue(5 == completableFuture.get());
+    }
+
+    /** Using handle method with Exception */
+    @Test
+    public void handleWithException() throws Exception {
+        String num = "abc";
+        CompletableFuture<Integer> value = getIntegerCompletableFuture(num);
+        assertTrue(value.get() == 0);
     }
 
 
