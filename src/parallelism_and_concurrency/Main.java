@@ -122,6 +122,12 @@ public class Main {
         }
     }
 
+    /** Using the handle method */
+    private CompletableFuture<Integer> getIntegerCompletableFuture(String num) {
+        return CompletableFuture.supplyAsync(() -> Integer.parseInt(num))
+                .handle((val, exc) -> val != null ? val : 0);
+    }
+
     /** Creating sequential streams (parts of a JUnit test) */
     @Test
     public void sequentialStreamOf() throws Exception {

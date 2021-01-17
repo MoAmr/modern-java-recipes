@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="194" column="48" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+            <state relative-caret-position="364">
+              <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -308,14 +308,11 @@
       <workItem from="1606747667295" duration="5260000" />
       <workItem from="1606945708816" duration="1259000" />
       <workItem from="1607032488221" duration="410000" />
-      <workItem from="1610912093534" duration="4350000" />
+      <workItem from="1610912093534" duration="4634000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_getRegionNamesForNepal - 2020.11.27 at 01h 08m 16s.xml">
-      <configuration name="Main.getRegionNamesForNepal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_getRegionNamesForChicago - 2020.11.27 at 01h 13m 38s.xml">
       <configuration name="Main.getRegionNamesForChicago" configurationId="JUnit" />
     </history-entry>
@@ -343,9 +340,12 @@
     <history-entry file="Main_compose - 2021.01.17 at 23h 37m 58s.xml">
       <configuration name="Main.compose" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_combine - 2021.01.17 at 23h 43m 20s.xml">
+      <configuration name="Main.combine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190377000" />
+    <option name="totallyTimeSpent" value="190661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="194" column="48" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+        <state relative-caret-position="364">
+          <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
