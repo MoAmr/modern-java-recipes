@@ -1398,4 +1398,16 @@ giving it a value or causing it to throw an exception when the get method
 is invoked, use the completedFuture, complete, or the completeExceptionally
 methods.</h4>
 
+<h3><u>Note:</u></h3><h4>The real benefit of CompletableFuture is that it 
+allows you to coordinate activities without writing nested callbacks.</h4>
+
+<h3><u>Note:</u></h3><h4>If you want the completion of one Future to trigger 
+another action, use the various instance methods in CompletableFuture that 
+coordinate actions, like thenApply, thenCompose, thenRun, and more.</h4>
+
+<h3><u>Note:</u></h3><h4>Choosing whether or not to use the Async versions of 
+the methods is a trade-off. You may get faster individual task execution with 
+asynchronous tasks, but they also add overhead, so the overall completion 
+speed may not improve.</h4>
+
 --------------------------------------------------------------------------

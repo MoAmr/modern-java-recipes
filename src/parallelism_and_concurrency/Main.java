@@ -58,7 +58,28 @@ public class Main {
 
         getIfNotCancelled(future);
 
+        CompletableFuture.supplyAsync(() -> sleepThenReturnString())
+                .thenApply(Integer::parseInt)
+                .thenApply(x -> 2 * x)
+                .thenAccept(System.out::println)
+                .join();
+
+        System.out.println("Running...");
+
     }
+
+    /** Coordinating tasks using a CompletableFuture */
+    private static String sleepThenReturnString() {
+
+        try {
+            Thread.sleep(100); // Introduce an artificial delay
+        } catch(InterruptedException ignored) {
+
+        }
+
+        return "42";
+    }
+
 
     /** Summing generic sequential streams */
     public long sequentialStreamSum() {
