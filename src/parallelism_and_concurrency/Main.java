@@ -169,6 +169,8 @@ public class Main {
     }
 
     /** Composing two Futures together */
+    // The argument to thenCompose is a function, which takes the result of the first
+    // Future and transforms it into the output of the second.
     @Test
     public void compose() throws Exception {
         int x = 2;
@@ -176,6 +178,21 @@ public class Main {
         CompletableFuture<Integer> completableFuture =
                 CompletableFuture.supplyAsync(() -> x)
                 .thenCompose(n -> CompletableFuture.supplyAsync(() -> n + y));
+
+        assertTrue(5 == completableFuture.get());
+    }
+
+    /**  Combining two Futures */
+    // The thenCombine method takes a Future and a BiFunction as arguments,
+    // where the results of both Futures are available in the function when computing the result.
+    @Test
+    public void combine() throws Exception {
+        int x = 2;
+        int y = 3;
+        CompletableFuture<Integer> completableFuture =
+                CompletableFuture.supplyAsync(() -> x)
+                .thenCombine(CompletableFuture.supplyAsync(() -> y),
+                        (n1, n2) -> n1 + n2);
 
         assertTrue(5 == completableFuture.get());
     }
