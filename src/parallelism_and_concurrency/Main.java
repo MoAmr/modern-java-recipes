@@ -213,5 +213,14 @@ public class Main {
         assertTrue(value.get() == 0);
     }
 
+    /** Using handle method without Exception */
+    @Test
+    public void handleWithoutException() throws Exception {
+        String num = "42";
+        CompletableFuture<Integer> value = getIntegerCompletableFuture(num);
+        assertTrue(value.get() == 42);
+
+    }
+
 
 }

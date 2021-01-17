@@ -175,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.handleWithException">
+  <component name="RunManager" selected="JUnit.Main.handleWithoutException">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
       <module name="Modern Java Recipes" />
@@ -237,7 +237,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.parallelStreamThenSequential" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.handleWithoutException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
@@ -247,7 +247,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
       <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
-      <option name="METHOD_NAME" value="parallelStreamThenSequential" />
+      <option name="METHOD_NAME" value="handleWithoutException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.handleWithoutException" />
         <item itemvalue="JUnit.Main.handleWithException" />
         <item itemvalue="JUnit.Main.combine" />
         <item itemvalue="JUnit.Main.compose" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Main.parallelStreamThenSequential" />
       </list>
     </recent_temporary>
   </component>
