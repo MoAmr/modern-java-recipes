@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baseball_Boxscore/resources/sample_boxscore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="387">
+              <first_editor relative-caret-position="21150">
                 <caret line="1410" selection-start-line="1410" selection-end-line="1410" />
               </first_editor>
               <second_editor />
@@ -28,14 +29,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
+            <state relative-caret-position="603">
+              <caret line="220" column="38" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/resources/sample_boxscore.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19335">
+              <caret line="1289" selection-start-line="1289" selection-end-line="1289" />
             </state>
           </provider>
         </entry>
@@ -112,12 +122,12 @@
         <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/DoublingDemo.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java" />
+        <option value="$PROJECT_DIR$/src/Baseball_Boxscore/resources/sample_boxscore.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="726" />
-    <option name="width" value="714" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,14 +154,13 @@
               <item name="Modern Java Recipes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Modern Java Recipes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="parallelism_and_concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="CatdeaLogs" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,17 +318,12 @@
       <workItem from="1606747667295" duration="5260000" />
       <workItem from="1606945708816" duration="1259000" />
       <workItem from="1607032488221" duration="410000" />
-      <workItem from="1610912093534" duration="4918000" />
+      <workItem from="1610912093534" duration="5578000" />
+      <workItem from="1611006409304" duration="391000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_getRegionNamesForChicago - 2020.11.27 at 01h 13m 38s.xml">
-      <configuration name="Main.getRegionNamesForChicago" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_getRegionNamesForChicago - 2020.11.27 at 01h 28m 05s.xml">
-      <configuration name="Main.getRegionNamesForChicago" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_sequentialStreamOf - 2020.11.29 at 00h 07m 06s.xml">
       <configuration name="Main.sequentialStreamOf" configurationId="JUnit" />
     </history-entry>
@@ -343,9 +348,15 @@
     <history-entry file="Main_combine - 2021.01.17 at 23h 43m 20s.xml">
       <configuration name="Main.combine" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_handleWithException - 2021.01.17 at 23h 53m 15s.xml">
+      <configuration name="Main.handleWithException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_handleWithoutException - 2021.01.17 at 23h 56m 06s.xml">
+      <configuration name="Main.handleWithoutException" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190945000" />
+    <option name="totallyTimeSpent" value="191996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,10 +368,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="679" y="0" width="761" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1821975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -369,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -794,7 +804,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="387">
+          <first_editor relative-caret-position="21150">
             <caret line="1410" selection-start-line="1410" selection-end-line="1410" />
           </first_editor>
           <second_editor />
@@ -803,11 +813,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parallelism_and_concurrency/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
+        <state relative-caret-position="603">
+          <caret line="220" column="38" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/resources/sample_boxscore.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19335">
+          <caret line="1289" selection-start-line="1289" selection-end-line="1289" />
         </state>
       </provider>
     </entry>
