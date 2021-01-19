@@ -1,4 +1,4 @@
-package Baseball_Boxscore.resources.json;
+package Baseball_Boxscore.json;
 
 /**
  * @author Mohammed Amr
