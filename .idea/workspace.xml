@@ -291,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GamePageLinksSupplierTest">
+  <component name="RunManager" selected="JUnit.GamePageParserTest.getGames">
     <configuration name="BoxscoreRetrieverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
@@ -354,17 +354,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.handleWithoutException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GamePageParserTest.getGames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parallelism_and_concurrency.*" />
+          <option name="PATTERN" value="Baseball_Boxscore.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
-      <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
-      <option name="METHOD_NAME" value="handleWithoutException" />
+      <option name="PACKAGE_NAME" value="Baseball_Boxscore.test" />
+      <option name="MAIN_CLASS_NAME" value="Baseball_Boxscore.test.GamePageParserTest" />
+      <option name="METHOD_NAME" value="getGames" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -372,11 +372,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GamePageParserTest.getGames" />
         <item itemvalue="JUnit.GamePageLinksSupplierTest" />
         <item itemvalue="JUnit.BoxscoreRetrieverTest.apply" />
         <item itemvalue="JUnit.BoxscoreRetrieverTest" />
         <item itemvalue="JUnit.BoxscoreRetrieverTest.gamePattern2Result" />
-        <item itemvalue="JUnit.Main.handleWithoutException" />
       </list>
     </recent_temporary>
   </component>
