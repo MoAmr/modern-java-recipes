@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3ddf9-32eb-46b0-ae17-5e298d54be71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Baseball_Boxscore/GamePageParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baseball_Boxscore/test/BoxscoreRetrieverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modern Java Recipes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Modern Java Recipes.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/BoxscoreRetriever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="540">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/GamePageLinksSupplier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="150">
               <caret line="20" column="34" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,16 +107,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/GamePageParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="150">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#779#825#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/test/BoxscoreRetrieverTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/Baseball_Boxscore/GamePageLinksSupplie.java" />
         <option value="$PROJECT_DIR$/src/Baseball_Boxscore/GamePageLinksSupplier.java" />
         <option value="$PROJECT_DIR$/src/Baseball_Boxscore/GamePageParser.java" />
+        <option value="$PROJECT_DIR$/src/Baseball_Boxscore/test/BoxscoreRetrieverTest.java" />
       </list>
     </option>
   </component>
@@ -215,6 +227,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,12 +247,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Baseball_Boxscore" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Modern Java Recipes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Modern Java Recipes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Baseball_Boxscore" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -272,47 +291,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.handleWithoutException">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
+  <component name="RunManager" selected="JUnit.BoxscoreRetrieverTest.apply">
+    <configuration name="BoxscoreRetrieverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parallelism_and_concurrency.*" />
+          <option name="PATTERN" value="Baseball_Boxscore.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Baseball_Boxscore.test" />
+      <option name="MAIN_CLASS_NAME" value="Baseball_Boxscore.test.BoxscoreRetrieverTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.combine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoxscoreRetrieverTest.apply" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parallelism_and_concurrency.*" />
+          <option name="PATTERN" value="Baseball_Boxscore.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
-      <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
-      <option name="METHOD_NAME" value="combine" />
+      <option name="PACKAGE_NAME" value="Baseball_Boxscore.test" />
+      <option name="MAIN_CLASS_NAME" value="Baseball_Boxscore.test.BoxscoreRetrieverTest" />
+      <option name="METHOD_NAME" value="apply" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.compose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoxscoreRetrieverTest.gamePattern2Result" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modern Java Recipes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parallelism_and_concurrency.*" />
+          <option name="PATTERN" value="Baseball_Boxscore.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parallelism_and_concurrency" />
-      <option name="MAIN_CLASS_NAME" value="parallelism_and_concurrency.Main" />
-      <option name="METHOD_NAME" value="compose" />
+      <option name="PACKAGE_NAME" value="Baseball_Boxscore.test" />
+      <option name="MAIN_CLASS_NAME" value="Baseball_Boxscore.test.BoxscoreRetrieverTest" />
+      <option name="METHOD_NAME" value="gamePattern2Result" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -352,11 +373,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoxscoreRetrieverTest.apply" />
+        <item itemvalue="JUnit.BoxscoreRetrieverTest" />
+        <item itemvalue="JUnit.BoxscoreRetrieverTest.gamePattern2Result" />
         <item itemvalue="JUnit.Main.handleWithoutException" />
         <item itemvalue="JUnit.Main.handleWithException" />
-        <item itemvalue="JUnit.Main.combine" />
-        <item itemvalue="JUnit.Main.compose" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -407,20 +428,12 @@
       <workItem from="1607032488221" duration="410000" />
       <workItem from="1610912093534" duration="5578000" />
       <workItem from="1611006409304" duration="1139000" />
-      <workItem from="1611086527663" duration="2633000" />
+      <workItem from="1611086527663" duration="3887000" />
+      <workItem from="1611169261771" duration="487000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_sequentialStreamOf - 2020.11.29 at 00h 07m 06s.xml">
-      <configuration name="Main.sequentialStreamOf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_sequentialIterateStream - 2020.11.29 at 00h 08m 31s.xml">
-      <configuration name="Main.sequentialIterateStream" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_sequentialGenerateStream - 2020.11.29 at 00h 09m 21s.xml">
-      <configuration name="Main.sequentialGenerateStream" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_sequentialCollectionStream - 2020.11.29 at 00h 10m 35s.xml">
       <configuration name="Main.sequentialCollectionStream" configurationId="JUnit" />
     </history-entry>
@@ -442,9 +455,18 @@
     <history-entry file="Main_handleWithoutException - 2021.01.17 at 23h 56m 06s.xml">
       <configuration name="Main.handleWithoutException" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BoxscoreRetrieverTest_gamePattern2Result - 2021.01.20 at 01h 22m 03s.xml">
+      <configuration name="BoxscoreRetrieverTest.gamePattern2Result" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoxscoreRetrieverTest - 2021.01.20 at 22h 45m 27s.xml">
+      <configuration name="BoxscoreRetrieverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoxscoreRetrieverTest - 2021.01.20 at 22h 48m 47s.xml">
+      <configuration name="BoxscoreRetrieverTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197117000" />
+    <option name="totallyTimeSpent" value="198858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,10 +478,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="726" y="0" width="714" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2514881" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25107297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -468,7 +490,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -938,19 +960,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/BoxscoreRetriever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/GamePageLinksSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="150">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -962,13 +974,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/GamePageParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="150">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#779#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/BoxscoreRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Baseball_Boxscore/test/BoxscoreRetrieverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
